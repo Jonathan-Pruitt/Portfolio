@@ -1,0 +1,38 @@
+@theme {
+    /*----------- FONTS -----------*/
+    --font-header: "Baloo 2";
+    --font-header: "Merriweather Sans";
+    --font-header: "Inter Tight";
+    --font-header: Goldman;
+    --font-header: Nunito;
+    --font-header: Urbanist;
+    
+    --font-content: Urbanist;
+    --font-content: Goldman;
+    --font-content: "Baloo 2";
+    --font-content: "Merriweather Sans";
+    --font-content: Nunito;
+    --font-content: "Inter Tight";
+
+    --font-code: "Ubuntu Sans Mono";
+    
+    /*---------- COLORS  ----------*/
+    --color-background: #f9f9f9;
+    --color-surface: #F8EBFF;
+    --color-primary-text: #100020;
+    --color-secondary-text: #93879c;
+    /*name shadow*/
+
+    --color-jp-primary: #009fb7;
+    --color-jp-secondary: #fed766;
+    --color-jp-tertiary: #fe4a49;
+}
+
+@variant dark {
+    :root {
+        --color-background: #100020;
+        --color-surface: #19032a;
+        --color-primary-text: #F8EBFF;
+        --color-secondary-text: #93879c;
+    }
+}

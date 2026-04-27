@@ -1,7 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import LayoutWrapper from './components/LayoutWrapper.vue';
+
 </script>
 
 <template>
-  <HelloWorld />
+  <LayoutWrapper/>
 </template>
