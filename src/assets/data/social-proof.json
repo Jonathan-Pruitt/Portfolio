@@ -1,0 +1,58 @@
+{
+    "social-proofs" : [
+        {
+            "name" : "Margarito Valencia",
+            "current-role" : { 
+                "title": "Instructor",
+                "organization" : "Mississippi Coding Academies"
+            },
+            "content" : {
+                "full" : "I\u0027ve worked with Jonathan since early 2023 at the Coding Academy, and I can honestly say he\u0027s one of the most dependable people I\u0027ve ever teamed up with. When we hit a massive transition period early on, Jonathan didn't skip a beat—he stepped up to lead our C# and foundational courses, making sure our students didn't lose any momentum. His ability to get beginners up to speed actually made my job teaching Full-stack development so much easier, and we ended up graduating a class with some of the best numbers we\u0027ve seen. Over the next year and a half, we spent a lot of time re-developing our curriculum together, and his work ethic and easy-going personality made the whole process seamless. Jonathan is someone who consistently goes above and beyond, and any team would be lucky to have him",
+                "highlights" : "Jonathan is one of the $ people I\u0027ve ever teamed up with. His $ and easy-going personality made re-developing our curriculum seamless. He is someone who goes $, and any team would be lucky to have him.",
+                "keywords" : [
+                    "most dependable",
+                    "work ethic",
+                    "above and beyond"
+                ]
+            },
+            "img-path" : "../images/m-valencia.jpeg",
+            "_recommendation-source" : "LinkedIn"
+        },
+        {
+            "name" : "Sara Dedeaux",
+            "current-role" : { 
+                "title": "Programs and Operations Coordinator",
+                "organization" : "Mississippi Coding Academies"
+            },
+            "content" : {
+                "full" : "As a former business owner, I know how valuable having someone like Jonathan on your team is. I\u0027d work with him again in a heartbeat—at any level. As a mentor, manager, peer, or employee - any team would be lucky to have him.\nJonathan was (and continues to be) an incredible mentor to me from my time at Mississippi Coding Academies. He wasn\u0027t just a great teacher—he was fully invested in making sure his students actually understood the material. Even as a total beginner, I never felt defeated because he had a way of breaking down coding concepts in a way that made sense. What really stood out was how he took the time to adapt his teaching style to fit different learners. I\u0027m a very visual learner, which isn\u0027t his natural style, but he went out of his way to find ways to teach me in a way that clicked.\nBeyond just being a great instructor, Jonathan is someone I trust and respect—both as a developer and as a person. He\u0027s professional, intelligent, and confident while also being authentic to himself as good-natured and approachable. He brought a sense of stability and structure to our class while fostering a positive, inclusive environment where everyone in our diverse group felt supported. His standards and expectations for our class were high and he didn\u0027t lower the bar for anyone—he helped us rise to meet it.\nJonathan applies the value of high expectations to himself. His passion lies in problem-solving and tinkering with complexities. He gains momentum and energy when he encounters a new or complex concept. Problem-solving is where he thrives, but Jonathan does not cherry-pick objectives. While his focus is targeted, he can set aside his work if other priorities arise and return to a state of flow without losing interest or motivation. He manages his time, energy, and efforts well, respects the big-picture goals, and completes all the necessary tasks for a successful project.\nOne of the things I admire most about Jonathan is his openness to growth. He actively sought out ways to improve, took feedback seriously, and applied it tangibly. That\u0027s the kind of person you want on your team—someone who applies a growth mindset in measurable ways all while being a genuinely enjoyable person to be around.",
+                "highlights" : "Jonathan gains momentum when he encounters new or $. Problem-solving is where he thrives, but he can $ and return to a state of flow without losing motivation. I\u0027d work with him again in a heartbeat.",
+                "keywords" : [
+                    "complex concepts",
+                    "pivot between priorities"
+                ]
+            },
+            "img-path" : "../images/s-dedaux.jpeg",
+            "_recommendation-source" : "LinkedIn"
+        },
+        {
+            "name" : "Hydreca Brewster",
+            "current-role" : {
+                "title" : "Retail Branch Operations Analyst",
+                "organization" : "Regions Bank"
+            },
+            "content" : {
+                "full" : "I had the pleasure of working alongside Jonathan Pruitt, and I can confidently say he is an outstanding professional and an incredible asset to any team.\nDuring our time together, Jonathan consistently demonstrated a strong work ethic and had a genuine commitment to excellence. Whether handling day-to-day tasks or high pressure situations, he approached every task with professionalism and a positive attitude.\nWhat truly sets Jonathan apart is his ability to collaborate and build strong relationships. He is not only dependable and knowledgeable, but also supportive of his colleagues—always willing to lend a hand or share insight to help the team succeed.\nI highly recommend Jonathan to any organization looking for someone who is driven, reliable, and brings both skill and integrity to their work. He will make a significant impact wherever he goes.",
+                "highlights" : "Whether handling day-to-day tasks or $ situations, he approached every task with $. ... He is someone who is $, reliable, and brings both $ to their work.",
+                "keywords" : [
+                    "high pressure",
+                    "professionalism",
+                    "driven",
+                    "skill and integrity"
+                ],
+                "img-path" : "../images/h-brewster.jpeg",
+                "_recommendation-source" : "LinkedIn"
+            }
+        }
+    ]
+}

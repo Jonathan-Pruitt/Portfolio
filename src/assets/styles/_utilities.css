@@ -1,8 +1,5 @@
 @layer utilities {
-    .text-vertical {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-    }
+
     .test {
         @apply border rounded border-gray-500;
         outline: 1px solid green;
@@ -14,4 +11,14 @@
     .rescue {
         @apply bg-red-500 text-yellow-200 border-black border font-black
     }
+}
+
+@utility vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+@utility text-outline {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-background);
 }

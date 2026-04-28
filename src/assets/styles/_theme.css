@@ -19,20 +19,24 @@
     /*---------- COLORS  ----------*/
     --color-background: #f9f9f9;
     --color-surface: #F8EBFF;
+    --color-contrast: #100020;
     --color-primary-text: #100020;
     --color-secondary-text: #93879c;
     /*name shadow*/
 
-    --color-jp-primary: #009fb7;
-    --color-jp-secondary: #fed766;
-    --color-jp-tertiary: #fe4a49;
+    --color-jp-primary: #008DA3;
+    --color-jp-secondary: #77527A;
+    --color-jp-splash: #EB5E55;
 }
 
 @variant dark {
     :root {
         --color-background: #100020;
         --color-surface: #19032a;
+        --color-contrast: #F8EBFF;
         --color-primary-text: #F8EBFF;
         --color-secondary-text: #93879c;
+
+        /* --color-jp-splash: #7A5901; */
     }
 }
