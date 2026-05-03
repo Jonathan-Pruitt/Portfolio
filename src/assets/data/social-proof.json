@@ -32,7 +32,7 @@
                     "pivot between priorities"
                 ]
             },
-            "img-path" : "../images/s-dedaux.jpeg",
+            "img-path" : "../images/s-dedaux.jpg",
             "_recommendation-source" : "LinkedIn"
         },
         {
@@ -53,6 +53,24 @@
                 "img-path" : "../images/h-brewster.jpeg",
                 "_recommendation-source" : "LinkedIn"
             }
+        },
+        {
+            "name": "Allison Braund-Harris",
+            "current-role": {
+                "title": "CEO | Brand Strategist | Designer",
+                "organization": "Hardly"
+            },
+            "content": {
+                "full": "Jonathan has been working with our team for almost a year now, and we've loved having him on board. He's dependable with deliverables and always brings a smile to team meetings. I would highly recommended hiring him!",
+                "highlights": "Jonathan has been working with our team for almost a year now, and we've $ having him on board. He's dependable with $ and always brings a smile to team meetings. I would highly $ hiring him!",
+                "keywords": [
+                    "loved",
+                    "deliverables",
+                    "recommend"
+                ]
+            },
+            "img-path": "./images/*",
+            "_recommendation-source": "LinkedIn"
         }
     ]
 }
