@@ -17,26 +17,26 @@
     --font-code: "Ubuntu Sans Mono";
     
     /*---------- COLORS  ----------*/
-    --color-background: #f9f9f9;
-    --color-surface: #F8EBFF;
-    --color-contrast: #100020;
-    --color-primary-text: #100020;
-    --color-secondary-text: #93879c;
-    /*name shadow*/
+    --color-jp-lightmax:    #E8EDFC;
+    --color-jp-lightest:    #97AAF2;
+    --color-jp-lighter:     #6E89ED;
+    --color-jp-light:       #4568E8;
+    --color-jp-full:        #1C47E3;
+    --color-jp-dark:        #1434A4;
+    --color-jp-darker:      #0D2168;
+    --color-jp-darkest:     #081440;
+    --color-jp-darkmax:     #030717;
 
-    --color-jp-primary: #008DA3;
-    --color-jp-secondary: #77527A;
-    --color-jp-splash: #EB5E55;
+    --color-jp-splash: #E3B81C;
+    --color-jp-gray: #677086;
+
+    --color-background: #f9f9f9;
+    --color-surface: #f0f0f0;
 }
 
 @variant dark {
     :root {
-        --color-background: #100020;
-        --color-surface: #19032a;
-        --color-contrast: #F8EBFF;
-        --color-primary-text: #F8EBFF;
-        --color-secondary-text: #93879c;
-
-        /* --color-jp-splash: #7A5901; */
+        --color-background: #060606;
+        --color-surface: #0f0f0f;
     }
 }
