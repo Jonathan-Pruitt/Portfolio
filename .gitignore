@@ -26,6 +26,10 @@ dist-ssr
 # Quick Actions
 up
 down
+load-social.py
 
 # Design/Planning
 Planning.md
+
+# Backups
+social-proof.json.bak
