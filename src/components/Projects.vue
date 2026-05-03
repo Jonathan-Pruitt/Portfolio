@@ -4,9 +4,9 @@
 
 <template>
   <section id="projects">
-    <div class="mt-5 container md:flex flex-row">
-      <div class="bg-jp-secondary">
-        <h1 class="text-5xl font-black text-outline md:vertical-text md:tracking-[-0.25em] inline">PROJECTS</h1>
+    <div class="mt-4 container md:flex flex-row">
+      <div class="bg-jp-darker dark:jp-lighter">
+        <h1 class="text-5xl font-black text-jp-lightest md:vertical-text md:tracking-[-0.25em] inline">PROJECTS</h1>
       </div>
       <div class="flex">
         <div class="flex-3">

@@ -8,11 +8,11 @@
 
 <template>
   <Navbar />
-  <!-- rescue -- cool dropping things go here  -->
-  <!-- probably best bet to use 'hue-rotate' combined with 'mask' to play with colors -->
-  <main>
-    <Hero />
-    <Projects />
-  </main>
+    <!-- rescue -- cool dropping things go here  -->
+    <!-- probably best bet to use 'hue-rotate' combined with 'mask' to play with colors -->
+    <main>
+      <Hero />
+      <Projects />
+    </main>
   <Footer />
 </template>

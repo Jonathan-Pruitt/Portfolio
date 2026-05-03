@@ -4,5 +4,7 @@ import LayoutWrapper from './components/LayoutWrapper.vue';
 </script>
 
 <template>
-  <LayoutWrapper/>
+  <div class="">
+    <LayoutWrapper/>
+  </div>
 </template>
