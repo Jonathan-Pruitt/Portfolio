@@ -25,8 +25,8 @@
         </div>
         
         <!-- Right side -->
-        <div class="aspect-square px-4">
-          <img src="https://placehold.co/400x600" alt="Portfolio" class="aspect-2/3 object-cover w-full h-full rounded-md shadow-md" />
+        <div class="aspect-square justify-self-center">
+          <img src="../assets/images/hero-jp.png" alt="Jonathan Pruitt" class="rounded-full border-5" />
         </div>
       </div>
     </div>

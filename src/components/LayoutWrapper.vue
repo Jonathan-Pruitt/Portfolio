@@ -2,8 +2,8 @@
   import Navbar from './Navbar.vue';
   import Hero from './Hero.vue';
   import Projects from './Projects.vue'
+  import About from './About.vue';
   import Footer from './Footer.vue';
-  import HelloWorld from './HelloWorld.vue'
 </script>
 
 <template>
@@ -13,6 +13,7 @@
     <main>
       <Hero />
       <Projects />
+      <About />
     </main>
   <Footer />
 </template>

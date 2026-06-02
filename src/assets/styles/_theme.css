@@ -1,22 +1,23 @@
+/* BRAND COLOR - 
+    Velvet Orchid - #673A8A 
+*/
 @theme {
     /*----------- FONTS -----------*/
-    --font-header: "Baloo 2";
-    --font-header: "Merriweather Sans";
-    --font-header: "Inter Tight";
-    --font-header: Goldman;
-    --font-header: Nunito;
     --font-header: Urbanist;
-    
-    --font-content: Urbanist;
-    --font-content: Goldman;
-    --font-content: "Baloo 2";
-    --font-content: "Merriweather Sans";
-    --font-content: Nunito;
     --font-content: "Inter Tight";
-
     --font-code: "Ubuntu Sans Mono";
     
     /*---------- COLORS  ----------*/
+    --color-jp: #673a8a;
+    
+    --color-bg
+    --color-border
+    --color-text
+    --color-danger
+    --color-warning
+    --color-success
+    --color-info
+
     --color-jp-lightmax:    #E8EDFC;
     --color-jp-lightest:    #97AAF2;
     --color-jp-lighter:     #6E89ED;
