@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import Carousel from './partials/Carousel.vue';
 import projectData from "../assets/data/projects.json"
 
 const projects = ref(projectData)
@@ -22,13 +23,17 @@ const projects = ref(projectData)
           </ul>
         </div>
         <div class="flex-5">
-          <div v-for="image in project.images" class="w-full aspect-video overflow-hidden rounded-xl">
+          <Carousel 
+            :image-slides="project.images"
+            type="project"
+          />
+          <!-- <div v-for="image in project.images" class="w-full aspect-video overflow-hidden rounded-xl">
             <img 
               :src="image.path"
               :alt="image.altText"
               class="w-full h-full object-cover"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

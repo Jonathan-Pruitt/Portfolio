@@ -9,7 +9,7 @@
         
         <!-- Right side -->
         <div class="sm:order-2">
-          <img src="../assets/images/hero-jp.png" alt="Jonathan Pruitt" class="rounded-full border-10 border-brand mx-auto sm:ml-0" />
+          <img src="../assets/images/hero-jp.png" alt="Jonathan Pruitt" class="rounded-full border-10 border-header mx-auto sm:ml-0" />
         </div>
 
         <!-- Left side -->
