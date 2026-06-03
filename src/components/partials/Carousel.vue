@@ -21,12 +21,10 @@ const changeSlide = (val) => {
     <div 
       class="flex transition-transform duration-300 ease-in-out"
       :style="{ transform: `translateX(-${currentIndex*100}%)`}"
-    >
+      >
       <div 
-        v-for="(slide, index) in slides" {
-          type: Array,
-          required: true
-        }    :key="index"
+        v-for="(slide, index) in slides"
+        :key="index"
         class="w-full shrink-0 flex items-center justify-center px-2 text-center"
       >
         <Slide 
