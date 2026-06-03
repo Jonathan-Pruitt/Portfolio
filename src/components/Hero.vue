@@ -4,29 +4,29 @@
 
 <template>
   <section id="home">
-    <div class="container mx-auto max-w-3xl mt-4 min-h-screen">
-      <div class="aspect-square grid grid-cols-2 items-center">
-        <!-- Left side -->
-        <div class="aspect-square text-right px-4 relative border">
-          <h1 class="text-5xl font-black tracking-tight mb-2">JONATHAN PRUITT</h1>
-          <h2 class="text-xl text-jp-gray font-content font-light italic tracking-widest mb-8">Full Stack Developer</h2>
-          <div class="relative">
-            <div class="fill-jp-full absolute grid gap-4 inset-y-0 right-0">
-              <svg class="w-12 h-12" viewBox="0 0 24 24">
-                <!-- RESCUE (Place an SVG logo here) -->
-                <rect x="0" y="0" width="24" height="24" rx="2" ry="2" />
-              </svg>
-              <svg class="w-12 h-12" viewBox="0 0 24 24">
-                <!-- RESCUE (Place an SVG logo here) -->
-                <rect x="0" y="0" width="24" height="24" rx="2" ry="2" />
-              </svg>
-            </div>
-          </div>
-        </div>
+    <div class="container mx-auto min-h-screen flex flex-col place-content-center">
+      <div class="sm:grid sm:grid-cols-2 p-4 m-4">
         
         <!-- Right side -->
-        <div class="aspect-square justify-self-center">
-          <img src="../assets/images/hero-jp.png" alt="Jonathan Pruitt" class="rounded-full border-5" />
+        <div class="sm:order-2">
+          <img src="../assets/images/hero-jp.png" alt="Jonathan Pruitt" class="rounded-full border-10 border-brand mx-auto sm:ml-0" />
+        </div>
+
+        <!-- Left side -->
+        <div class="text-center content-center sm:text-right px-2 relative sm:order-1">
+          <h1 class="text-5xl md:text-6xl font-black tracking-tight mb-2">JONATHAN PRUITT</h1>
+          <h2 class="text-xl text-body font-content font-light italic tracking-widest mb-4">Full Stack Developer</h2>
+          <div class="text-brand text-5xl">
+            <a href="https://github.com/Jonathan-Pruitt" target="_blank" class="ml-2">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/jonathan-pruitt-developer" target="_blank" class="ml-2">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/@BTWJ-stream" target="_blank" class="ml-2">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
