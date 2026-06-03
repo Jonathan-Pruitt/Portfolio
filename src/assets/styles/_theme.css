@@ -4,39 +4,53 @@
 @theme {
     /*----------- FONTS -----------*/
     --font-header: Urbanist;
-    --font-content: "Inter Tight";
-    --font-code: "Ubuntu Sans Mono";
+    --font-content: Inter Tight;
+    --font-code: Ubuntu Sans Mono;
     
     /*---------- COLORS  ----------*/
-    --color-jp: #673a8a;
-    
-    --color-bg
-    --color-border
-    --color-text
-    --color-danger
-    --color-warning
-    --color-success
-    --color-info
+    --color-brand: var(--primary);
+    --color-danger: var(--danger);
+    --color-warning: var(--warning);
+    --color-success: var(--success);
+    --color-info: var(--info);
 
-    --color-jp-lightmax:    #E8EDFC;
-    --color-jp-lightest:    #97AAF2;
-    --color-jp-lighter:     #6E89ED;
-    --color-jp-light:       #4568E8;
-    --color-jp-full:        #1C47E3;
-    --color-jp-dark:        #1434A4;
-    --color-jp-darker:      #0D2168;
-    --color-jp-darkest:     #081440;
-    --color-jp-darkmax:     #030717;
+    --color-base: var(--bg-0);
+    --color-flat: var(--bg-1);
+    --color-raised: var(--bg-2);
+    --color-peak: var(--bg-3);
+    --color-header: var(--text);
+    --color-body: var(--text-muted);
+    --color-subtle: var(--border);
+}
 
-    --color-jp-splash: #E3B81C;
-    --color-jp-gray: #677086;
+:root {
+    --bg-0: hsl(0,0%,95%);
+    --bg-1: hsl(0,0%,84%);
+    --bg-2: hsl(0,0%,87%);
+    --bg-3: hsl(0,0%,91%);
+    --text: hsl(273, 100%, 20%);
+    --text-muted: hsl(0,0%,30%);
+    --border: hsl(0,0%,75%);
 
-    --color-background: #f9f9f9;
-    --color-surface: #f0f0f0;
+    /* --primary: #673a8a; */
+    --primary: #6f00c4;
+
+    --danger: #E73651;
+    --warning: #F4CF3E;
+    --success: #7DCFB6;
+    --info: #7776BC;
 }
 
 @variant dark {
     :root {
+        --bg-0: hsl(0,0%,5%);
+        --bg-1: hsl(0,0%,9%);
+        --bg-2: hsl(0,0%,13%);
+        --bg-3: hsl(0,0%,16%);
+        --text: hsl(0,0%,95%);
+        --text-muted: hsl(0,0%,70%);
+        --border: hsl(0,0%,25%);
+        
         --color-background: #060606;
         --color-surface: #0f0f0f;
     }

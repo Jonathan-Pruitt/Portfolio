@@ -11,21 +11,16 @@
 
     body {
         font-family: var(--font-content, sans-serif);
-        background-color: var(--color-background);
-        color: var(--color-jp-darkmax);
+        background-color: var(--color-base);
+        color: var(--color-body);
     }
     
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-header, sans-serif);
+        color: var(--color-header);
     }
     
     code {
         font-family: var(--font-code, monospace);
-    }
-}
-
-@variant dark {
-    body {
-        color: var(--color-jp-lightmax);
     }
 }
