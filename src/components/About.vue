@@ -4,9 +4,15 @@
 
 <template>
   <section id="about">
-    <div class="bg-cover bg-center">
-      <div class="h-[20vh] bg-[url(@/assets/images/wide-arch.jpeg)] bg-cover bg-center">
-        <!-- <img src="@/assets/images/wide-arch.jpeg" class="object-cover w-full h-full" alt="Arches National Park"> -->
+    <div class="bg-[#6c85a4]">
+      <div 
+        class="
+          w-full
+          h-[300px]
+          bg-[url(@/assets/images/big-sky.jpg)] 
+          bg-center
+          bg-no-repeat
+          ">
       </div>
     </div>
 

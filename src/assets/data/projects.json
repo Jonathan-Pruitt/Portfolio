@@ -2,7 +2,7 @@
     {
         "title" : "Catan Companion",
         "description" : "From the moment you finish board setup to the end of the game, Catan Companion keeps track of the various dice rolls, settlements, and other data generated in a game of Settlers of Catan.",
-        "tech-stack" : [
+        "techStack" : [
             "C#",
             "XAML",
             "WPF"
@@ -14,16 +14,16 @@
         ],
         "images" : [
             {
-                "path": "./assets/image.png",
-                "alt-text": "e.g. Catan Companion's Welcome Screen"
+                "path": "https://placehold.co/600x400",
+                "altText": "e.g. Catan Companion's Welcome Screen"
             },
             {
-                "path": "./assets/image.png",
-                "alt-text": "e.g. Catan Companion's Welcome Screen"
+                "path": "https://placehold.co/400x600",
+                "altText": "e.g. Catan Companion's Welcome Screen"
             },
             {
-                "path": "./assets/image.png",
-                "alt-text": "e.g. Catan Companion's Welcome Screen"
+                "path": "https://placehold.co/600x600",
+                "altText": "e.g. Catan Companion's Welcome Screen"
             }
         ],
         "links" : {
