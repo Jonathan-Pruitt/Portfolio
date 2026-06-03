@@ -27,7 +27,7 @@ const changeSlide = (val) => {
           type: Array,
           required: true
         }    :key="index"
-        class="w-full flex-shrink-0 flex items-center justify-center px-2 text-center"
+        class="w-full shrink-0 flex items-center justify-center px-2 text-center"
       >
         <Slide 
           :slide-data="slide"
