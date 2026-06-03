@@ -1,34 +1,45 @@
 <script setup>
 import { ref } from 'vue';
-import ProjectSlide from './ProjectSlide.vue';
+import Slide from './Slide.vue';
 
 const props = defineProps({
-  slides : {
+  slides: {
     type: Array,
-    required: true,
-    // EXPECTED STRUCTURE [{type: 'text'|'image', content: '...', 'title' : '...'}]
-  }
-  // imageSlides: Array,
-  // type: String
+    required: true
+  },
 })
-const currentSlide = ref(0)
+const currentIndex = ref(0)
 
-const changeSlide = () => {
-  currentSlide.value += 1;
+const changeSlide = (val) => {
+  currentIndex.value = (val + currentIndex.value+ props.slides.length) % props.slides.length;
 }
-console.log()
+
 </script>
 
 <template>
-  <div class="min-h-full overflow-hidden border border-subtle flex">
-    <div v-for="(slide, index) in imageSlides" :class="`w-[${imageSlides.length}px]`">
-      <ProjectSlide 
-        :image="slide"
-        :id="index * 10 + 0"
-      />
+  <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
+    <div 
+      class="flex transition-transform duration-300 ease-in-out"
+      :style="{ transform: `translateX(-${currentIndex*100}%)`}"
+    >
+      <div 
+        v-for="(slide, index) in slides" {
+          type: Array,
+          required: true
+        }    :key="index"
+        class="w-full flex-shrink-0 flex items-center justify-center px-2 text-center"
+      >
+        <Slide 
+          :slide-data="slide"
+          type="project"
+        />
+      </div>
     </div>
+    <button class="absolute bottom-5 left-5 mx-6 text-white" @click="changeSlide(-1)">
+      prev
+    </button>
+    <button class="absolute bottom-5 right-5 mx-6 text-white" @click="changeSlide(1)">
+      next
+    </button>
   </div>
-  <button @click="changeSlide">
-    change
-  </button>
 </template>
