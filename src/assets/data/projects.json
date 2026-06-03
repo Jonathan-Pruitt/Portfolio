@@ -1,0 +1,34 @@
+[
+    {
+        "title" : "Catan Companion",
+        "description" : "From the moment you finish board setup to the end of the game, Catan Companion keeps track of the various dice rolls, settlements, and other data generated in a game of Settlers of Catan.",
+        "tech-stack" : [
+            "C#",
+            "XAML",
+            "WPF"
+        ],
+        "tags" : [
+            "personal",
+            "entertainment",
+            "utility"
+        ],
+        "images" : [
+            {
+                "path": "./assets/image.png",
+                "alt-text": "e.g. Catan Companion's Welcome Screen"
+            },
+            {
+                "path": "./assets/image.png",
+                "alt-text": "e.g. Catan Companion's Welcome Screen"
+            },
+            {
+                "path": "./assets/image.png",
+                "alt-text": "e.g. Catan Companion's Welcome Screen"
+            }
+        ],
+        "links" : {
+            "sample": "https://github.com/Jonathan-Pruitt/Catan-Data-Tracker/releases/tag/v1.0.0-rc1",
+            "repo": "https://github.com/Jonathan-Pruitt/Catan-Data-Tracker"
+        }
+    }
+]
