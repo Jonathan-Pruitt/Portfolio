@@ -25,7 +25,7 @@ const changeSlide = (val) => {
       <div 
         v-for="(slide, index) in slides"
         :key="index"
-        class="w-full shrink-0 flex items-center justify-center px-2 text-center"
+        class="w-full shrink-0 flex items-center justify-center text-center"
       >
         <Slide 
           :slide-data="slide"

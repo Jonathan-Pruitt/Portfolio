@@ -12,7 +12,8 @@
     --color-danger: var(--danger);
     --color-warning: var(--warning);
     --color-success: var(--success);
-    --color-info: var(--info);
+    --color-tech: var(--info);
+    --color-tag: var(--color-teal-900);
 
     --color-base: var(--bg-0);
     --color-flat: var(--bg-1);
@@ -39,7 +40,7 @@
     --danger: #E73651;
     --warning: #F4CF3E;
     --success: #7DCFB6;
-    --info: #2941cc;
+    --info: #384381;
 }
 
 @variant dark {
