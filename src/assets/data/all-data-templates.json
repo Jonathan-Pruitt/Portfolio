@@ -1,0 +1,32 @@
+{
+    "PROJECTS" : [
+        {
+            "title" : "",
+            "description" : "",
+            "disclaimer (optional)" : "",
+            "techStack" : [
+                "",
+                "",
+                ""
+            ],
+            "tags" : [
+                "",
+                "",
+                ""
+            ],
+            "images" : [
+                {
+                    "path": "",
+                    "altText": ""
+                },
+                {
+                    "..." : "..."
+                }
+            ],
+            "links" : {
+                "sample": "",
+                "repo": ""
+            }
+        }
+    ]
+}
