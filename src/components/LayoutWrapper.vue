@@ -14,7 +14,7 @@
     <main>
       <Debug />
       <Hero />
-      <Projects />
+      <Projects class="border-l-4 border-tech/50"/>
       <About />
     </main>
   <Footer />

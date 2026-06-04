@@ -4,7 +4,7 @@
 
 <template>
   <section id="about">
-    <div class="bg-[#6c85a4]">
+    <div class="bg-[#6c85a4] border-y-16 border-brand">
       <div 
         class="
           w-full
