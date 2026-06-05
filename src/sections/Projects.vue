@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import Carousel from './components/Carousel.vue';
 import projectData from "../assets/data/projects.json"
+import Tag from './partials/Tag.vue';
 
 const projects = ref(projectData)
 
@@ -28,9 +29,8 @@ const projects = ref(projectData)
             <ul class="flex-1 flex flex-wrap text-left">
               <li 
                 v-for="item in project.techStack"
-                class="mx-1 my-auto py-1 px-2 font-semibold text-tech text-xs rounded-lg bg-tech/30 ring-tech inset-ring-2"
               >
-                {{ item }}
+                <Tag :tag="item"/>
               </li>
             </ul>
             <ul class="flex-1 flex flex-wrap flex-row-reverse">

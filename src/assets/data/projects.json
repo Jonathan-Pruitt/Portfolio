@@ -3,9 +3,18 @@
         "title" : "Catan Companion",
         "description" : "From the moment you setup the board all the way to the moment of victory, Catan Companion keeps track of the various dice rolls, settlements, and other data generated during a game of Settlers of Catan.",
         "techStack" : [
-            "C#",
-            "XAML",
-            "WPF"
+            {
+                "textIndicator" : "C#",
+                "colorIndicator" : "backend"
+            },
+            {
+                "textIndicator" : "XAML",
+                "colorIndicator" : "frontend"
+            },
+            {
+                "textIndicator" : "WPF",
+                "colorIndicator" : "framework"
+            }
         ],
         "tags" : [
             "personal",
@@ -36,11 +45,26 @@
         "description" : "Hardly is a business-to-business SaaS platform that provides job-seekers and career coaches with organizational and generative tools to improve their effectiveness in a difficult market.",
         "disclaimer" : "Note: The core architecture and overarching design of Hardly-Work was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
-            "Laravel",
-            "PHP",
-            "Vue.js",
-            "JavaScript",
-            "Tailwind"
+            {
+                "textIndicator": "Laravel",
+                "colorIndicator": "framework"
+            },
+            {
+                "textIndicator": "PHP",
+                "colorIndicator": "backend"
+            },
+            {
+                "textIndicator": "Vue.js",
+                "colorIndicator": "framework"
+            },
+            {
+                "textIndicator": "JavaScript",
+                "colorIndicator": "frontend"
+            },
+            {
+                "textIndicator": "Tailwind",
+                "colorIndicator": "framework"
+            }
         ],
         "tags" : [
             "professional",

@@ -12,11 +12,11 @@ const props = defineProps({
         default: "md"
     },
 })
-
+const sm = 'w-12 h-12'
 const SIZE_MAP = {
-  sm: 'w-8 h-8',    
-  md: 'w-16 h-16',  
-  lg: 'w-24 h-24',  
+  sm: sm,    
+  md: sm + ' sm:w-16 sm:h-16',  
+  lg: sm + ' sm:w-24 sm:h-24',  
 };
 
 const svgData = computed(() => {
