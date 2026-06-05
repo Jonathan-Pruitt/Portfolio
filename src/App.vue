@@ -1,5 +1,5 @@
 <script setup>
-import LayoutWrapper from './components/LayoutWrapper.vue';
+import LayoutWrapper from './sections/LayoutWrapper.vue';
 
 </script>
 

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import Carousel from './partials/Carousel.vue';
+import Carousel from './components/Carousel.vue';
 import projectData from "../assets/data/projects.json"
 
 const projects = ref(projectData)

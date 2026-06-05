@@ -1,5 +1,5 @@
 <script setup>
-
+import SvgIcon from './partials/SvgIcon.vue';
 </script>
 
 <template>
@@ -25,6 +25,15 @@
             </a>
             <a href="https://www.youtube.com/@BTWJ-stream" target="_blank" class="ml-2">
               <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://github.com/Jonathan-Pruitt" target="_blank" class="ml-2">
+              <SvgIcon class="bg-red-500" name="github"/>
+            </a>
+            <a href="https://linkedin.com/in/jonathan-pruitt-developer" target="_blank" class="ml-2">
+              <SvgIcon class="bg-red-500" name="linkedin"/>
+            </a>
+            <a href="https://www.youtube.com/@BTWJ-stream" target="_blank" class="ml-2">
+              <SvgIcon class="bg-red-500" name="youtube"/>
             </a>
           </div>
         </div>
