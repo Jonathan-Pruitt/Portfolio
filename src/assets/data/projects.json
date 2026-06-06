@@ -17,9 +17,18 @@
             }
         ],
         "tags" : [
-            "personal",
-            "entertainment",
-            "utility"
+            {
+                "textIndicator" : "personal",
+                "colorIndicator" : "personal"
+            },
+            {
+                "textIndicator" : "entertainment",
+                "colorIndicator" : "usage"
+            },
+            {
+                "textIndicator" : "utility",
+                "colorIndicator" : "usage"
+            }
         ],
         "images" : [
             {
@@ -46,20 +55,24 @@
         "disclaimer" : "Note: The core architecture and overarching design of Hardly-Work was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
             {
-                "textIndicator": "Laravel",
-                "colorIndicator": "framework"
+                "textIndicator": "JavaScript",
+                "colorIndicator": "frontend"
             },
             {
                 "textIndicator": "PHP",
                 "colorIndicator": "backend"
             },
             {
-                "textIndicator": "Vue.js",
+                "textIndicator": "MySQL",
+                "colorIndicator": "backend"
+            },
+            {
+                "textIndicator": "Laravel",
                 "colorIndicator": "framework"
             },
             {
-                "textIndicator": "JavaScript",
-                "colorIndicator": "frontend"
+                "textIndicator": "Vue.js",
+                "colorIndicator": "framework"
             },
             {
                 "textIndicator": "Tailwind",
@@ -67,9 +80,18 @@
             }
         ],
         "tags" : [
-            "professional",
-            "utility",
-            "client-driven"
+            {
+                "textIndicator" : "professional",
+                "colorIndicator" : "professional"
+            },
+            {
+                "textIndicator" : "utility",
+                "colorIndicator" : "usage"
+            },
+            {
+                "textIndicator" : "client-driven",
+                "colorIndicator" : "usage"
+            }
         ],
         "images" : [
             {
@@ -87,6 +109,94 @@
         ],
         "links" : {
             "sample": "https://hardly-work.com/",
+            "repo": ""
+        }
+    },
+    {
+        "title" : "ASCII Dreaming",
+        "description" : "Convert an image from pixels to ASCII art",
+        "techStack" : [
+            {
+                "textIndicator" : "C#",
+                "colorIndicator" : "backend"
+            },
+            {
+                "textIndicator" : "XAML",
+                "colorIndicator" : "frontend"
+            },
+            {
+                "textIndicator" : "WPF",
+                "colorIndicator" : "framework"
+            }
+        ],
+        "tags" : [
+            {
+                "textIndicator" : "personal",
+                "colorIndicator" : "personal"
+            },
+            {
+                "textIndicator" : "entertainment",
+                "colorIndicator" : "usage"
+            }
+        ],
+        "images" : [
+            {
+                "path": "https://picsum.photos/id/64/400/400",
+                "altText": "A computer"
+            },
+            {
+                "path": "https://picsum.photos/id/45/400/400",
+                "altText": "A forrested area"
+            },
+            {
+                "path": "https://picsum.photos/id/5/400/400",
+                "altText": "Some old shoe"
+            }
+        ],
+        "links" : {
+            "sample": "",
+            "repo": ""
+        }
+    },
+    {
+        "title" : "Slasher",
+        "description" : "A one-week self-educational project built entirely in vanilla JavaScript in an HTML Canvas tag. I bypassed external frameworks to focus on improving my understanding of game creation, core game logic, state management, rendering objects, and player/enemy controls and movement",
+        "techStack" : [
+            {
+                "textIndicator" : "JavaScript",
+                "colorIndicator" : "frontend"
+            }
+        ],
+        "tags" : [
+            {
+                "textIndicator" : "personal",
+                "colorIndicator" : "personal"
+            },
+            {
+                "textIndicator" : "game",
+                "colorIndicator" : "usage"
+            },
+            {
+                "textIndicator" : "self-education",
+                "colorIndicator" : "usage"
+            }
+        ],
+        "images" : [
+            {
+                "path": "https://picsum.photos/id/12/400/400",
+                "altText": "A computer"
+            },
+            {
+                "path": "https://picsum.photos/id/23/400/400",
+                "altText": "A forrested area"
+            },
+            {
+                "path": "https://picsum.photos/id/34/400/400",
+                "altText": "Some old shoe"
+            }
+        ],
+        "links" : {
+            "sample": "",
             "repo": ""
         }
     }

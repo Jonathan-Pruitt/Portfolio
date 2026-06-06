@@ -15,13 +15,12 @@ const color = computed(() => {
 })
 
 const TAG_COLORS = {
-    "backend" :     'bg-[hsl(240,50%,50%)]/20 inset-ring-[hsl(240,50%,50%)] text-[hsl(240,50%,50%)]',
-    "frontend" :    'bg-[hsl(210,50%,50%)]/20 inset-ring-[hsl(210,50%,50%)] text-[hsl(210,50%,50%)]',
+    "backend" :     'bg-[hsl(240,50%,60%)]/20 inset-ring-[hsl(240,50%,60%)] text-[hsl(240,50%,60%)]',
+    "frontend" :    'bg-[hsl(210,50%,40%)]/20 inset-ring-[hsl(210,50%,40%)] text-[hsl(210,50%,40%)]',
     "framework" :   'bg-[hsl(180,70%,30%)]/20 inset-ring-[hsl(180,70%,30%)] text-[hsl(180,70%,30%)]',
-    "entertainment":'bg-[hsl(150,50%,50%)]/20 inset-ring-[hsl(150,50%,50%)] text-[hsl(150,50%,50%)]',
-    "personal" :    'bg-[hsl(120,50%,50%)]/20 inset-ring-[hsl(120,50%,50%)] text-[hsl(120,50%,50%)]',
-    "client-driven":'bg-[hsl(90,50%,50%)]/20 inset-ring-[hsl(90,50%,50%)] text-[hsl(90,50%,50%)]',
-    "utility" :     'bg-[hsl(60,50%,50%)]/20 inset-ring-[hsl(60,50%,50%)] text-[hsl(60,50%,50%)]',
+    "personal" :    'bg-[hsl(120,50%,35%)]/20 inset-ring-[hsl(120,50%,35%)] text-[hsl(120,50%,35%)]',
+    "usage":        'bg-[hsl(320,50%,50%)]/20 inset-ring-[hsl(320,50%,50%)] text-[hsl(320,50%,50%)]',
+    "professional": 'bg-[hsl(30,50%,40%)]/20 inset-ring-[hsl(30,50%,40%)] text-[hsl(30,50%,40%)]',
 }
 
 </script>

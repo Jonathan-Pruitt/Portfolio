@@ -36,9 +36,8 @@ const projects = ref(projectData)
             <ul class="flex-1 flex flex-wrap flex-row-reverse">
               <li 
                 v-for="tag in project.tags"
-                class="mx-1 my-auto py-1 px-2 font-semibold text-xs text-tag  bg-tag/30 rounded-lg ring-tag inset-ring-2"
               >
-                {{ tag }}
+                <Tag :tag="tag" />
               </li>
             </ul>
           </div>
