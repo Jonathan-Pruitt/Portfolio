@@ -33,6 +33,19 @@ const changeSlide = (val) => {
         />
       </div>
     </div>
+    <div class="absolute inset-x-0 bottom-0 h-1/10 mx-auto">
+      <div class="mx-auto max-w-2/3 p-0.5 w-fit flex justify-center bg-gray-500/50 rounded-full">
+        <div 
+          class="mx-1"
+          v-for="(_, index) in slides"
+        >
+          <div 
+            class="size-2 bg-white mx-auto rounded-full" 
+            :class="index != currentIndex ? 'bg-white/50' : ''"
+          />
+        </div>
+      </div>
+    </div>
     <button class="absolute bottom-5 left-5 mx-6 text-white" @click="changeSlide(-1)">
       prev
     </button>
