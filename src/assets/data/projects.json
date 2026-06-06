@@ -161,6 +161,7 @@
     {
         "title" : "Slasher",
         "description" : "A one-week self-educational project built entirely in vanilla JavaScript in an HTML Canvas tag. I bypassed external frameworks to focus on improving my understanding of game creation, core game logic, state management, rendering objects, and player/enemy controls and movement",
+        "disclaimer": "Browser Compatability Notice: This tool was developed and last tested March 2023 using Google Chrome (v111). The game might not function on other browsers",
         "techStack" : [
             {
                 "textIndicator" : "JavaScript",
@@ -183,21 +184,28 @@
         ],
         "images" : [
             {
-                "path": "https://picsum.photos/id/12/400/400",
-                "altText": "A computer"
+                "path": "src/assets/images/img-projects/slasher/gmply1.gif",
+                "altText": "Short clip of 'Slasher' gameplay"
             },
             {
-                "path": "https://picsum.photos/id/23/400/400",
-                "altText": "A forrested area"
+                "path": "src/assets/images/img-projects/slasher/gmply3.gif",
+                "altText": "Long clip of 'Slasher' gameplay"
             },
             {
-                "path": "https://picsum.photos/id/34/400/400",
-                "altText": "Some old shoe"
+                "path": "src/assets/images/img-projects/slasher/gmply2.gif",
+                "altText": "Slasher 'game over' clip"
+            },
+            {
+                "path": "src/assets/images/img-projects/slasher/slasher-intro.jpg",
+                "altText": "Slasher intdroduction screenshot"
             }
         ],
         "links" : {
-            "sample": "",
-            "repo": ""
+            "sample": {
+                "link": "https://jonathan-pruitt.github.io/SLASHER/",
+                "text": "Play SLASHER"
+            },
+            "repo": "https://github.com/Jonathan-Pruitt/SLASHER"
         }
     }
 ]
