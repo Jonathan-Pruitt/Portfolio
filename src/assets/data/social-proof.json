@@ -14,7 +14,7 @@
                 "above and beyond"
             ]
         },
-        "img-path": "../images/m-valencia.jpeg",
+        "img-path": "../images/img-social-proof/m-valencia.jpeg",
         "_recommendation-source": "LinkedIn"
     },
     {
@@ -31,7 +31,7 @@
                 "pivot between priorities"
             ]
         },
-        "img-path": "../images/s-dedaux.jpg",
+        "img-path": "../images/img-social-proof/s-dedaux.jpg",
         "_recommendation-source": "LinkedIn"
     },
     {
@@ -49,7 +49,7 @@
                 "driven",
                 "skill and integrity"
             ],
-            "img-path": "../images/h-brewster.jpeg",
+            "img-path": "../images/img-social-proof/h-brewster.jpeg",
             "_recommendation-source": "LinkedIn"
         }
     },
@@ -68,7 +68,7 @@
                 "recommend"
             ]
         },
-        "img-path": "../images/*",
+        "img-path": "../images/img-social-proof/*",
         "_recommendation-source": "LinkedIn"
     },
     {
@@ -86,7 +86,7 @@
                 "capable"
             ]
         },
-        "img-path": "../images/*",
+        "img-path": "../images/img-social-proof/*",
         "_recommendation-source": "LinkdedIn"
     }
 ]
