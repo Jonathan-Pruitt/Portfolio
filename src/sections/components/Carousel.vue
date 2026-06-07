@@ -17,7 +17,19 @@ const changeSlide = (val) => {
 </script>
 
 <template>
-  <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
+  <div class="w-[360px] sm:w-100">
+    <div class="w-full flex overflow-x-scroll snap-x snap-mandatory">
+      <div class="snap-center shrink-0"
+        v-for="(slide, index) in slides"
+      >
+        <Slide 
+        :slide-data="slide"
+        type="project"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
     <div 
       class="flex transition-transform duration-300 ease-in-out"
       :style="{ transform: `translateX(-${currentIndex*100}%)`}"
@@ -52,5 +64,5 @@ const changeSlide = (val) => {
     <button class="absolute bottom-5 right-5 mx-6 text-white" @click="changeSlide(1)">
       next
     </button>
-  </div>
+  </div> -->
 </template>

@@ -4,7 +4,7 @@ import { onMounted, ref } from 'vue'
 const props = defineProps({
   slideData: Object,
   type: String,
-})
+});
 
 </script>
 
