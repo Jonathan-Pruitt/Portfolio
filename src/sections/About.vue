@@ -26,7 +26,7 @@
         <span class="absolute -top-4">THIS IS THE TEXT DIV THAT CONTAINS THE FRAMING IMAGE DON'T FORGET TO DELETE</span>
         <img src="../assets/images/cmd-temp.png" alt="">
         <div class="absolute opacity-100 left-1/2 -translate-x-1/2 border border-gray-200 --rescue set-top-8 set-w-static-val set-bg-black w-4xl top-6 h-100 bg-yellow-300 ">
-          <div class="flex bg-white w-full text-black h-8">
+          <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
             <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1">
             <h6 class="font-cmd text-sm px-1 content-center">Administrator: Command Prompt</h6>
             <div class="flex grow justify-end">
