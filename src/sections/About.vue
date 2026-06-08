@@ -1,5 +1,24 @@
 <script setup>
-  /** */
+
+/**
+ * WORK IN PROGRESS -- 
+ *  TEXT IS TYPED 1 CHAR AT A TIME.
+ *    V1 - TEXT IS TYPED AS IS (FLAT, NO RICHTEXT)
+ *    V2 - INSERT <STRONG> TAGS FOR RICHTEXT
+ *      IDEA -- setTimeout(()=> {v-model.value += char}) -- USE NESTED LOOP FOR 'STRONG'
+ * 
+ */
+// import { ref } from 'vue';
+// const test = "This is the $*text$ that I want to $*parse$ then display in $*erratic$ timing."
+// const crawlingText = ref('')
+
+// const slowText = (text) => {
+//   crawlingText.value = '';
+//   text.forEach((char) => {
+//     setTimeout()
+//   });
+// }
+
 </script>
 
 <template>
@@ -22,10 +41,8 @@
         <h2 class="text-5xl font-black vertical-text tracking-[-0.25em]">I</h2>
         <h2 class="text-5xl font-black vertical-text tracking-[-0.25em]">AM</h2>
       </div>
-      <div class="text-red-600 relative">
-        <span class="absolute -top-4">THIS IS THE TEXT DIV THAT CONTAINS THE FRAMING IMAGE DON'T FORGET TO DELETE</span>
-        <img src="../assets/images/cmd-temp.png" alt="">
-        <div class="absolute opacity-100 left-1/2 -translate-x-1/2 border border-gray-200 --rescue set-top-8 set-w-static-val set-bg-black w-4xl top-6 h-100 bg-yellow-300 ">
+      <div class="bg-black">
+        <div class="border-gray-200 border w-9/10 pb-4">
           <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
             <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1">
             <h6 class="font-cmd text-sm px-1 content-center">Administrator: Command Prompt</h6>
@@ -39,13 +56,34 @@
             <code class="block">C:\> cd About/Me</code>
             <code class="block mt-4">C:\About\Me> run Jonathan.exe</code>
             <code class="block text-yellow-500">------====== Unpacking identity_core ======------</code>
-            <code class="leading-5">Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen Testing to see if I go offscreen </code>
+            <code class="leading-5">
+              <p class="mt-4">I am a <strong>Full-Stack Software Developer</strong> with a passion for building functional, scalable backends. My journey into tech began at the <strong>Mississippi Coding Academies</strong>, where I built a strong foundation in <strong>C#</strong> and software architecture. Since then, I've channeled my lifelong love for troubleshooting and problem-solving into building deep-tech personal projects and delivering dynamic, scalable solutions for <strong>professional client work.</strong></p>
+
+              <p class="mt-4">Through my professional work with Hardly, I've gained invaluable experience in <strong>component-led architecture, ORM, and asynchronous web flows</strong>. A personal highlight was developing and deploying an upgraded 'Interview Practice Tool,' where I implemented <strong>audio/video transcription</strong> to provide users with real-time feedback. Whether optimizing data manipulation or rendering complex logic, I treat every project as a challenge to master new frameworks and solve novel problems.</p>
+
+              <p class="mt-4">I do my best work in collaborative environments where I can learn from mentors, pitch ideas, and iterate based on feedback. I am excited to bring my <strong>technical adaptability</strong>, strong work ethic, and passion for excellence to a forward-thinking development team.</p>
+            </code>
           </div>
         </div>
 
-        <p>Fullstack Developer focused on building fast, scalable, and resource-lean software and web applications. I have developed a love of the VILT (Vue, Inertia.js, Laravel, TailwindCSS) tech stack for web projects, and I'm partial to C# and Python for software applications. Working with Hardly Inc, I have leveraged asynchronous programming, ORM usage, and component-lead architecture to deliver high-impact solutions. Notably, I constructed an AI generated feedback engine for Hardly's 'Interview Practice' tool. By implementing Asynchronous Web Flows and Audio/Video Transcription, I significantly reduced latency between user submission and coach review. I am currently looking for a developer team to which I can contribute my passion for clean code and collaborative problem-solving.</p>
+        <!-- START OFFICIAL ABOUT ME TEXT -->
+        <!-- <p>I am fullstack software developer with a preference for building functional, scalable backends. From early childhood, my interest in video games, science, and technology got me involved in hobbies where I learned trouble-shooting skills, how to read error messages, and attention to detail. In early 2023, I entered the world of software development by learning the basics of C# while apprenticing under Andrew Stamps at the Mississippi Coding Adademies. Since that time, I have been working on personal and professional projects including games, utility apps, SaaS websites, and entertainment apps.</p>
+
+        <p>I created each of my personal projects to be a challenge I could use to deepen my understanding of a coding language, framework, or concept. While the Catan Companion project expanded my understanding of the interaction between a window's logic and the client's view, the Slasher game introduced me to game creation, programatically rendering and orienting objects in 2d, and core game logic, and the ASCII Dreaming project strengthened my appreciation for data manipulation by showing how binary data can be interpreted and represented in many forms. My professional work with Hardly has provided me with invaluable experience in ORM, component-lead architecture, client-lead project work, and scalable, dynamic solutions to novel problems. I am particularly proud of my development and deployment of the upgraded 'Interview Practice Tool' where I implemented asynchronous web flows and audio/video transcription to create real-time feedback to users regarding the efficacy of their interview responses.</p>
+
+        <p>I've found that I do my best work when I have easy access to a supportive team and mentor. I love hearing the ideas of others, presenting my own ideas and findings, incorporating feedback into my work, and building awesome projects through individual and collaborative efforts. I am excited to bring my passion and experience with me to a team with a similar zeal for excellence.</p> -->
+        <!-- END OFFICIAL ABOUT ME TEXT -->
+
         <p>Core Competencies: Vue.js | Laravel | TailwindCSS] | React.js | JavaScript | PHP | Python | C# | MySQL | AI Integration</p>
       </div>
     </div>
   </section>
 </template>
+
+<style>
+p > strong {
+  color: var(--color-brand);
+  text-decoration: underline;
+  font-size: 1.15rem;
+}
+</style>
