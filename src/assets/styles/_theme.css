@@ -6,6 +6,7 @@
     --font-header: Urbanist;
     --font-content: Inter Tight;
     --font-code: Ubuntu Sans Mono;
+    --font-cmd: "Segoe UI";
     
     /*---------- COLORS  ----------*/
     --color-brand: var(--primary);
