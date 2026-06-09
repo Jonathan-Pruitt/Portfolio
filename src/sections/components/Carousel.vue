@@ -14,11 +14,17 @@ const changeSlide = (val) => {
   currentIndex.value = (val + currentIndex.value+ props.slides.length) % props.slides.length;
 }
 
+const testScroll = () => {
+  // FIGURE OUT HOW TO SET A BRIEF CHECK-BACK TIMER
+  const timer = setTimeout('something?', 300)
+  console.log("scrolling")
+}
+
 </script>
 
 <template>
-  <div class="w-[360px] sm:w-100">
-    <div class="w-full flex overflow-x-scroll snap-x snap-mandatory">
+  <div class="w-[360px] sm:w-100 relative">
+    <div class="w-full flex overflow-x-scroll snap-x snap-mandatory" @scroll="testScroll">
       <div class="snap-center shrink-0"
         v-for="(slide, index) in slides"
       >
@@ -26,6 +32,19 @@ const changeSlide = (val) => {
         :slide-data="slide"
         type="project"
         />
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-1/10 mx-auto">
+      <div class="mx-auto max-w-2/3 p-0.5 w-fit flex justify-center bg-gray-500/50 rounded-full">
+        <div 
+          class="mx-1"
+          v-for="(_, index) in slides"
+        >
+          <div 
+            class="size-2 bg-white mx-auto rounded-full" 
+            :class="index != currentIndex ? 'bg-white/50' : ''"
+          />
+        </div>
       </div>
     </div>
   </div>
