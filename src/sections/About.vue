@@ -1,6 +1,10 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
+const props = defineProps({
+  sectionId: String
+})
+
 const width = ref(0);
 const aboutMeData = ref({
   title: 'Administrator: Command Prompt',
@@ -43,7 +47,7 @@ const setAboutMeData = () => {
 </script>
 
 <template>
-  <section id="about">
+  <section :id="sectionId">
     <div class="bg-[#6c85a4] border-y-16 border-brand">
       <div 
         class="
@@ -64,10 +68,10 @@ const setAboutMeData = () => {
       </div>
       <!-- COMMAND PROMPT MIMIC -->
       <div class="bg-linear-to-tr from-blue-200 to-blue-700">
-        <div class="bg-black border-gray-200 border w-9/10 pb-8 mx-auto mt-8">
+        <div class="bg-black border-gray-200 border w-9/10 pb-8 mx-auto my-8">
           <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
             <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1 shrink">
-            <h6 class="font-cmd text-sm px-1 content-center whitespace-nowrap">{{ aboutMeData.title }}</h6>
+            <h6 class="font-cmd text-sm text-black px-1 content-center whitespace-nowrap">{{ aboutMeData.title }}</h6>
             <div class="flex grow justify-end">
               <img src="../assets/images/cmd-line.png"   class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
               <img src="../assets/images/cmd-square.png" class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
@@ -84,6 +88,8 @@ const setAboutMeData = () => {
               <p class="mt-4">Through my professional work with Hardly, I've gained invaluable experience in <strong>component-led architecture, ORM, and asynchronous web flows</strong>. A personal highlight was developing and deploying an upgraded 'Interview Practice Tool,' where I implemented <strong>audio/video transcription</strong> to provide users with real-time feedback. Whether optimizing data manipulation or rendering complex logic, I treat every project as a challenge to master new frameworks and solve novel problems.</p>
 
               <p class="mt-4">I do my best work in collaborative environments where I can learn from mentors, pitch ideas, and iterate based on feedback. I am excited to bring my <strong>technical adaptability</strong>, strong work ethic, and passion for excellence to a forward-thinking development team.</p>
+
+              <p class="mt-4"><strong>Core Competencies:</strong> Vue.js | JavaScript | Python | C# | Laravel | PHP | MySQL | React.js | TailwindCSS | AI Integration</p>
             </code>
           </div>
         </div>
@@ -96,7 +102,6 @@ const setAboutMeData = () => {
         <p>I've found that I do my best work when I have easy access to a supportive team and mentor. I love hearing the ideas of others, presenting my own ideas and findings, incorporating feedback into my work, and building awesome projects through individual and collaborative efforts. I am excited to bring my passion and experience with me to a team with a similar zeal for excellence.</p> -->
         <!-- END OFFICIAL ABOUT ME TEXT -->
 
-        <p>Core Competencies: Vue.js | Laravel | TailwindCSS] | React.js | JavaScript | PHP | Python | C# | MySQL | AI Integration</p>
       </div>
     </div>
   </section>

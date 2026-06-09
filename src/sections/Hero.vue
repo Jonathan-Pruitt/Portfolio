@@ -1,9 +1,13 @@
 <script setup>
 import SvgIcon from './partials/SvgIcon.vue';
+
+const props = defineProps({
+  sectionId: String
+})
 </script>
 
 <template>
-  <section id="home">
+  <section :id="sectionId">
     <div class="container mx-auto min-h-screen flex flex-col place-content-center">
       <div class="sm:grid sm:grid-cols-2 p-4 m-4">
         

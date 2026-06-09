@@ -5,17 +5,33 @@
   import About from './About.vue';
   import Footer from './Footer.vue';
   import Debug from './Debug.vue';
+
+  const navList = {
+    hero: 'home',
+    projects: 'projects',
+    about: 'about',
+    footer: 'footer'
+  }
 </script>
 
 <template>
-  <Navbar />
+  <Navbar :nav="navList"/>
     <!-- rescue -- cool dropping things go here  -->
     <!-- probably best bet to use 'hue-rotate' combined with 'mask' to play with colors -->
     <main>
       <Debug />
-      <Hero />
-      <Projects class="border-l-4 border-tech/50"/>
-      <About />
+      <Hero 
+        :section-id="navList.hero"
+      />
+      <Projects 
+        class="border-l-4 border-tech/50"
+        :section-id="navList.projects"
+      />
+      <About 
+        :section-id="about"
+      />
     </main>
-  <Footer />
+  <Footer 
+    :section-id="footer"
+  />
 </template>
