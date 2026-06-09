@@ -1,4 +1,7 @@
 <script setup>
+const props = defineProps({
+  nav: Object // 'home' 'projects' 'about' 'footer'
+})
 </script>
 
 <template>
