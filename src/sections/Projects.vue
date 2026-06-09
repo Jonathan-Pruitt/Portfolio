@@ -4,12 +4,15 @@ import Carousel from './components/Carousel.vue';
 import projectData from "../assets/data/projects.json"
 import Tag from './partials/Tag.vue';
 
+const props = defineProps({
+  sectionId: String
+})
 const projects = ref(projectData)
 
 </script>
 
 <template>
-  <section id="projects">
+  <section :id="sectionId">
     <div class="sm:flex flex-row sm:mx-8">
       <h2 class="text-5xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4">PROJECTS</h2>
       <div class="flex-1 grid lg:grid-cols-2 gap-4">

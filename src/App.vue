@@ -4,7 +4,7 @@ import LayoutWrapper from './sections/LayoutWrapper.vue';
 </script>
 
 <template>
-  <div class="">
+  <div class="relative">
     <LayoutWrapper/>
   </div>
 </template>
