@@ -1,5 +1,26 @@
 <script setup>
+import { ref, onMounted } from 'vue';
 
+const width = ref(0);
+const aboutMeData = ref({
+  title: 'Administrator: Command Prompt',
+  header: '------====== Unpacking identity_core ======------',
+})
+const breakpoint = 500;
+
+onMounted(() => {
+  setAboutMeData();
+})
+
+const setAboutMeData = () => {
+  width.value = window.innerWidth;
+  if (width.value < breakpoint) {
+    aboutMeData.value = {
+      title: "Command Prompt",
+      header: "---=== Unpacking identity_core ===---"
+    }
+  }
+}
 /**
  * WORK IN PROGRESS -- 
  *  TEXT IS TYPED 1 CHAR AT A TIME.
@@ -41,21 +62,22 @@
         <h2 class="text-5xl font-black vertical-text tracking-[-0.25em]">I</h2>
         <h2 class="text-5xl font-black vertical-text tracking-[-0.25em]">AM</h2>
       </div>
-      <div class="bg-black">
-        <div class="border-gray-200 border w-9/10 pb-4">
+      <!-- COMMAND PROMPT MIMIC -->
+      <div class="bg-linear-to-tr from-blue-200 to-blue-700">
+        <div class="bg-black border-gray-200 border w-9/10 pb-8 mx-auto mt-8">
           <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
-            <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1">
-            <h6 class="font-cmd text-sm px-1 content-center">Administrator: Command Prompt</h6>
+            <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1 shrink">
+            <h6 class="font-cmd text-sm px-1 content-center whitespace-nowrap">{{ aboutMeData.title }}</h6>
             <div class="flex grow justify-end">
               <img src="../assets/images/cmd-line.png"   class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
               <img src="../assets/images/cmd-square.png" class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
               <img src="../assets/images/cmd-x.png"      class="h-full box-content px-2.5 hover:bg-red-500" alt="">
             </div>
           </div>
-          <div class="bg-black pt-4 text-white">
+          <div class="pt-4 text-white">
             <code class="block">C:\> cd About/Me</code>
             <code class="block mt-4">C:\About\Me> run Jonathan.exe</code>
-            <code class="block text-yellow-500">------====== Unpacking identity_core ======------</code>
+            <code class="block mt-4 text-yellow-300">{{ aboutMeData.header }}</code>
             <code class="leading-5">
               <p class="mt-4">I am a <strong>Full-Stack Software Developer</strong> with a passion for building functional, scalable backends. My journey into tech began at the <strong>Mississippi Coding Academies</strong>, where I built a strong foundation in <strong>C#</strong> and software architecture. Since then, I've channeled my lifelong love for troubleshooting and problem-solving into building deep-tech personal projects and delivering dynamic, scalable solutions for <strong>professional client work.</strong></p>
 
@@ -82,8 +104,11 @@
 
 <style>
 p > strong {
-  color: var(--color-brand);
-  text-decoration: underline;
+  /* color: var(--color-brand); */
+  color: black;
   font-size: 1.15rem;
+  padding-left: var(--spacing);
+  padding-left: var(--spacing);
+  background-color: var(--color-brand);
 }
 </style>
