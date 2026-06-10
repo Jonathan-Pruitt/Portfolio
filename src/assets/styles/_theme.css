@@ -10,6 +10,7 @@
     
     /*---------- COLORS  ----------*/
     --color-brand: var(--primary);
+    --color-brand-muted: var(--primary-muted);
     --color-danger: var(--danger);
     --color-warning: var(--warning);
     --color-success: var(--success);
@@ -37,6 +38,7 @@
     --border-brand: var(--brand-purple);
 
     --primary: hsl(272,50%,50%);
+    --primary-muted: hsl(272,60%,25%);
 
     --danger: #E73651;
     --warning: #F4CF3E;

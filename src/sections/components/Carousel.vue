@@ -16,7 +16,7 @@ const changeSlide = (val) => {
 
 const testScroll = () => {
   // FIGURE OUT HOW TO SET A BRIEF CHECK-BACK TIMER
-  const timer = setTimeout('something?', 300)
+  // const timer = setTimeout('something?', 300)
   console.log("scrolling")
 }
 

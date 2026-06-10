@@ -34,6 +34,16 @@ const sizeClass = computed(() => {
         class="rounded-lg inline-block"
         :class="sizeClass"
         >
-        <svg v-if="svgData" class="w-full h-full" id="icon" xmlns="http://www.w3.org/2000/svg" :fill="`var(--color-brand)`" width="100%" height="100%" v-html="svgData.content" :viewBox="svgData.viewBox"></svg>
+        <svg 
+            v-if="svgData" 
+            class="w-full h-full" 
+            id="icon" 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="currentColor"
+            width="100%" 
+            height="100%" 
+            v-html="svgData.content" 
+            :viewBox="svgData.viewBox">
+        </svg>
     </div>
 </template>

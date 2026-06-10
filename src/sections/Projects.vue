@@ -14,9 +14,9 @@ const projects = ref(projectData)
 <template>
   <section :id="sectionId">
     <div class="sm:flex flex-row sm:mx-8">
-      <h2 class="text-5xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4">PROJECTS</h2>
+      <h2 class="text-5xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4 cursor-default">PROJECTS</h2>
       <div class="flex-1 grid lg:grid-cols-2 gap-4">
-        <div v-for="project in projects" class="mt-4 sm:mt-0 flex flex-wrap border-4">
+        <div v-for="project in projects" class="mt-4 sm:mt-0 flex flex-wrap">
           <!-- <div class="px-8 py-4 mx-4 w-full bg-flat rounded-2xl"> -->
           <div class="w-full bg-flat rounded-2xl">
             <h3 class="text-3xl font-bold">{{ project.title }}</h3>

@@ -22,13 +22,13 @@ const props = defineProps({
           <h2 class="text-xl text-body font-content font-light italic tracking-widest mb-4">Full Stack Developer</h2>
           <div class="text-brand text-5xl">
             <a href="https://github.com/Jonathan-Pruitt" target="_blank" class="ml-2">
-              <SvgIcon class="" size="md" name="github"/>
+              <SvgIcon class="hover:brightness-75 transition-all duration-200" size="md" name="github"/>
             </a>
             <a href="https://linkedin.com/in/jonathan-pruitt-developer" target="_blank" class="ml-2">
-              <SvgIcon class="" size="md" name="linkedin"/>
+              <SvgIcon class="hover:brightness-75 transition-all duration-200" size="md" name="linkedin"/>
             </a>
             <a href="https://www.youtube.com/@BTWJ-stream" target="_blank" class="ml-2">
-              <SvgIcon class="" size="md" name="youtube"/>
+              <SvgIcon class="hover:brightness-75 transition-all duration-200" size="md" name="youtube"/>
             </a>
           </div>
         </div>

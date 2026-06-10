@@ -52,7 +52,7 @@
     {
         "title" : "Hardly",
         "description" : "Hardly is a business-to-business SaaS platform that provides job-seekers and career coaches with organizational and generative tools to improve their effectiveness in a difficult market.",
-        "disclaimer" : "Note: The core architecture and overarching design of Hardly-Work was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
+        "disclaimer" : "Note: The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
             {
                 "textIndicator": "JavaScript",
