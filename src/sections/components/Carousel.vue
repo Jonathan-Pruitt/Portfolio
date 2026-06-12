@@ -1,5 +1,76 @@
 <script setup>
 import { ref } from 'vue';
+import Slide from '../components/Slide.vue'
+
+const props = defineProps({
+  slides: {
+    type: Array,
+    required: true
+  },
+})
+
+const currentIndex = ref(0);
+const scrollContainer = ref(null);
+
+// Tracks which item is currently snapped into view
+const handleScroll = (e) => {
+  const container = e.target;
+  const width = container.clientWidth;
+  // Calculates the current index based on horizontal scroll position
+  currentIndex.value = Math.round(container.scrollLeft / width);
+};
+
+// Allows dot indicators to scroll the carousel into view
+const scrollToSwipe = (index) => {
+  if (!scrollContainer.value) return;
+  const width = scrollContainer.value.clientWidth;
+  scrollContainer.value.scrollTo({
+    left: index * width,
+    behavior: 'smooth'
+  });
+};
+</script>
+
+<template>
+  <!-- <div class="w-full relative group"> -->
+  <div class="w-full relative">
+      <div 
+          ref="scrollContainer"
+          class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
+          @scroll="handleScroll"
+      >
+          <div 
+              v-for="(slide, index) in slides"
+              :key="index"
+              class="w-full shrink-0 snap-center flex items-center justify-center"
+          >
+            <Slide :slide-data="slide" type="projects"/>
+          </div>
+      </div>
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
+          <div class="rounded-lg px-1 flex gap-2 bg-gray-500/50">
+            <button
+              v-for="(_, index) in slides"
+              :key="index"
+              @click="scrollToSwipe(index)"
+              class="w-2 h-2 rounded-full transition-all duration-200"
+              :class="index === currentIndex ? 'bg-white' : 'bg-white/50'"
+            />
+          </div>
+      </div>
+  </div>
+
+</template>
+
+<style scoped>
+/* Hides scrollbar visual clutter while retaining swipe functionality */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+
+<!-- 
+<script setup>
+import { ref } from 'vue';
 import Slide from './Slide.vue';
 
 const props = defineProps({
@@ -21,10 +92,30 @@ const testScroll = () => {
 }
 
 </script>
+             -->
+<!--
+ul {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100vw;
 
+  height: 300px;
+  padding: 20px;
+  gap: 4vw;
+}
+li {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  
+  padding: 20px;
+  list-style-type: none;
+}
+-->
+<!-- 
 <template>
-  <div class="w-[360px] sm:w-100 relative">
-    <div class="w-full flex overflow-x-scroll snap-x snap-mandatory" @scroll="testScroll">
+  <div class="w-full relative">
+    <div class="flex overflow-x-scroll snap-x snap-mandatory" @scroll="testScroll">
       <div class="snap-center shrink-0"
         v-for="(slide, index) in slides"
       >
@@ -47,7 +138,7 @@ const testScroll = () => {
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
     <div 
       class="flex transition-transform duration-300 ease-in-out"
@@ -84,4 +175,4 @@ const testScroll = () => {
       next
     </button>
   </div> -->
-</template>
+<!-- </template> -->

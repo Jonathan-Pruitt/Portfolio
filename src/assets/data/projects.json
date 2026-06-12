@@ -1,7 +1,8 @@
 [
     {
         "title" : "Catan Companion",
-        "description" : "From the moment you setup the board all the way to the moment of victory, Catan Companion keeps track of the various dice rolls, settlements, and other data generated during a game of Settlers of Catan.",
+        "iconPath" : "src/assets/icons/logo.png",
+        "description" : "From initial setup to the moment of final victory, Catan Companion keeps track of the various dice rolls, settlements, and other data generated during a game of Settlers of Catan.",
         "techStack" : [
             {
                 "textIndicator" : "C#",
@@ -51,6 +52,7 @@
     },
     {
         "title" : "Hardly",
+        "iconPath" : "src/assets/icons/hardly-icon.webp",
         "description" : "Hardly is a business-to-business SaaS platform that provides job-seekers and career coaches with organizational and generative tools to improve their effectiveness in a difficult market.",
         "disclaimer" : "Note: The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
@@ -114,6 +116,7 @@
     },
     {
         "title" : "ASCII Dreaming",
+        "iconPath" : "src/assets/icons/logo.png",
         "description" : "Convert an image from pixels to ASCII art",
         "techStack" : [
             {
@@ -160,6 +163,7 @@
     },
     {
         "title" : "Slasher",
+        "iconPath" : "src/assets/icons/logo.png",
         "description" : "A one-week self-educational project built entirely in vanilla JavaScript in an HTML Canvas tag. I bypassed external frameworks to focus on improving my understanding of game creation, core game logic, state management, rendering objects, and player/enemy controls and movement",
         "disclaimer": "Browser Compatability Notice: This tool was developed and last tested March 2023 using Google Chrome (v111). The game might not function on other browsers",
         "techStack" : [

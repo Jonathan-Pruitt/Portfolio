@@ -10,13 +10,13 @@ const props = defineProps({
 
 <template>
   <div 
-    v-if="type === 'project'"
-    class="w-full h-full relative"
+    v-if="type === 'projects'"
+    class="px-2"
   >
     <img 
       :src="slideData.path" 
       :alt="slideData.altText"
-      class="w-full h-full object-cover rounded-lg"
+      class="object-cover rounded-lg"
     >
   </div>
 </template>

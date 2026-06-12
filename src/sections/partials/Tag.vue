@@ -28,7 +28,7 @@ const TAG_COLORS = {
 <template>
     <!-- class="mx-1 my-auto py-1 px-2 font-semibold text-tech text-xs rounded-lg bg-tech/30 ring-tech inset-ring-2 inline-block" -->
     <div 
-        class="text-xs font-semibold mx-1 my-auto px-2 py-1 inline-block rounded-lg inset-ring-2"
+        class="text-xs font-semibold mx-1 my-auto px-2 py-1 inline-block rounded-lg inset-ring-2 text-center"
         :class="color"
         :title="text"
     >

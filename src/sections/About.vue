@@ -47,7 +47,7 @@ const setAboutMeData = () => {
 </script>
 
 <template>
-  <section :id="sectionId" class="bg-linear-to-tr from-blue-200 to-blue-700">
+  <section :id="sectionId" class="bg-linear-to-tr from-blue-200 to-blue-700 pb-1">
     <h2 class="text-5xl font-black sm:hidden cursor-default bg-base">WHO I AM</h2>
     <div class="bg-[#6c85a4] border-y-4 border-brand">
       <div 
@@ -70,7 +70,7 @@ const setAboutMeData = () => {
       </div>
       
       <!-- COMMAND PROMPT MIMIC -->
-      <div class="mx-8">
+      <div class="mx-8 shadow-lg shadow-black/50">
         <div class="bg-black border-gray-200 border w-full pb-8 mx-auto my-16 max-w-4xl">
           <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
             <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1 shrink">
