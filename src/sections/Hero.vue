@@ -33,14 +33,15 @@ const props = defineProps({
           </div>
         </div>
 
-        <!-- PROFICIENT TECH (INDEPENDENT WORK, NOT YET ADVANCED [BUILD FROM SCRATCH/TEACH]) -->
-        <ul class="w-xs mx-auto grid grid-cols-5 shadow-lg shadow-brand/20 rounded-lg">
-          c# JS React HTML CSS Python MySQL XAML WPF PHP Laravel Tailwind Vue
-          MakeEachItemRaisedOrPeak
-        </ul>
-
-        <!-- BASIC/FAMILIAR TECH (UNDERSTAND CORE CONCEPTS AND HAVE SOME EXPERIENCE) -->
       </div>
+      <!-- PROFICIENT TECH (INDEPENDENT WORK, NOT YET ADVANCED [BUILD FROM SCRATCH/TEACH]) -->
+      <p class="w-xs mx-auto shadow-lg shadow-brand/20 rounded-lg">
+        c# JS React HTML CSS Python MySQL XAML WPF PHP Laravel Tailwind Vue
+        MakeEachItemRaisedOrPeak
+      </p>
+      <div class="grid grid-cols-5"></div>
+
+      <!-- BASIC/FAMILIAR TECH (UNDERSTAND CORE CONCEPTS AND HAVE SOME EXPERIENCE) -->
     </div>
   </section>
 </template>

@@ -47,15 +47,15 @@ const ICON_COLORS = {
     <div 
         :class="iconColor"
         :title="text || 'icon'"
-        class="justify-items-center"
+        class=""
     >
         <component 
             :is="svgTags[tag.iconPath ?? '']" 
             :class="tag.iconPath ? '' : 'hidden'"
-            class="size-6 sm:size-8 md:size-10 lg:size-12 rounded-lg bg-base/25"
+            class="size-6 sm:size-8 md:size-10 lg:size-12 rounded-lg bg-base/25 mx-auto"
         />
         <h5 
-            class="text-xs font-semibold mx-1 my-auto px-2 py-1 rounded-lg inset-ring-2 text-center hidden md:block"
+            class="text-xs font-semibold mx-1 my-auto px-2 py-1 rounded-lg inset-ring-2 text-center hidden md:block mx-auto"
             :class="color"
         >
         {{ text }}
