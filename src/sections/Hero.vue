@@ -1,9 +1,34 @@
 <script setup>
 import SvgIcon from './partials/SvgIcon.vue';
+import TechTag from './partials/TechTag.vue';
+import { TechTagObject } from '../services/TechTagObject.js';
 
 const props = defineProps({
   sectionId: String
 })
+const coreList = [];
+const proficientList = [];
+const familiarist = [];
+const techTagList = [
+  'csharp', 
+  'css',
+  'github',
+  'html',
+  'javascript', 
+  'laravel',
+  'linear',
+  'linux',
+  'mysql',
+  'php',
+  'python',
+  'react', 
+  'tailwind',
+  'vue',
+  'windows',
+  'wpf',
+  'xaml',
+]
+
 </script>
 
 <template>
@@ -35,13 +60,41 @@ const props = defineProps({
 
       </div>
       <!-- PROFICIENT TECH (INDEPENDENT WORK, NOT YET ADVANCED [BUILD FROM SCRATCH/TEACH]) -->
-      <p class="w-xs mx-auto shadow-lg shadow-brand/20 rounded-lg">
-        c# JS React HTML CSS Python MySQL XAML WPF PHP Laravel Tailwind Vue
-        MakeEachItemRaisedOrPeak
-      </p>
-      <div class="grid grid-cols-5">need-to-build-a-wpf-logo-in-style-of-css</div>
-
+      
       <!-- BASIC/FAMILIAR TECH (UNDERSTAND CORE CONCEPTS AND HAVE SOME EXPERIENCE) -->
+      
+      <div class="border-2">
+        <h3>Tech Experinece</h3>
+        <h4 class="">
+          Core Competencies 
+          <em class="italic text-xs text-body">
+            Technologies I use independently to design, build, and deliver production-ready projects with minimal oversight (other than code reivew).
+          </em>
+        </h4>
+        <h4 class="">
+          Proficient
+          <em class="italic text-xs text-body">
+            Technologies applied successfully in personal or hobby projects where I can build functional applications independently.
+          </em>
+        </h4>
+        <h4 class="">
+          Familiar 
+          <em class="italic text-xs text-body">
+            Technologies I have conceptual knowledge of and basic hands-on experience with through limited project exposure.
+          </em>
+        </h4>
+        <div class="grid grid-cols-3 ">
+          <div
+            v-for="id, index in techTagList"
+            class="border"
+          >
+            <TechTag 
+              :tag="new TechTagObject(id).getTechTagItem()"
+              size="xs"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>

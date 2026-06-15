@@ -49,7 +49,7 @@ const projects = ref(projectData)
                   <li
                     v-for="item in project.techStack"
                   >
-                    <TechTag :tag="item"/>
+                    <!-- <TechTag :tag="item"/> -->
                   </li>
                 </ul>
               </div>

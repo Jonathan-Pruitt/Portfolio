@@ -1,0 +1,104 @@
+[
+    {
+        "id": "csharp",
+        "title" :       "C#",
+        "domain" :      "backend",
+        "iconPath" :    "/src/assets/icons/tech/csharp.svg"
+    },
+    {
+        "id": "css",
+        "title": "CSS",
+        "domain": "frontend",
+        "iconPath": "/src/assets/icons/tech/css.svg"
+    },
+    {
+        "id": "github",
+        "title" : "GitHub",
+        "domain" : "version control",
+        "iconPath" : "/src/assets/icons/tech/github.svg"
+    },
+    {
+        "id": "html",
+        "title" : "HTML",
+        "domain" : "frontend",
+        "iconPath" : "/src/assets/icons/tech/html5.svg"
+    },
+    {
+        "id": "javascript",
+        "title": "JavaScript",
+        "domain": "frontend",
+        "iconPath" : "/src/assets/icons/tech/js.svg"
+    },
+    {
+        "id": "laravel",
+        "title": "Laravel",
+        "domain": "framework",
+        "iconPath" : "/src/assets/icons/tech/laravel.svg"
+    },
+    {
+        "id": "linear",
+        "title" : "Linear",
+        "domain" : "project management",
+        "iconPath" : "/src/assets/icons/tech/linear.svg"
+    },
+    {
+        "id": "linux",
+        "title" : "Linux",
+        "domain" : "OS",
+        "iconPath" : "/src/assets/icons/tech/linux.svg"
+    },
+    {
+        "id": "mysql",
+        "title": "MySQL",
+        "domain": "backend",
+        "iconPath" : "/src/assets/icons/tech/mysql.svg"
+    },
+    {
+        "id": "php",
+        "title": "PHP",
+        "domain": "backend",
+        "iconPath" : "/src/assets/icons/tech/php.svg"
+    },
+    {
+        "id": "python",
+        "title" : "Python",
+        "domain" : "backend",
+        "iconPath" : "/src/assets/icons/tech/python.svg"
+    },
+    {
+        "id": "react",
+        "title" : "React.js",
+        "domain" : "frontend",
+        "iconPath" : "/src/assets/icons/tech/react.svg"
+    },
+    {
+        "id": "tailwind",
+        "title": "Tailwind",
+        "domain": "framework",
+        "iconPath" : "/src/assets/icons/tech/tailwind.svg"
+    },
+    {
+        "id": "vue",
+        "title": "Vue.js",
+        "domain": "framework",
+        "iconPath" : "/src/assets/icons/tech/vue.svg"
+    },
+    {
+        "id": "windows",
+        "title" : "Windows",
+        "domain" : "OS",
+        "iconPath" : "/src/assets/icons/tech/windows.svg"
+    },
+    {
+        "id": "wpf",
+        "title" :       "WPF",
+        "domain" :      "framework",
+        "iconPath" :    null
+    },
+    {
+        "id": "xaml",
+        "title" :       "XAML",
+        "domain" :      "frontend",
+        "iconPath" :    "/src/assets/icons/tech/xaml.svg"
+    }
+]

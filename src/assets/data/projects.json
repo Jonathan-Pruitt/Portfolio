@@ -5,19 +5,19 @@
         "description" : "From initial setup to the moment of final victory, Catan Companion keeps track of the various dice rolls, settlements, and other data generated during a game of Settlers of Catan.",
         "techStack" : [
             {
-                "textIndicator" : "C#",
-                "colorIndicator" : "backend",
-                "iconPath" : ""
+                "title" :       "C#",
+                "domain" :      "backend",
+                "iconPath" :    "/src/assets/icons/tech/csharp.svg"
             },
             {
-                "textIndicator" : "XAML",
-                "colorIndicator" : "frontend",
-                "iconPath" : ""
+                "title" :       "XAML",
+                "domain" :      "frontend",
+                "iconPath" :    "/src/assets/icons/tech/xaml.svg"
             },
             {
-                "textIndicator" : "WPF",
-                "colorIndicator" : "framework",
-                "iconPath" : ""
+                "title" :       "WPF",
+                "domain" :      "framework",
+                "iconPath" :    ""
             }
         ],
         "tags" : [
@@ -63,34 +63,44 @@
         "disclaimer" : "Note: The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
             {
-                "textIndicator": "JavaScript",
-                "colorIndicator": "frontend",
-                "iconPath" : ""
+                "title": "JavaScript",
+                "domain": "frontend",
+                "iconPath" : "/src/assets/icons/tech/js.svg"
             },
             {
-                "textIndicator": "PHP",
-                "colorIndicator": "backend",
-                "iconPath" : ""
+                "title": "PHP",
+                "domain": "backend",
+                "iconPath" : "/src/assets/icons/tech/php.svg"
             },
             {
-                "textIndicator": "MySQL",
-                "colorIndicator": "backend",
-                "iconPath" : ""
+                "title": "MySQL",
+                "domain": "backend",
+                "iconPath" : "/src/assets/icons/tech/mysql.svg"
             },
             {
-                "textIndicator": "Laravel",
-                "colorIndicator": "framework",
-                "iconPath" : ""
+                "title": "Laravel",
+                "domain": "framework",
+                "iconPath" : "/src/assets/icons/tech/laravel.svg"
             },
             {
-                "textIndicator": "Vue.js",
-                "colorIndicator": "framework",
-                "iconPath" : ""
+                "title": "Vue.js",
+                "domain": "framework",
+                "iconPath" : "/src/assets/icons/tech/vue.svg"
             },
             {
-                "textIndicator": "Tailwind",
-                "colorIndicator": "framework",
-                "iconPath" : ""
+                "title": "Tailwind",
+                "domain": "framework",
+                "iconPath" : "/src/assets/icons/tech/tailwind.svg"
+            },
+            {
+                "title" : "GitHub",
+                "domain" : "version control",
+                "iconPath" : "/src/assets/icons/tech/github.svg"
+            },
+            {
+                "title" : "Linear",
+                "domain" : "project management",
+                "iconPath" : "/src/assets/icons/tech/linear.svg"
             }
         ],
         "tags" : [
@@ -135,18 +145,18 @@
         "description" : "Convert an image from pixels to ASCII art",
         "techStack" : [
             {
-                "textIndicator" : "C#",
-                "colorIndicator" : "backend",
-                "iconPath" : ""
+                "title" : "C#",
+                "domain" : "backend",
+                "iconPath" : "/src/assets/icons/tech/csharp.svg"
             },
             {
-                "textIndicator" : "XAML",
-                "colorIndicator" : "frontend",
-                "iconPath" : ""
+                "title" : "XAML",
+                "domain" : "frontend",
+                "iconPath" : "/src/assets/icons/tech/xaml.svg"
             },
             {
-                "textIndicator" : "WPF",
-                "colorIndicator" : "framework",
+                "title" : "WPF",
+                "domain" : "framework",
                 "iconPath" : ""
             }
         ],
@@ -195,7 +205,7 @@
             {
                 "textIndicator" : "JavaScript",
                 "colorIndicator" : "frontend",
-                "iconPath" : ""
+                "iconPath" : "/src/assets/icons/tech/js.svg"
             }
         ],
         "tags" : [
