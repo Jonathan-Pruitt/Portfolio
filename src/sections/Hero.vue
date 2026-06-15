@@ -39,7 +39,7 @@ const props = defineProps({
         c# JS React HTML CSS Python MySQL XAML WPF PHP Laravel Tailwind Vue
         MakeEachItemRaisedOrPeak
       </p>
-      <div class="grid grid-cols-5"></div>
+      <div class="grid grid-cols-5">need-to-build-a-wpf-logo-in-style-of-css</div>
 
       <!-- BASIC/FAMILIAR TECH (UNDERSTAND CORE CONCEPTS AND HAVE SOME EXPERIENCE) -->
     </div>
