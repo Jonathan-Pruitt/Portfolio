@@ -1,14 +1,17 @@
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import Carousel from './components/Carousel.vue';
-import projectData from "../assets/data/projects.json"
+import projectData from "../assets/data/projects.json";
+import TechTag from './partials/TechTag.vue';
 import Tag from './partials/Tag.vue';
+import tag_svg from '/src/assets/icons/tags/tag.svg?component';
+import tech_svg from '/src/assets/icons/tags/tech.svg?component';
 
 const props = defineProps({
-  sectionId: String
+  sectionId: String,
+  tags: Object
 })
 const projects = ref(projectData)
-
 </script>
 
 <template>
@@ -16,7 +19,7 @@ const projects = ref(projectData)
     <div class="sm:flex flex-row sm:mx-8">
       <h2 class="text-5xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4 cursor-default">PROJECTS</h2>
       
-      <div class="flex-1 grid lg:grid-cols-2 gap-4">
+      <div class="flex-1 grid gap-4">
         
         <!-- PROJECTS LIST -->
         <div v-for="project in projects" class="mt-4 sm:mt-0 flex flex-wrap">
@@ -38,12 +41,15 @@ const projects = ref(projectData)
               </div>
               <!-- ROW 2 -->
               <div class="col-span-1 content-center">
-                <h4 class="text-xs text-center">Tech</h4>
+                <div class="flex text-xs justify-center border-b border-brand/30">
+                  <tech_svg class="size-4 fill-gray-500/75" />
+                  <h4 class="text-gray-500/75">Tech</h4>
+                </div>
                 <ul class="flex flex-col">
                   <li
                     v-for="item in project.techStack"
                   >
-                    <Tag :tag="item"/>
+                    <TechTag :tag="item"/>
                   </li>
                 </ul>
               </div>
@@ -57,12 +63,19 @@ const projects = ref(projectData)
                 <p class="font-light text-sm">{{ project.description }}</p>
               </div>
               <div class="col-span-1 content-center">
-                <h4 class="text-xs text-center">Tags</h4>
+                <div class="flex text-xs justify-center border-b border-brand/30">
+                  <tag_svg class="size-4 fill-gray-500/75" />
+                  <h4 class="text-gray-500/75">Tags</h4>
+                </div>
                 <ul class="flex flex-col">
                   <li 
-                    v-for="tag in project.tags"
+                    class="flex flex-wrap justify-center"
                   >
-                    <Tag :tag="tag" />
+                    <Tag 
+                      v-for="tag in project.tags"
+                      :tag="tag" 
+                      :tag-obj="tags"
+                    />
                   </li>
                 </ul>
               </div>

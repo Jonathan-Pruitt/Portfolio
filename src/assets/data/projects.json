@@ -6,29 +6,35 @@
         "techStack" : [
             {
                 "textIndicator" : "C#",
-                "colorIndicator" : "backend"
+                "colorIndicator" : "backend",
+                "iconPath" : ""
             },
             {
                 "textIndicator" : "XAML",
-                "colorIndicator" : "frontend"
+                "colorIndicator" : "frontend",
+                "iconPath" : ""
             },
             {
                 "textIndicator" : "WPF",
-                "colorIndicator" : "framework"
+                "colorIndicator" : "framework",
+                "iconPath" : ""
             }
         ],
         "tags" : [
             {
                 "textIndicator" : "personal",
-                "colorIndicator" : "personal"
+                "colorIndicator" : "personal",
+                "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "entertainment",
-                "colorIndicator" : "usage"
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
             },
             {
                 "textIndicator" : "utility",
-                "colorIndicator" : "usage"
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/utility.svg"
             }
         ],
         "images" : [
@@ -58,41 +64,50 @@
         "techStack" : [
             {
                 "textIndicator": "JavaScript",
-                "colorIndicator": "frontend"
+                "colorIndicator": "frontend",
+                "iconPath" : ""
             },
             {
                 "textIndicator": "PHP",
-                "colorIndicator": "backend"
+                "colorIndicator": "backend",
+                "iconPath" : ""
             },
             {
                 "textIndicator": "MySQL",
-                "colorIndicator": "backend"
+                "colorIndicator": "backend",
+                "iconPath" : ""
             },
             {
                 "textIndicator": "Laravel",
-                "colorIndicator": "framework"
+                "colorIndicator": "framework",
+                "iconPath" : ""
             },
             {
                 "textIndicator": "Vue.js",
-                "colorIndicator": "framework"
+                "colorIndicator": "framework",
+                "iconPath" : ""
             },
             {
                 "textIndicator": "Tailwind",
-                "colorIndicator": "framework"
+                "colorIndicator": "framework",
+                "iconPath" : ""
             }
         ],
         "tags" : [
             {
                 "textIndicator" : "professional",
-                "colorIndicator" : "professional"
+                "colorIndicator" : "professional",
+                "iconPath" : "/src/assets/icons/tags/business.svg"
             },
             {
                 "textIndicator" : "utility",
-                "colorIndicator" : "usage"
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/utility.svg"
             },
             {
                 "textIndicator" : "client-driven",
-                "colorIndicator" : "usage"
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/client.svg"
             }
         ],
         "images" : [
@@ -121,25 +136,35 @@
         "techStack" : [
             {
                 "textIndicator" : "C#",
-                "colorIndicator" : "backend"
+                "colorIndicator" : "backend",
+                "iconPath" : ""
             },
             {
                 "textIndicator" : "XAML",
-                "colorIndicator" : "frontend"
+                "colorIndicator" : "frontend",
+                "iconPath" : ""
             },
             {
                 "textIndicator" : "WPF",
-                "colorIndicator" : "framework"
+                "colorIndicator" : "framework",
+                "iconPath" : ""
             }
         ],
         "tags" : [
             {
                 "textIndicator" : "personal",
-                "colorIndicator" : "personal"
+                "colorIndicator" : "personal",
+                "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "entertainment",
-                "colorIndicator" : "usage"
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
+            },
+            {
+                "textIndicator" : "art",
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/art.svg"
             }
         ],
         "images" : [
@@ -169,21 +194,25 @@
         "techStack" : [
             {
                 "textIndicator" : "JavaScript",
-                "colorIndicator" : "frontend"
+                "colorIndicator" : "frontend",
+                "iconPath" : ""
             }
         ],
         "tags" : [
             {
                 "textIndicator" : "personal",
-                "colorIndicator" : "personal"
+                "colorIndicator" : "personal",
+                "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "game",
-                "colorIndicator" : "usage"
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/game.svg"
             },
             {
                 "textIndicator" : "self-education",
-                "colorIndicator" : "usage"
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/self-improvement.svg"
             }
         ],
         "images" : [

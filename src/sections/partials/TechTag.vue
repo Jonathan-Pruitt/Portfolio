@@ -1,7 +1,6 @@
 <script setup>
 import { computed } from 'vue';
 
-
 const props = defineProps({
     tag: {
         type: [String, Object],
@@ -9,18 +8,10 @@ const props = defineProps({
     },
 })
 
-const svgTags = import.meta.glob('/src/assets/icons/tags/*.svg', {
-  query : '?component',
-  eager: true
-})
 const text = props.tag.textIndicator;
 
 const color = computed(() => {
     return TAG_COLORS[props.tag.colorIndicator] || 'bg-gray-600/20 inset-ring-gray-600'
-})
-
-const iconColor = computed(() => {
-    return ICON_COLORS[props.tag.colorIndicator] || 'fill-current'
 })
 
 const TAG_COLORS = {
@@ -32,34 +23,15 @@ const TAG_COLORS = {
     "professional": 'bg-[hsl(30,50%,40%)]/20 inset-ring-[hsl(30,50%,40%)] text-[hsl(30,50%,40%)]',
 }
 
-const ICON_COLORS = {
-    "backend" :     'text-tag-backend',
-    "frontend" :    'text-tag-frontend',
-    "framework" :   'text-tag-framework',
-    "personal" :    'text-tag-personal',
-    "usage":        'text-tag-usage',
-    "professional": 'text-tag-professional',
-}
-
 </script>
 
 <template>
+    <!-- class="mx-1 my-auto py-1 px-2 font-semibold text-tech text-xs rounded-lg bg-tech/30 ring-tech inset-ring-2 inline-block" -->
     <div 
-        :class="iconColor"
-        :title="text || 'icon'"
-        class="justify-items-center"
+        class="text-xs font-semibold mx-1 my-auto px-2 py-1 inline-block rounded-lg inset-ring-2 text-center"
+        :class="color"
+        :title="text"
     >
-        <component 
-            :is="svgTags[tag.iconPath ?? '']" 
-            :class="tag.iconPath ? '' : 'hidden'"
-            class="size-6 sm:size-8 md:size-10 lg:size-12 rounded-lg bg-base/25"
-        />
-        <h5 
-            class="text-xs font-semibold mx-1 my-auto px-2 py-1 rounded-lg inset-ring-2 text-center hidden md:block"
-            :class="color"
-        >
         {{ text }}
-    
-        </h5>
     </div>
 </template>

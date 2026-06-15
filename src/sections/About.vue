@@ -53,16 +53,18 @@ const setAboutMeData = () => {
       <div 
         class="
           w-full
-          h-[300px]
+          sm:h-[300px]
+          h-[150px]
+          bg-top
           bg-[url(@/assets/images/big-sky.png)] 
-          bg-center
+          sm:bg-center
           bg-no-repeat
           ">
       </div>
     </div>
     
     <div class="sm:flex relative w-full">  
-      
+      <!-- SECTION HEADER TEXT : VERTICAL -->
       <div class="absolute sm:static flex flex-col h-full invisible sm:visible mx-8 cursor-default">
         <h2 class="text-5xl font-black vertical-text tracking-[-0.30em] mt-16">WHO</h2>
         <h2 class="text-5xl font-black vertical-text tracking-[-0.30em] mt-8">I</h2>
@@ -70,8 +72,8 @@ const setAboutMeData = () => {
       </div>
       
       <!-- COMMAND PROMPT MIMIC -->
-      <div class="mx-8 shadow-lg shadow-black/50">
-        <div class="bg-black border-gray-200 border w-full pb-8 mx-auto my-16 max-w-4xl">
+      <div class="mx-8">
+        <div class="bg-black border-gray-200 border w-full pb-8 mx-auto my-16 max-w-4xl shadow-lg shadow-black/50">
           <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
             <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1 shrink">
             <h6 class="font-cmd text-sm text-black px-1 content-center whitespace-nowrap">{{ aboutMeData.title }}</h6>
