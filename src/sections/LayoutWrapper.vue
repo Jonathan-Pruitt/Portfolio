@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from './Navbar.vue';
 import Hero from './Hero.vue';
+import Experience from './Experience.vue';
 import Projects from './Projects.vue'
 import About from './About.vue';
 import Footer from './Footer.vue';

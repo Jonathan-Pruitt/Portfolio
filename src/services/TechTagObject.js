@@ -10,10 +10,12 @@ export class TechTagObject {
             this._title = record.title;
             this._domain = record.domain;
             this._iconPath = record.iconPath || TechTagObject.DEFAULT_PATH;
+            this._useFrequency = record.useFrequency;
         } else {
             this._title = "Unkown";
             this._domain = "Unknown";
-            this._iconPath = TechTagObject.DEFAULT_PATH
+            this._iconPath = TechTagObject.DEFAULT_PATH;
+            this._useFrequency = 'Unknown';
         }
     }
 
@@ -26,6 +28,15 @@ export class TechTagObject {
     get iconPath() {
         return this._iconPath;
     }
+    get useFrequency() {
+        const USAGE = [
+            'rarely',
+            'occasionally',
+            'regularly',
+            'daily'
+        ]
+        return USAGE[this._useFrequency];
+    }
     /**
      * CONSTRUCTS THE TECHSTACK OBJECT AND RETURNS IT
      * @returns {techTagItem} The json object that holds all techstack item data (title,domain,logo)
@@ -35,6 +46,7 @@ export class TechTagObject {
             title: this.title,
             domain: this.domain,
             iconPath: this.iconPath,
+            useFrequency: this.useFrequency
         }
     }
 }

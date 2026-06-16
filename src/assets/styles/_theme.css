@@ -3,9 +3,9 @@
 */
 @theme {
     /*----------- FONTS -----------*/
-    --font-header: Urbanist;
-    --font-content: Inter Tight;
-    --font-code: Ubuntu Sans Mono;
+    --font-header: "Urbanist";
+    --font-content: "Inter Tight";
+    --font-code: "Ubuntu Sans Mono";
     --font-cmd: "Segoe UI";
     
     /*---------- COLORS  ----------*/
@@ -14,7 +14,7 @@
     --color-danger: var(--danger);
     --color-warning: var(--warning);
     --color-success: var(--success);
-    --color-tech: var(--info);
+    --color-info: var(--info);
     --color-tag: var(--color-teal-900);
 
     --color-base: var(--bg-0);
@@ -50,7 +50,7 @@
     --danger: #E73651;
     --warning: #F4CF3E;
     --success: #7DCFB6;
-    --info: #384381;
+    --info: #4763ff;
 }
 
 @variant dark {

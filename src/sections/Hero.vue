@@ -2,33 +2,65 @@
 import SvgIcon from './partials/SvgIcon.vue';
 import TechTag from './partials/TechTag.vue';
 import { TechTagObject } from '../services/TechTagObject.js';
+import { onMounted, ref } from 'vue';
 
-const props = defineProps({
-  sectionId: String
-})
-const coreList = [];
-const proficientList = [];
-const familiarist = [];
-const techTagList = [
-  'csharp', 
-  'css',
+// STATIC DATA
+const coreArray = [
   'github',
+  'css',
   'html',
-  'javascript', 
+  'javascript',
   'laravel',
   'linear',
   'linux',
-  'mysql',
-  'php',
-  'python',
-  'react', 
-  'tailwind',
-  'vue',
   'windows',
-  'wpf',
+  'tailwind',
+  'php',
+  'vue',
+];
+const proficientArray = [
+  'csharp',
+  'python',
+  'mysql',
   'xaml',
-]
+  'wpf'
+];
+const familiarArray = [
+  'react',
+];
 
+// DATA
+const props = defineProps({
+  sectionId: String
+})
+const showDetails = ref('');
+const coreTags = ref([]);
+const proficientTags = ref([]);
+const familiarTags = ref([]);
+
+// METHODS
+const getAllTags = () => {
+  coreTags.value = getTagArray(coreArray);
+  proficientTags.value = getTagArray(proficientArray);
+  familiarTags.value = getTagArray(familiarArray);
+}
+
+const getTagArray = (stringArray) => {
+  let tagArray = stringArray.map((rawTag) => new TechTagObject(rawTag).getTechTagItem())
+  return tagArray;
+}
+
+const handleClickCategories = (category) => {
+  if (category == showDetails.value) {
+    showDetails.value = ''
+  } else {
+    showDetails.value = category
+  }
+}
+
+onMounted(() => {
+  getAllTags();
+})
 </script>
 
 <template>
@@ -58,42 +90,6 @@ const techTagList = [
           </div>
         </div>
 
-      </div>
-      <!-- PROFICIENT TECH (INDEPENDENT WORK, NOT YET ADVANCED [BUILD FROM SCRATCH/TEACH]) -->
-      
-      <!-- BASIC/FAMILIAR TECH (UNDERSTAND CORE CONCEPTS AND HAVE SOME EXPERIENCE) -->
-      
-      <div class="border-2">
-        <h3>Tech Experinece</h3>
-        <h4 class="">
-          Core Competencies 
-          <em class="italic text-xs text-body">
-            Technologies I use independently to design, build, and deliver production-ready projects with minimal oversight (other than code reivew).
-          </em>
-        </h4>
-        <h4 class="">
-          Proficient
-          <em class="italic text-xs text-body">
-            Technologies applied successfully in personal or hobby projects where I can build functional applications independently.
-          </em>
-        </h4>
-        <h4 class="">
-          Familiar 
-          <em class="italic text-xs text-body">
-            Technologies I have conceptual knowledge of and basic hands-on experience with through limited project exposure.
-          </em>
-        </h4>
-        <div class="grid grid-cols-3 ">
-          <div
-            v-for="id, index in techTagList"
-            class="border"
-          >
-            <TechTag 
-              :tag="new TechTagObject(id).getTechTagItem()"
-              size="xs"
-            />
-          </div>
-        </div>
       </div>
     </div>
   </section>

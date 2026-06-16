@@ -4,21 +4,9 @@
         "iconPath" : "src/assets/icons/logo.png",
         "description" : "From initial setup to the moment of final victory, Catan Companion keeps track of the various dice rolls, settlements, and other data generated during a game of Settlers of Catan.",
         "techStack" : [
-            {
-                "title" :       "C#",
-                "domain" :      "backend",
-                "iconPath" :    "/src/assets/icons/tech/csharp.svg"
-            },
-            {
-                "title" :       "XAML",
-                "domain" :      "frontend",
-                "iconPath" :    "/src/assets/icons/tech/xaml.svg"
-            },
-            {
-                "title" :       "WPF",
-                "domain" :      "framework",
-                "iconPath" :    ""
-            }
+            "csharp",
+            "xaml",
+            "wpf"
         ],
         "tags" : [
             {
@@ -62,46 +50,14 @@
         "description" : "Hardly is a business-to-business SaaS platform that provides job-seekers and career coaches with organizational and generative tools to improve their effectiveness in a difficult market.",
         "disclaimer" : "Note: The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
-            {
-                "title": "JavaScript",
-                "domain": "frontend",
-                "iconPath" : "/src/assets/icons/tech/js.svg"
-            },
-            {
-                "title": "PHP",
-                "domain": "backend",
-                "iconPath" : "/src/assets/icons/tech/php.svg"
-            },
-            {
-                "title": "MySQL",
-                "domain": "backend",
-                "iconPath" : "/src/assets/icons/tech/mysql.svg"
-            },
-            {
-                "title": "Laravel",
-                "domain": "framework",
-                "iconPath" : "/src/assets/icons/tech/laravel.svg"
-            },
-            {
-                "title": "Vue.js",
-                "domain": "framework",
-                "iconPath" : "/src/assets/icons/tech/vue.svg"
-            },
-            {
-                "title": "Tailwind",
-                "domain": "framework",
-                "iconPath" : "/src/assets/icons/tech/tailwind.svg"
-            },
-            {
-                "title" : "GitHub",
-                "domain" : "version control",
-                "iconPath" : "/src/assets/icons/tech/github.svg"
-            },
-            {
-                "title" : "Linear",
-                "domain" : "project management",
-                "iconPath" : "/src/assets/icons/tech/linear.svg"
-            }
+            "javascript",
+            "php",
+            "mysql",
+            "laravel",
+            "vue",
+            "tailwind",
+            "github",
+            "linear"
         ],
         "tags" : [
             {
@@ -144,21 +100,9 @@
         "iconPath" : "src/assets/icons/logo.png",
         "description" : "Convert an image from pixels to ASCII art",
         "techStack" : [
-            {
-                "title" : "C#",
-                "domain" : "backend",
-                "iconPath" : "/src/assets/icons/tech/csharp.svg"
-            },
-            {
-                "title" : "XAML",
-                "domain" : "frontend",
-                "iconPath" : "/src/assets/icons/tech/xaml.svg"
-            },
-            {
-                "title" : "WPF",
-                "domain" : "framework",
-                "iconPath" : ""
-            }
+            "csharp",
+            "xaml",
+            "wpf"
         ],
         "tags" : [
             {
@@ -202,11 +146,7 @@
         "description" : "A one-week self-educational project built entirely in vanilla JavaScript in an HTML Canvas tag. I bypassed external frameworks to focus on improving my understanding of game creation, core game logic, state management, rendering objects, and player/enemy controls and movement",
         "disclaimer": "Browser Compatability Notice: This tool was developed and last tested March 2023 using Google Chrome (v111). The game might not function on other browsers",
         "techStack" : [
-            {
-                "textIndicator" : "JavaScript",
-                "colorIndicator" : "frontend",
-                "iconPath" : "/src/assets/icons/tech/js.svg"
-            }
+            "javascript"
         ],
         "tags" : [
             {
