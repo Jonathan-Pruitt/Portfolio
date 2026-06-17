@@ -17,6 +17,10 @@ const navList = [
   {
     title: 'about',
     icon: about_svg
+  },
+  {
+    title: 'experience',
+    icon: about_svg
   }
 ]
 </script>
@@ -32,6 +36,7 @@ const navList = [
       <Hero 
         section-id="home"
       />
+      <Experience :section-id="navList[2].title"/>
       <Projects 
         class="border-l-4 border-tech/50"
         :section-id="navList[0].title"

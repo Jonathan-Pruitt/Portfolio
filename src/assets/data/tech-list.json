@@ -108,7 +108,7 @@
         "id": "wpf",
         "title" :       "WPF",
         "domain" :      "framework",
-        "iconPath" :    null,
+        "iconPath" :    "/src/assets/icons/tech/wpf.svg",
         "useFrequency": 0
     },
     {

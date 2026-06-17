@@ -1,66 +1,6 @@
 <script setup>
 import SvgIcon from './partials/SvgIcon.vue';
-import TechTag from './partials/TechTag.vue';
-import { TechTagObject } from '../services/TechTagObject.js';
-import { onMounted, ref } from 'vue';
 
-// STATIC DATA
-const coreArray = [
-  'github',
-  'css',
-  'html',
-  'javascript',
-  'laravel',
-  'linear',
-  'linux',
-  'windows',
-  'tailwind',
-  'php',
-  'vue',
-];
-const proficientArray = [
-  'csharp',
-  'python',
-  'mysql',
-  'xaml',
-  'wpf'
-];
-const familiarArray = [
-  'react',
-];
-
-// DATA
-const props = defineProps({
-  sectionId: String
-})
-const showDetails = ref('');
-const coreTags = ref([]);
-const proficientTags = ref([]);
-const familiarTags = ref([]);
-
-// METHODS
-const getAllTags = () => {
-  coreTags.value = getTagArray(coreArray);
-  proficientTags.value = getTagArray(proficientArray);
-  familiarTags.value = getTagArray(familiarArray);
-}
-
-const getTagArray = (stringArray) => {
-  let tagArray = stringArray.map((rawTag) => new TechTagObject(rawTag).getTechTagItem())
-  return tagArray;
-}
-
-const handleClickCategories = (category) => {
-  if (category == showDetails.value) {
-    showDetails.value = ''
-  } else {
-    showDetails.value = category
-  }
-}
-
-onMounted(() => {
-  getAllTags();
-})
 </script>
 
 <template>

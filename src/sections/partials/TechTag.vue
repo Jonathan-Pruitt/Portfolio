@@ -37,7 +37,7 @@ const TAG_COLORS = {
     >
         <component
             :is="techSvgs[tag.iconPath]"
-            class="w-full h-full rounded sm:rounded-lg dark:bg-brand/50"
+            class="w-full h-full rounded sm:rounded-lg"
         />
         <h5 
             v-if="showDomain"
