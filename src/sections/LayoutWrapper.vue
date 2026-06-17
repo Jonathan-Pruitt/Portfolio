@@ -8,6 +8,7 @@ import Footer from './Footer.vue';
 import Debug from './Debug.vue';
 import projects_svg from '/src/assets/icons/tags/projects.svg?component';
 import about_svg from '/src/assets/icons/tags/about-me.svg?component';
+import experience_svg from '/src/assets/icons/tags/experience.svg?component';
 
 const navList = [
   {
@@ -20,7 +21,7 @@ const navList = [
   },
   {
     title: 'experience',
-    icon: about_svg
+    icon: experience_svg
   }
 ]
 </script>

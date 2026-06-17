@@ -139,23 +139,6 @@ onMounted(() => {
                         />
                     </div>
                 </div>
-                <!-- <ul class="flex flex-col">
-                    <li
-                        v-for="tag in techTags"
-                    >
-                        <div 
-                            class="size-8 sm:size-12 lg:size-16"
-                        >
-                            <TechTag :tag="tag"/>
-                        </div>
-                        <h5 
-                            class="text-xs font-semibold px-2 py-1 rounded-lg inset-ring-2 text-center hidden md:block mx-auto"
-                            :class="COLORS[tag.domain]"
-                        >
-                            {{ tag.domain }}
-                        </h5>
-                    </li>
-                </ul> -->
             </div>
             <div class="col-span-2">
                 <Carousel 

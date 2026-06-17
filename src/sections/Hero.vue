@@ -1,6 +1,9 @@
 <script setup>
 import SvgIcon from './partials/SvgIcon.vue';
 
+const props = defineProps({
+  sectionId: String
+});
 </script>
 
 <template>
