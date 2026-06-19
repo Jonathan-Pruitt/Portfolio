@@ -9,7 +9,20 @@ export default defineConfig({
   plugins: [
     vue(),
     tailwindcss(),
-    svgLoader()
+    svgLoader({
+      svgoConfig: {
+        plugins: [
+          {
+            name: 'preset-default',
+            params: {
+              overrides: {
+                cleanupIds: false, 
+              },
+            },
+          },
+          'prefixIds', 
+        ],
+    }})
   ],
   resolve: {
     alias: {
