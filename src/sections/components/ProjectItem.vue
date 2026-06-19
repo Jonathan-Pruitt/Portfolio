@@ -47,7 +47,6 @@ const loadTechTags = () => {
     addTags(pMan);
     addTags(vCont);
     emit('update-max-tech', maxTags)
-    console.log(techTags.value)
 
     function addTags(tagArray) {
         if (tagArray.length > 0) {
