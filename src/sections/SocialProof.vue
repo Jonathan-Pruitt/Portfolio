@@ -1,12 +1,11 @@
 <script setup>
-  //
-  /*------------ GRABBING PROOFS ------------*/
-  /**
-   * BACKUP IDEA: CPY/PSTE linkedin info and make static JSON with recommendations.
-   */
+import Carousel from './components/Carousel.vue';
+const title = '#'
   
 </script>
 
 <template>
-  
+  <section :id="title">
+    <Carousel :slides="{path: '#', altText: 'placeholder text'}"/>
+  </section>
 </template>
