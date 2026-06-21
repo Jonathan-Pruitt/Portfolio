@@ -1,12 +1,14 @@
 <script setup>
 import { ref } from 'vue';
-import Slide from '../components/Slide.vue'
+import ProjectSlide from './ProjectSlide.vue';
+import EndorsementSlide from './EndorsementSlide.vue';
 
 const props = defineProps({
   slides: {
     type: Array,
     required: true
   },
+  type: String
 })
 
 const currentIndex = ref(0);
@@ -44,7 +46,20 @@ const scrollToSwipe = (index) => {
               :key="index"
               class="w-full shrink-0 snap-center flex items-center justify-center"
           >
-            <Slide :slide-data="slide" type="projects"/>
+            <div 
+              v-if="type == 'projects'"
+              class=""
+            >
+              <ProjectSlide :slide-data="slide"/>
+            </div>
+            <div 
+              v-if="type == 'socials'"
+              class=""
+            >
+              <EndorsementSlide 
+                :slide-data="''"
+              />
+            </div>
           </div>
       </div>
       <div class="absolute bottom-4 left-1/2 -translate-x-1/2">

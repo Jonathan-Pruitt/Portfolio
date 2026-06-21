@@ -2,15 +2,13 @@
 import { onMounted, ref } from 'vue'
 
 const props = defineProps({
-  slideData: Object,
-  type: String,
+  slideData: Object,  // EXPECTED OBJECT KEYS => path, altText
 });
 
 </script>
 
 <template>
   <div 
-    v-if="type === 'projects'"
     class="px-2"
   >
     <img 

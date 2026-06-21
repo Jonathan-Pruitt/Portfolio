@@ -3,7 +3,7 @@ import Navbar from './Navbar.vue';
 import Hero from './Hero.vue';
 import Experience from './Experience.vue';
 import Projects from './Projects.vue';
-import SocialProof from './SocialProof.vue';
+import Endorsements from './Endorsements.vue';
 import About from './About.vue';
 import Footer from './Footer.vue';
 import Debug from './Debug.vue';
@@ -35,12 +35,10 @@ const navList = [
     <!-- probably best bet to use 'hue-rotate' combined with 'mask' to play with colors -->
     <main>
       <Debug />
-      <div class="mt-30 p-1 border">
-        <SocialProof />
-      </div>
       <Hero 
         section-id="home"
       />
+      <Endorsements :section-id="'endorsements'"/>
       <Experience :section-id="navList[2].title"/>
       <Projects 
         class="border-l-4 border-tech/50"

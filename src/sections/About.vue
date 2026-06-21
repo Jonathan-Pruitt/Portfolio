@@ -112,7 +112,7 @@ const setAboutMeData = () => {
   </section>
 </template>
 
-<style>
+<style scoped>
 p > strong {
   /* color: var(--color-brand); */
   color: black;

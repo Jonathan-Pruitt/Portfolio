@@ -93,7 +93,7 @@ onMounted(() => {
             v-for="tag in coreTags"
           >
             <div class="grid grid-cols-2 items-center">
-              <div class="size-8 sm:size-12 md:size-16 justify-self-end box-content p-1 dark:bg-brand/50 rounded sm:rounded-lg">
+              <div class="size-8 sm:size-12 md:size-16 justify-self-end box-content p-1 dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded sm:rounded-lg">
                 <TechTag 
                   :tag="tag"
                 />
@@ -130,7 +130,7 @@ onMounted(() => {
             v-for="tag in proficientTags"
           >
             <div class="grid grid-cols-2 items-center">
-              <div class="size-8 sm:size-12 md:size-16 justify-self-end box-content p-1 dark:bg-brand/50 rounded sm:rounded-lg">
+              <div class="size-8 sm:size-12 md:size-16 justify-self-end box-content p-1 dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded sm:rounded-lg">
                 <TechTag 
                   :tag="tag"
                 />
@@ -167,7 +167,7 @@ onMounted(() => {
             v-for="tag in familiarTags"
           >
             <div class="grid grid-cols-2 items-center">
-              <div class="size-8 sm:size-12 md:size-16 justify-self-end box-content p-1 dark:bg-brand/50 rounded sm:rounded-lg">
+              <div class="size-8 sm:size-12 md:size-16 justify-self-end box-content p-1 dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded sm:rounded-lg">
                 <TechTag 
                   :tag="tag"
                 />

@@ -99,6 +99,7 @@ onMounted(() => {
                         <TechTag 
                             v-for="frontendTag in techTags.frontend"
                             :tag="frontendTag"
+                            class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
                         />
                     </div>
                 </div>
@@ -108,6 +109,7 @@ onMounted(() => {
                         <TechTag 
                             v-for="backendTag in techTags.backend"
                             :tag="backendTag"
+                            class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
                         />
                     </div>
                 </div>
@@ -117,6 +119,7 @@ onMounted(() => {
                         <TechTag 
                             v-for="frameworkTag in techTags.framework"
                             :tag="frameworkTag"
+                            class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
                         />
                     </div>
                 </div>
@@ -126,6 +129,7 @@ onMounted(() => {
                         <TechTag 
                             v-for="versionTag in techTags['version control']"
                             :tag="versionTag"
+                            class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
                         />
                     </div>
                 </div>
@@ -135,6 +139,7 @@ onMounted(() => {
                         <TechTag 
                             v-for="projectTag in techTags['project management']"
                             :tag="projectTag"
+                            class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
                         />
                     </div>
                 </div>
@@ -142,6 +147,7 @@ onMounted(() => {
             <div class="col-span-2">
                 <Carousel 
                     :slides="project.images"
+                    type="projects"
                 />
             </div>
         
