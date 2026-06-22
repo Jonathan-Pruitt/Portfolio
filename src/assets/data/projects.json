@@ -82,6 +82,14 @@
             {
                 "path": "src/assets/images/img-projects/hardly/homepage.jpg",
                 "altText": "hardly-work.com -- Website homepage"
+            },
+            {
+                "path": "src/assets/images/img-projects/hardly/interview-practice.jpg",
+                "altText": "hardly-work.com -- Interview practice description"
+            },
+            {
+                "path": "src/assets/images/img-projects/hardly/email-generator.jpg",
+                "altText": "hardly-work.com -- Email generator description"
             }
         ],
         "links" : {
