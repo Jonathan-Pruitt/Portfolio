@@ -1,5 +1,7 @@
 <script setup>
 import SvgIcon from './partials/SvgIcon.vue';
+import adhd_svg from '/src/assets/icons/tags/adhd.svg?component'
+import coffee_svg from '/src/assets/icons/tags/coffee.svg?component'
 const props = defineProps({
   sectionId: String
 })
@@ -37,7 +39,7 @@ const props = defineProps({
           >jonathan.s.pruitt@gmail.com</address>
 
           <div class="border-t pt-6 w-full max-w-2xl text-center mb-16 tracking-widest text-brand-muted font-light">
-            <small>Built with ADHD and coffee</small>
+            <small class="flex justify-self-center items-center ">Built with ADHD <adhd_svg class="mr-2"/> and coffee <coffee_svg/></small>
           </div>
         </div>
       </div>
