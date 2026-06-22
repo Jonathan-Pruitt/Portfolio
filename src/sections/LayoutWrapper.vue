@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from './Navbar.vue';
 import Hero from './Hero.vue';
-import Experience from './Experience.vue';
+import Proficiencies from './Proficiencies.vue';
 import Projects from './Projects.vue';
 import Endorsements from './Endorsements.vue';
 import About from './About.vue';
@@ -9,20 +9,25 @@ import Footer from './Footer.vue';
 import Debug from './Debug.vue';
 import projects_svg from '/src/assets/icons/tags/projects.svg?component';
 import about_svg from '/src/assets/icons/tags/about-me.svg?component';
-import experience_svg from '/src/assets/icons/tags/experience.svg?component';
+import proficiency_svg from '/src/assets/icons/tags/proficiency.svg?component';
+import social_svg from '/src/assets/icons/tags/social.svg?component';
 
 const navList = [
+  {
+    title: 'proficiencies',
+    icon: proficiency_svg
+  },
   {
     title: 'projects',
     icon: projects_svg
   },
   {
-    title: 'about',
-    icon: about_svg
+    title: 'endorsements',
+    icon: social_svg
   },
   {
-    title: 'experience',
-    icon: experience_svg
+    title: 'about',
+    icon: about_svg
   }
 ]
 </script>
@@ -34,18 +39,25 @@ const navList = [
     <!-- rescue -- cool dropping things go here  -->
     <!-- probably best bet to use 'hue-rotate' combined with 'mask' to play with colors -->
     <main>
-      <Debug />
+      <!-- <Debug /> -->
       <Hero 
         section-id="home"
+        class="box-content"
       />
-      <Endorsements :section-id="'endorsements'"/>
-      <Experience :section-id="navList[2].title"/>
-      <Projects 
-        class="border-l-4 border-tech/50"
+      <Proficiencies 
+        class="border-l-4 border-yellow-200/75"
         :section-id="navList[0].title"
       />
-      <About 
+      <Projects 
+        class="border-l-4 border-blue-200/75"
         :section-id="navList[1].title"
+      />
+      <Endorsements 
+        class="border-l-4 border-red-200/75"
+        :section-id="navList[2].title"
+      />
+      <About 
+        :section-id="navList[3].title"
       />
     </main>
   <Footer 

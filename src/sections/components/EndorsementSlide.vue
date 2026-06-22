@@ -24,7 +24,7 @@ onMounted(() => {
 
 <template>
   <div 
-    class="w-full grid grid-rows-[auto_auto] sm:grid-rows-2 p-4 bg-linear-to-b from-flat via-brand/50 via-25% to-flat rounded-lg"
+    class="w-full grid grid-rows-[auto_auto] sm:grid-rows-2 p-4 dark:bg-linear-to-b dark:from-flat dark:via-brand/40 dark:via-25% dark:to-flat rounded-lg"
   >
     <div class="flex">
       <div class="sm:flex gap-4">
@@ -42,11 +42,11 @@ onMounted(() => {
 
       </div>
       <div class="grow text-end">
-        <button class="bg-gray-500">See More</button>
+        <button class="bg-red-500 text-yellow-300 font-bold">See More</button>
       </div>
 
     </div>
-    <div class="bg-raised rounded-lg px-4 py-2 text-sm sm:text-none md:text-lg">
+    <div class="w-4/5 mx-auto px-4 py-2 text-sm sm:text-none md:text-lg rounded-lg shadow-lg shadow-brand/20 hover:bg-brand/5 dark:shadow-none dark:bg-base/10 dark:inset-shadow-sm dark:inset-shadow-gray-500/50 transition-all duration-200">
       <div v-html="highlights"/>
     </div>
   </div>

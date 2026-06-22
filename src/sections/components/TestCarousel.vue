@@ -38,7 +38,7 @@ const scrollToSwipe = (index) => {
         v-if="type == 'projects'"
         ref="scrollContainer"
         @scroll="handleScroll"
-        class="flex overflow-x-scroll snap-x snap-mandatory no-scrollbar"
+        class="flex overflow-x-scroll snap-x snap-mandatory no-scrollbar scroll-smooth scrollbar-none"
       >
         <li
           v-for="card in cards"

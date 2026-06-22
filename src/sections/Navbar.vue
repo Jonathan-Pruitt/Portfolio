@@ -26,7 +26,7 @@ window.addEventListener('scroll', handleScroll)
       class="z-999 h-24 transition-all duration-150 delay-100 bg-brand fixed top-0 left-0 right-0 text-header"
       :class="isScrolled ? 'scrolled' : ''"
     >
-      <div class="flex h-full w-full content-center font-bold sm:text-lg md:text-xl lg:text-2xl">
+      <div class="flex h-full w-full content-center">
         
         <!-- LOGO -->
         <a href="#home" 
@@ -45,11 +45,12 @@ window.addEventListener('scroll', handleScroll)
           <a 
             v-for="navItem in nav"
             :href="'#'+navItem.title"
-            class="sm:px-8 px-4 hover:brightness-115 bg-brand transition-all duration-200"
+            class="px-4 hover:brightness-115 bg-brand transition-all duration-200"
+            :title="capitalizeFirstChar(navItem.title)"
             >
             <div class="h-full items-center flex gap-2">
-              <component :is="navItem.icon"/>
-              {{ capitalizeFirstChar(navItem.title) }}
+              <component :is="navItem.icon" class="size-8 sm:size-6 md:size-8"/>
+              <span class="hidden font-bold sm:block md:text-xl lg:text-2xl">{{ capitalizeFirstChar(navItem.title) }}</span>
             </div>
           </a>
         </div>

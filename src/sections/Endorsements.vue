@@ -32,7 +32,7 @@ onMounted(() => {
 
 <template>
     <section :id="sectionId">
-      <h2 class="text-5xl font-black cursor-default">Endorsements</h2>
+      <h2 class="text-4xl font-black cursor-default">ENDORSEMENTS</h2>
       <TestCarousel type="endorsements" :cards="shuffledEndorsements"/>
     </section>
 </template>
