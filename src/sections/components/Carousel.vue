@@ -22,7 +22,7 @@ const handleScroll = (e) => {
   currentIndex.value = Math.round(container.scrollLeft / width);
 };
 
-// Allows dot indicators to scroll the carousel into view
+// Allows dot indicators to scroll the carousel view
 const scrollToSwipe = (index) => {
   if (!scrollContainer.value) return;
   const width = scrollContainer.value.clientWidth;
@@ -31,10 +31,18 @@ const scrollToSwipe = (index) => {
     behavior: 'smooth'
   });
 };
+
+const handleClick = (newIndex) => {
+  currentIndex.value = (props.slides.length + newIndex) % props.slides.length;
+  const width = scrollContainer.value.clientWidth;
+  scrollContainer.value.scrollTo({
+    left: currentIndex.value * width,
+    behavior: 'smooth'
+  });
+}
 </script>
 
 <template>
-  <!-- <div class="w-full relative group"> -->
   <div class="w-full relative">
       <div 
           ref="scrollContainer"
@@ -73,6 +81,22 @@ const scrollToSwipe = (index) => {
             />
           </div>
       </div>
+      <div class="absolute inset-y-0 left-2 content-center">
+        <button
+          @click="handleClick(currentIndex - 1)"
+          class="w-4 h-6 transition-all duration-200 bg-gray-500 rounded-r opacity-50"
+        >
+          <
+        </button>
+      </div>
+      <div class="absolute inset-y-0 right-2 content-center">
+        <button
+          @click="handleClick(currentIndex + 1)"
+          class="w-4 h-6 transition-all duration-200 bg-gray-500 rounded-l opacity-50"
+        >
+          >
+        </button>
+      </div>
   </div>
 
 </template>
@@ -82,112 +106,3 @@ const scrollToSwipe = (index) => {
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
-
-<!-- 
-<script setup>
-import { ref } from 'vue';
-import Slide from './Slide.vue';
-
-const props = defineProps({
-  slides: {
-    type: Array,
-    required: true
-  },
-})
-const currentIndex = ref(0)
-
-const changeSlide = (val) => {
-  currentIndex.value = (val + currentIndex.value+ props.slides.length) % props.slides.length;
-}
-
-const testScroll = () => {
-  // FIGURE OUT HOW TO SET A BRIEF CHECK-BACK TIMER
-  // const timer = setTimeout('something?', 300)
-  console.log("scrolling")
-}
-
-</script>
-             -->
-<!--
-ul {
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  width: 100vw;
-
-  height: 300px;
-  padding: 20px;
-  gap: 4vw;
-}
-li {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
-  
-  padding: 20px;
-  list-style-type: none;
-}
--->
-<!-- 
-<template>
-  <div class="w-full relative">
-    <div class="flex overflow-x-scroll snap-x snap-mandatory" @scroll="testScroll">
-      <div class="snap-center shrink-0"
-        v-for="(slide, index) in slides"
-      >
-        <Slide 
-        :slide-data="slide"
-        type="project"
-        />
-      </div>
-    </div>
-    <div class="absolute inset-x-0 bottom-1/10 mx-auto">
-      <div class="mx-auto max-w-2/3 p-0.5 w-fit flex justify-center bg-gray-500/50 rounded-full">
-        <div 
-          class="mx-1"
-          v-for="(_, index) in slides"
-        >
-          <div 
-            class="size-2 bg-white mx-auto rounded-full" 
-            :class="index != currentIndex ? 'bg-white/50' : ''"
-          />
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
-    <div 
-      class="flex transition-transform duration-300 ease-in-out"
-      :style="{ transform: `translateX(-${currentIndex*100}%)`}"
-      >
-      <div 
-        v-for="(slide, index) in slides"
-        :key="index"
-        class="w-full shrink-0 flex items-center justify-center text-center"
-      >
-        <Slide 
-          :slide-data="slide"
-          type="project"
-        />
-      </div>
-    </div>
-    <div class="absolute inset-x-0 bottom-0 h-1/10 mx-auto">
-      <div class="mx-auto max-w-2/3 p-0.5 w-fit flex justify-center bg-gray-500/50 rounded-full">
-        <div 
-          class="mx-1"
-          v-for="(_, index) in slides"
-        >
-          <div 
-            class="size-2 bg-white mx-auto rounded-full" 
-            :class="index != currentIndex ? 'bg-white/50' : ''"
-          />
-        </div>
-      </div>
-    </div>
-    <button class="absolute bottom-5 left-5 mx-6 text-white" @click="changeSlide(-1)">
-      prev
-    </button>
-    <button class="absolute bottom-5 right-5 mx-6 text-white" @click="changeSlide(1)">
-      next
-    </button>
-  </div> -->
-<!-- </template> -->
