@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
-import endorsements from '../assets/data/social-proof.json';
+import endorsements from '../assets/data/endorsements.json';
 import TestCarousel from './components/TestCarousel.vue';
 
 const title = '#'
