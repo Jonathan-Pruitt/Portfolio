@@ -23,7 +23,7 @@ window.addEventListener('scroll', handleScroll)
   <header class="">
     <!-- NAVBAR -->
     <nav 
-      class="z-999 h-24 transition-all duration-150 delay-100 bg-brand fixed top-0 left-0 right-0 text-header"
+      class="z-10 h-24 transition-all duration-150 delay-100 bg-brand fixed top-0 left-0 right-0 text-header"
       :class="isScrolled ? 'scrolled' : ''"
     >
       <div class="flex h-full w-full content-center">

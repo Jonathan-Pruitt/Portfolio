@@ -82,7 +82,7 @@ onMounted(() => {
   <section :id="sectionId">
     <!-- Proficiencies -->
     <h2 class="text-4xl font-black cursor-default">PROFICIENCIES</h2>
-    <div class="m-8">
+    <div class="px-8">
       <div 
         v-if="coreTags.length > 0"
       >

@@ -39,7 +39,7 @@ const props = defineProps({
           >jonathan.s.pruitt@gmail.com</address>
 
           <div class="border-t pt-6 w-full max-w-2xl text-center mb-16 tracking-widest text-brand-muted font-light">
-            <small class="flex justify-self-center items-center ">Built with ADHD <adhd_svg class="mr-2"/> and coffee <coffee_svg/></small>
+            <small class="flex place-content-center items-center">Built with ADHD <adhd_svg class="mr-2"/> and coffee <coffee_svg/></small>
           </div>
         </div>
       </div>

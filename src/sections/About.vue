@@ -47,7 +47,7 @@ const setAboutMeData = () => {
 </script>
 
 <template>
-  <section :id="sectionId" class="bg-linear-to-tr from-blue-200 to-blue-700 pb-1">
+  <section :id="sectionId" class="pb-1">
     <h2 class="text-4xl font-black sm:hidden cursor-default bg-base">WHO I AM</h2>
     <div class="bg-[#6c85a4] border-y-4 border-brand">
       <div 
@@ -65,14 +65,14 @@ const setAboutMeData = () => {
     
     <div class="sm:flex relative w-full">  
       <!-- SECTION HEADER TEXT : VERTICAL -->
-      <div class="absolute sm:static flex flex-col h-full invisible sm:visible mx-8 cursor-default">
+      <div class="absolute sm:static flex flex-col h-full invisible sm:visible ml-8 cursor-default">
         <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-16">WHO</h2>
         <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-8">I</h2>
         <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-8">AM</h2>
       </div>
       
       <!-- COMMAND PROMPT MIMIC -->
-      <div class="mx-8">
+      <div class="mx-auto">
         <div class="bg-black border-gray-200 border w-full pb-8 mx-auto my-16 max-w-4xl shadow-lg shadow-black/50">
           <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
             <img src="../assets/images/cmd-icon.png" class="size-5 place-self-center ml-1 shrink">

@@ -12,7 +12,7 @@ const showDetails = ref(false);
 </script>
 
 <template>
-  <div class="rounded-lg shadow-lg my-8 px-8 py-4 dark:bg-base/10 dark:inset-shadow-sm dark:inset-shadow-gray-500/50">
+  <div class="rounded-lg shadow-lg mt-8 px-8 py-4 dark:bg-base/10 dark:inset-shadow-sm dark:inset-shadow-gray-500/50">
     <h3 class="text-xl font-bold tracking-wider">
       {{ category }}
       <button 
