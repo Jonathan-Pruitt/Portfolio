@@ -51,6 +51,8 @@
         "disclaimer" : "Note: The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
             "javascript",
+            "html",
+            "css",
             "php",
             "mysql",
             "laravel",
@@ -78,16 +80,8 @@
         ],
         "images" : [
             {
-                "path": "https://picsum.photos/id/16/400/400",
-                "altText": "A computer"
-            },
-            {
-                "path": "https://picsum.photos/id/128/400/400",
-                "altText": "A forrested area"
-            },
-            {
-                "path": "https://picsum.photos/id/116/400/400",
-                "altText": "Some old shoe"
+                "path": "src/assets/images/img-projects/hardly/homepage.jpg",
+                "altText": "hardly-work.com -- Website homepage"
             }
         ],
         "links" : {
@@ -146,7 +140,9 @@
         "description" : "A one-week self-educational project built entirely in vanilla JavaScript in an HTML Canvas tag. I bypassed external frameworks to focus on improving my understanding of game creation, core game logic, state management, rendering objects, and player/enemy controls and movement",
         "disclaimer": "Browser Compatability Notice: This tool was developed and last tested March 2023 using Google Chrome (v111). The game might not function on other browsers",
         "techStack" : [
-            "javascript"
+            "html",
+            "css",
+            "backendjs"
         ],
         "tags" : [
             {

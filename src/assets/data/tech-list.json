@@ -1,5 +1,12 @@
 [
     {
+        "id": "backendjs",
+        "title": "JavaScript",
+        "domain": "backend",
+        "iconPath" : "/src/assets/icons/tech/js.svg",
+        "useFrequency" : 3
+    },
+    {
         "id": "csharp",
         "title" :       "C#",
         "domain" :      "backend",

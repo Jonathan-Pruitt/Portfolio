@@ -18,9 +18,11 @@ const handleMaxTechCount = (e) => {
 <template>
   <section :id="sectionId">
     <div class="sm:flex flex-row sm:mx-8">
-      <h2 class="text-5xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4 cursor-default">PROJECTS</h2>
+      <h2 class="text-4xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4 cursor-default">
+        PROJECTS
+      </h2>
       
-      <div class="flex-1 grid gap-4">
+      <div class="flex-1 grid gap-4 my-4">
         
         <!-- PROJECTS LIST -->
         <div v-for="project in projects" class="mt-4 sm:mt-0 flex flex-wrap">
