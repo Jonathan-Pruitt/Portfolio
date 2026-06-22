@@ -48,7 +48,7 @@ const setAboutMeData = () => {
 
 <template>
   <section :id="sectionId" class="bg-linear-to-tr from-blue-200 to-blue-700 pb-1">
-    <h2 class="text-5xl font-black sm:hidden cursor-default bg-base">WHO I AM</h2>
+    <h2 class="text-4xl font-black sm:hidden cursor-default bg-base">WHO I AM</h2>
     <div class="bg-[#6c85a4] border-y-4 border-brand">
       <div 
         class="
@@ -66,9 +66,9 @@ const setAboutMeData = () => {
     <div class="sm:flex relative w-full">  
       <!-- SECTION HEADER TEXT : VERTICAL -->
       <div class="absolute sm:static flex flex-col h-full invisible sm:visible mx-8 cursor-default">
-        <h2 class="text-5xl font-black vertical-text tracking-[-0.30em] mt-16">WHO</h2>
-        <h2 class="text-5xl font-black vertical-text tracking-[-0.30em] mt-8">I</h2>
-        <h2 class="text-5xl font-black vertical-text tracking-[-0.30em] mt-8">AM</h2>
+        <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-16">WHO</h2>
+        <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-8">I</h2>
+        <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-8">AM</h2>
       </div>
       
       <!-- COMMAND PROMPT MIMIC -->
@@ -98,15 +98,6 @@ const setAboutMeData = () => {
             </code>
           </div>
         </div>
-
-        <!-- START OFFICIAL ABOUT ME TEXT -->
-        <!-- <p>I am fullstack software developer with a preference for building functional, scalable backends. From early childhood, my interest in video games, science, and technology got me involved in hobbies where I learned trouble-shooting skills, how to read error messages, and attention to detail. In early 2023, I entered the world of software development by learning the basics of C# while apprenticing under Andrew Stamps at the Mississippi Coding Adademies. Since that time, I have been working on personal and professional projects including games, utility apps, SaaS websites, and entertainment apps.</p>
-
-        <p>I created each of my personal projects to be a challenge I could use to deepen my understanding of a coding language, framework, or concept. While the Catan Companion project expanded my understanding of the interaction between a window's logic and the client's view, the Slasher game introduced me to game creation, programatically rendering and orienting objects in 2d, and core game logic, and the ASCII Dreaming project strengthened my appreciation for data manipulation by showing how binary data can be interpreted and represented in many forms. My professional work with Hardly has provided me with invaluable experience in ORM, component-lead architecture, client-lead project work, and scalable, dynamic solutions to novel problems. I am particularly proud of my development and deployment of the upgraded 'Interview Practice Tool' where I implemented asynchronous web flows and audio/video transcription to create real-time feedback to users regarding the efficacy of their interview responses.</p>
-
-        <p>I've found that I do my best work when I have easy access to a supportive team and mentor. I love hearing the ideas of others, presenting my own ideas and findings, incorporating feedback into my work, and building awesome projects through individual and collaborative efforts. I am excited to bring my passion and experience with me to a team with a similar zeal for excellence.</p> -->
-        <!-- END OFFICIAL ABOUT ME TEXT -->
-
       </div>
     </div>
   </section>
