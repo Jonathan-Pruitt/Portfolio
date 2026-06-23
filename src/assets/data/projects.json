@@ -47,7 +47,7 @@
     {
         "title" : "Hardly",
         "iconPath" : "src/assets/icons/hardly-icon.webp",
-        "description" : "Hardly is a business-to-business SaaS platform that provides job-seekers and career coaches with organizational and generative tools to improve their effectiveness in a difficult market.",
+        "description" : "Developed 4 full features and added functionality to many other existing web-features. My contributions include: Audio Transciption (ripping the audio from video and storing the transcription as text), Email Generator (generating a professional email from a few user entries), Resume Templates (allows a user to save a template of their resume for re-use), and User Tasks (a task management system that lets users and coaches assign and disposition tasks.)",
         "disclaimer" : "Note: The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
             "javascript",
@@ -188,10 +188,7 @@
             }
         ],
         "links" : {
-            "sample": {
-                "link": "https://jonathan-pruitt.github.io/SLASHER/",
-                "text": "Play SLASHER"
-            },
+            "sample": "https://jonathan-pruitt.github.io/SLASHER/",
             "repo": "https://github.com/Jonathan-Pruitt/SLASHER"
         }
     }

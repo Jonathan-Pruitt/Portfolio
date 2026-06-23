@@ -171,6 +171,32 @@ onMounted(() => {
                     </li>
                 </ul>
             </div>
+            <!-- ROW 4 -->
+            <div class="col-span-full flex flex-row-reverse gap-2">
+              <div 
+                v-if="project.links.sample"
+                class="bg-peak rounded-lg hover:brightness-90 transition-all"
+              >                
+                <a 
+                  :href="project.links.sample"
+                  class="px-4 py-2"
+                >
+                  Check it out!
+                </a>
+              </div>
+              <div 
+                v-if="project.links.repo"
+                class="bg-peak rounded-lg hover:brightness-90 transition-all"
+              >                
+                <a 
+                  :href="project.links.repo"
+                  class="px-4 py-2"
+                >
+                  See the code
+                </a>
+              </div>
+            </div>
+            <!-- ROW 5 -->
             <div 
                 v-if="project.disclaimer"
                 class="col-span-full"
