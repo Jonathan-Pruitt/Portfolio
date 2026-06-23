@@ -100,7 +100,7 @@
     {
         "title" : "ASCII Dreaming",
         "iconPath" : "src/assets/icons/logo.png",
-        "description" : "Convert an image from pixels to ASCII art",
+        "description" : "This was one of my first explorations with WPF and XAML. The program reads in a jpg as pixel data, normalizes pixel clusters, then generates an ASCII representation of the provided image. Higher resolution images result in a longer processing time (since I created this application before I had learned how to implement async processes in C#)",
         "techStack" : [
             "csharp",
             "xaml",
@@ -139,7 +139,7 @@
         ],
         "links" : {
             "sample": "",
-            "repo": ""
+            "repo": "https://github.com/Jonathan-Pruitt/ASCII_Dreaming"
         }
     },
     {

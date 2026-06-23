@@ -172,6 +172,18 @@ onMounted(() => {
                 </ul>
             </div>
             <!-- ROW 4 -->
+            <div 
+                v-if="project.disclaimer"
+                class="col-span-full"
+            >
+                <p 
+                    class="text-xs text-gray-500/60 italic my-2"
+                    :class="project.disclaimer ? 'mb-4' : ''"
+                >
+                    {{ project.disclaimer ?? '' }}
+                </p>
+            </div>
+            <!-- ROW 5 -->
             <div class="col-span-full flex flex-row-reverse gap-2">
               <div 
                 v-if="project.links.sample"
@@ -195,18 +207,6 @@ onMounted(() => {
                   See the code
                 </a>
               </div>
-            </div>
-            <!-- ROW 5 -->
-            <div 
-                v-if="project.disclaimer"
-                class="col-span-full"
-            >
-                <p 
-                    class="text-xs text-gray-500/60 italic my-2"
-                    :class="project.disclaimer ? 'mb-4' : ''"
-                >
-                    {{ project.disclaimer ?? '' }}
-                </p>
             </div>
         </div>
     </div>
