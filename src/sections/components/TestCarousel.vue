@@ -21,6 +21,7 @@ const handleScroll = (e) => {
 
 // Allows dot indicators to scroll the carousel into view
 const scrollToSwipe = (index) => {
+  console.log('something')
   if (!scrollContainer.value) return;
   const width = scrollContainer.value.clientWidth;
   scrollContainer.value.scrollTo({
@@ -28,40 +29,48 @@ const scrollToSwipe = (index) => {
     behavior: 'smooth'
   });
 };
+
+const handleClick = (newIndex) => {
+  currentIndex.value = (props.cards.length + newIndex) % props.cards.length;
+  const width = scrollContainer.value.clientWidth;
+  scrollContainer.value.scrollTo({
+    left: currentIndex.value * width,
+    behavior: 'smooth'
+  });
+}
 </script>
 
 <template>
   <div class="w-full relative">
-    <div class="">
-
-      <ul 
-        v-if="type == 'projects'"
-        ref="scrollContainer"
-        @scroll="handleScroll"
-        class="flex overflow-x-scroll snap-x snap-mandatory no-scrollbar scroll-smooth scrollbar-none"
+    <!-- <ul 
+      v-if="type == 'projects'"
+      ref="scrollContainer"
+      @scroll="handleScroll"
+      class="flex overflow-x-scroll snap-x snap-mandatory no-scrollbar scroll-smooth scrollbar-none"
+    >
+      <li
+        v-for="card in cards"
+        class=""
       >
-        <li
-          v-for="card in cards"
-          class=""
-        >
-          <ProjectSlide :slide-data="{
-              path: 'https://picsum.photos/id/64/400/400',
-              altText: 'A computer'
-          }"/>
-        </li>
-      </ul>
-      <ul 
-        v-if="type == 'endorsements'"
-        class="flex overflow-x-scroll snap-x snap-mandatory"
+        <ProjectSlide :slide-data="{
+            path: 'https://picsum.photos/id/64/400/400',
+            altText: 'A computer'
+        }"/>
+      </li>
+    </ul> -->
+    <ul 
+      v-if="type == 'endorsements'"
+      ref="scrollContainer"
+      class="flex overflow-x-scroll snap-x snap-mandatory"
+      @scroll="handleScroll"
+    >
+      <li
+        v-for="card in cards"
+        class=""
       >
-        <li
-          v-for="card in cards"
-          class=""
-        >
-          <EndorsementSlide :card-data="card"/>
-        </li>
-      </ul>
-    </div>
+        <EndorsementSlide :card-data="card"/>
+      </li>
+    </ul>
     <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
       <div class="rounded-lg px-1 flex gap-2 bg-gray-500/50">
         <button
@@ -73,6 +82,22 @@ const scrollToSwipe = (index) => {
         />
       </div>
     </div>
+    <div class="absolute inset-y-0 left-0 content-center w-1/15 max-w-6 min-w-2">
+        <button
+          @click="handleClick(currentIndex - 1)"
+          class="w-full h-1/5 transition-all duration-200 rounded-r border-black border border-l-0 bg-linear-to-l from-transparent to-gray-500 opacity-30 hover:opacity-5s0"
+        >
+          <
+        </button>
+      </div>
+      <div class="absolute inset-y-0 right-0 content-center w-1/15 max-w-6 min-w-2">
+        <button
+          @click="handleClick(currentIndex + 1)"
+          class="w-full h-1/5 transition-all duration-200 rounded-l border-black border border-r-0 bg-linear-to-r from-transparent to-gray-500 opacity-30 hover:opacity-5s0"
+        >
+          >
+        </button>
+      </div>
   </div>
 </template>
 

@@ -9,12 +9,12 @@ const props = defineProps({
 
 <template>
   <div 
-    class="px-2"
+    class="w-full"
   >
     <img 
       :src="slideData.path" 
       :alt="slideData.altText"
-      class="object-cover rounded-lg"
+      class="object-cover rounded-lg w-100"
     >
   </div>
 </template>

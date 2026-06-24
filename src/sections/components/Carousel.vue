@@ -56,9 +56,36 @@ const handleClick = (newIndex) => {
           >
             <div 
               v-if="type == 'projects'"
-              class=""
+              class="relative"
             >
               <ProjectSlide :slide-data="slide"/>
+              <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
+                <div class="rounded-lg px-1 flex gap-2 bg-gray-500/50">
+                  <button
+                    v-for="(_, index) in slides"
+                    :key="index"
+                    @click="scrollToSwipe(index)"
+                    class="w-2 h-2 rounded-full transition-all duration-200"
+                    :class="index === currentIndex ? 'bg-white' : 'bg-white/50'"
+                  />
+                </div>
+              </div>
+              <div class="absolute inset-y-0 left-0 content-center w-1/15">
+                <button
+                  @click="handleClick(currentIndex - 1)"
+                  class="w-full h-1/5 transition-all duration-200 rounded-r border-black border border-l-0 bg-linear-to-r from-transparent to-white opacity-50 hover:opacity-95"
+                >
+                  <
+                </button>
+              </div>
+              <div class="absolute inset-y-0 right-0 content-center w-1/15">
+                <button
+                  @click="handleClick(currentIndex + 1)"
+                  class="w-full h-1/5 transition-all duration-200 rounded-l border-black border border-r-0 bg-linear-to-r from-transparent to-white opacity-50 hover:opacity-95"
+                >
+                  >
+                </button>
+              </div>
             </div>
             <div 
               v-if="type == 'socials'"
@@ -70,33 +97,33 @@ const handleClick = (newIndex) => {
             </div>
           </div>
       </div>
-      <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
-          <div class="rounded-lg px-1 flex gap-2 bg-gray-500/50">
-            <button
-              v-for="(_, index) in slides"
-              :key="index"
-              @click="scrollToSwipe(index)"
-              class="w-2 h-2 rounded-full transition-all duration-200"
-              :class="index === currentIndex ? 'bg-white' : 'bg-white/50'"
-            />
-          </div>
+      <!-- <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
+        <div class="rounded-lg px-1 flex gap-2 bg-gray-500/50">
+          <button
+            v-for="(_, index) in slides"
+            :key="index"
+            @click="scrollToSwipe(index)"
+            class="w-2 h-2 rounded-full transition-all duration-200"
+            :class="index === currentIndex ? 'bg-white' : 'bg-white/50'"
+          />
+        </div>
       </div>
-      <div class="absolute inset-y-0 left-2 content-center">
+      <div class="absolute inset-y-0 left-0 content-center w-1/15">
         <button
           @click="handleClick(currentIndex - 1)"
-          class="w-4 h-6 transition-all duration-200 bg-gray-500 rounded-r opacity-50"
+          class="w-full h-1/5 transition-all duration-200 rounded-r border-black border border-l-0 bg-linear-to-r from-transparent to-white opacity-50 hover:opacity-95"
         >
           <
         </button>
       </div>
-      <div class="absolute inset-y-0 right-2 content-center">
+      <div class="absolute inset-y-0 right-0 content-center w-1/15">
         <button
           @click="handleClick(currentIndex + 1)"
-          class="w-4 h-6 transition-all duration-200 bg-gray-500 rounded-l opacity-50"
+          class="w-full h-1/5 transition-all duration-200 rounded-l border-black border border-r-0 bg-linear-to-r from-transparent to-white opacity-50 hover:opacity-95"
         >
           >
         </button>
-      </div>
+      </div> -->
   </div>
 
 </template>

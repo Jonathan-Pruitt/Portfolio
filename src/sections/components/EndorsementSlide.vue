@@ -30,7 +30,7 @@ onMounted(() => {
 
 <template>
   <div 
-    class="w-full grid grid-rows-[auto_auto] sm:grid-rows-2 p-4 dark:bg-linear-to-b dark:from-flat dark:via-brand/40 dark:via-25% dark:to-flat rounded-lg"
+    class="w-full grid grid-rows-[auto_auto] sm:grid-rows-2 p-4"
   >
     <div class="flex">
       <div class="sm:flex gap-4">
@@ -40,9 +40,26 @@ onMounted(() => {
           >
         </div>
         <div class="shrink">
-          <h3 class="text-lg font-semibold">{{ cardData.name }}</h3>
-          <h4 class="brightness-80 font-medium">{{ cardData["current-role"].title }}</h4>
-          <h4 class="brightness-80 font-medium">{{ cardData["current-role"].organization }}</h4>
+          <h3 
+            class="text-lg font-semibold"
+          >
+            {{ cardData.name }}
+          </h3>
+          <h4 
+            class="brightness-80 font-medium"
+          >
+            {{ cardData["current-role"].title }}
+          </h4>
+          <h4 
+            class="brightness-80 font-medium"
+          >
+            {{ cardData["current-role"].organization }}
+          </h4>
+          <h5 
+            class="text-gray-600 font-light"
+          >
+            {{ cardData.relationship }}
+          </h5>
         </div>
 
       </div>
@@ -56,14 +73,25 @@ onMounted(() => {
       <em class="text-subtle text-xs">Click to read the full context</em>
     </div>
   </div>
+
+  <!-- MODAL TO DISPLAY ENDORSEMENT FULLTEXT -->
   <Modal :show="showFullText" @close="showFullText = false">
     <template #title>
-
-      <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">{{ cardData.name }}</h2>
+      <div class="sm:flex">
+        <img 
+          :src="cardData.image.path" 
+          :alt="altText"
+          class="rounded-lg size-32 shrink-0"
+        >
+        <div class="">
+          <h2 class="font-bold">{{ cardData.name }}</h2>
+          <h3 class="font-medium"><strong>{{ cardData['current-role'].title }}</strong> @ {{ cardData['current-role'].organization }}</h3>
+        </div>
+      </div>
     </template>
     <template #content>
       <div class="border-t border-subtle">
-        <p class="tracking-wide text-justify full-text" v-html="fullText"/>
+        <p class="tracking-wide sm:text-justify full-text" v-html="fullText"/>
       </div>
     </template>
   </Modal>
