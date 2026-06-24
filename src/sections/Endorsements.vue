@@ -32,7 +32,11 @@ onMounted(() => {
 
 <template>
     <section :id="sectionId">
-      <h2 class="text-4xl font-black cursor-default">ENDORSEMENTS</h2>
-      <TestCarousel type="endorsements" :cards="shuffledEndorsements"/>
+      <div class="pb-4">
+        <h2 class="text-4xl font-black cursor-default">ENDORSEMENTS</h2>
+        <div class="my-8 mx-4 shadow-tag/30 shadow-xs dark:bg-linear-to-b dark:from-flat dark:via-brand/30 dark:via-25% dark:to-flat rounded-lg">
+          <TestCarousel type="endorsements" :cards="shuffledEndorsements"/>
+        </div>
+      </div>
     </section>
 </template>

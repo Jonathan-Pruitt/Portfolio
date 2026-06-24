@@ -18,6 +18,7 @@
             "path": "/src/assets/images/img-endorsements/m-valencia.jpg",
             "altText": ""
         },
+        "relationship": "Co-worker",
         "_recommendation-source": "LinkedIn"
     },
     {
@@ -38,6 +39,7 @@
             "path": "/src/assets/images/img-endorsements/s-dedaux.jpg",
             "altText": ""
         },
+        "relationship": "Instructee",
         "_recommendation-source": "LinkedIn"
     },
     {
@@ -60,6 +62,7 @@
             "path": "/src/assets/images/img-endorsements/h-brewster.jpeg",
             "altText": ""
         },
+        "relationship": "Co-worker",
         "_recommendation-source": "LinkedIn"
     },
     {
@@ -78,9 +81,10 @@
             ]
         },
         "image": {
-            "path": "/src/assets/images/img-endorsements/no-avatar.svg",
+            "path": "/src/assets/images/img-endorsements/a-braund-harris.jpeg",
             "altText": ""
         },
+        "relationship": "Supervisor",
         "_recommendation-source": "LinkedIn"
     },
     {
@@ -99,9 +103,10 @@
             ]
         },
         "image": {
-            "path": "/src/assets/images/img-endorsements/no-avatar.svg",
+            "path": "/src/assets/images/img-endorsements/r-harris.jpeg",
             "altText": ""
         },
+        "relationship": "Mentor/Supervisor",
         "_recommendation-source": "LinkdedIn"
     }
 ]
