@@ -9,7 +9,7 @@ onUnmounted(() => window.removeEventListener('resize', updateWidth))
 </script>
 
 <template>
-    <span class="fixed top-5 left-5 z-[9999] bg-black text-white text-lg p-2">
+    <span class="fixed top-5 left-5 z-[9999] bg-black text-white text-lg p-2 opacity-40 font-bold hover:opacity-100 cursor-default">
         <span class="">{{ width }}px | </span>
         <span class="sm:hidden">xs</span>
         <span class="hidden sm:inline md:hidden">sm</span>

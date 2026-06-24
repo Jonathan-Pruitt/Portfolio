@@ -47,19 +47,19 @@ const ICON_COLORS = {
     <div 
         :class="iconColor"
         :title="text || 'icon'"
-        class=""
+        class="w-full h-full"
     >
         <component 
-            :is="svgTags[tag.iconPath ?? '']" 
-            :class="tag.iconPath ? '' : 'hidden'"
-            class="size-6 sm:size-8 md:size-10 lg:size-12 rounded-lg bg-base/25 mx-auto"
-        />
-        <h5 
-            class="text-xs font-semibold my-auto px-2 py-1 rounded-lg inset-ring-2 text-center hidden md:block mx-auto"
-            :class="color"
+          :is="svgTags[tag.iconPath ?? '']" 
+          :class="tag.iconPath ? '' : 'hidden'"
+          class="w-full h-full"
+          />
+          <!-- class="size-6 sm:size-8 md:size-10 lg:size-12 rounded-lg bg-base/25 mx-auto" -->
+        <!-- <h5 
+          class="text-xs font-semibold my-auto px-2 py-1 rounded-lg inset-ring-2 text-center mx-auto"
+          :class="color"
         >
-        {{ text }}
-    
-        </h5>
+          {{ text }}
+        </h5> -->
     </div>
 </template>

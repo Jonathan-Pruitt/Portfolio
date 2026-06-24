@@ -81,8 +81,21 @@ onMounted(() => {
 <template>
   <section :id="sectionId">
     <!-- Proficiencies -->
-    <h2 class="text-4xl font-black cursor-default">PROFICIENCIES</h2>
-    <div class="px-8">
+     <div class="sm:ml-16">
+      <h2 class="text-4xl sm:text-6xl font-black cursor-default">PROFICIENCIES</h2>
+      <p 
+        class="pt-8 md:text-xl"
+      >
+        Let's break down my 
+        <strong>tools</strong>
+        and how
+        <strong>frequently</strong>
+        I use them
+      </p>
+    </div>
+    <div 
+    class="px-4 pb-12 mx-auto sm:w-xl"
+    >
       <div 
         v-if="coreTags.length > 0"
       >

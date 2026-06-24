@@ -17,22 +17,28 @@ const handleMaxTechCount = (e) => {
 
 <template>
   <section :id="sectionId">
-    <div class="sm:flex flex-row sm:mx-8">
-      <h2 class="text-4xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4 cursor-default">
-        PROJECTS
-      </h2>
+    <h2 class="text-4xl sm:text-6xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4 cursor-default sm:absolute">
+      PROJECTS
+    </h2>
+    <div class="max-w-3xl mx-auto sm:flex pb-12 sm:px-24">
       
-      <div class="flex-1 grid gap-4 my-4">
-        
-        <!-- PROJECTS LIST -->
-        <div v-for="project in projects" class="mt-4 sm:mt-0 flex flex-wrap">
-          <ProjectItem 
-            :project="project" 
-            :max-tech-items="maxTechItems"
-            @update-max-tech="handleMaxTechCount"
-          />
-          <!-- ALL OF THE PROJECT STUFF GOES HERE -->
-          <!-- ALL OF THE PROJECT STUFF GOES HERE -->
+      <div class="mx-auto my-4">
+        <p 
+          class="pt-4 sm:pt-0 md:text-xl"
+        >
+          Check out some of the 
+          <strong>projects</strong>
+          I've worked on
+        </p>
+        <div class="min-w-2xs">
+          <!-- PROJECTS LIST -->
+          <div v-for="project in projects" class="">
+            <ProjectItem 
+              :project="project" 
+              :max-tech-items="maxTechItems"
+              @update-max-tech="handleMaxTechCount"
+            />
+          </div>
         </div>
       </div>
     </div>

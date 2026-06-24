@@ -1,5 +1,6 @@
 <script setup>
 import { computed, onMounted, onUnmounted, watch } from "vue";
+import exit_svg from "/src/assets/icons/exit.svg?component"
 
 const props = defineProps({
   show: {
@@ -121,9 +122,9 @@ const maxWidthClass = computed(() => {
                   <button
                     v-if="closeable"
                     @click="close"
-                    class="px-2 py-1 text-sm md:text-lg bg-gray-400/60 rounded-lg"
+                    class="p-1 text-sm md:text-lg bg-subtle rounded-lg absolute top-2 right-2 cursor-pointer"
                   >
-                    Close
+                    <exit_svg/>
                   </button>
                 </div>
 

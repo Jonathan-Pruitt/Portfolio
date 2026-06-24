@@ -39,21 +39,21 @@ const navList = [
     <!-- rescue -- cool dropping things go here  -->
     <!-- probably best bet to use 'hue-rotate' combined with 'mask' to play with colors -->
     <main>
-      <!-- <Debug /> -->
+      <Debug />
       <Hero 
         section-id="home"
-        class="box-content"
+        class=""
       />
       <Proficiencies 
-        class="border-l-4 border-yellow-200/75"
+        class="border-l-4 sm:border-l-16 md:border-l-24 border-yellow-200/75"
         :section-id="navList[0].title"
       />
       <Projects 
-        class="border-l-4 border-blue-200/75"
+        class="border-l-4 sm:border-l-16 md:border-l-24 border-blue-200/75"
         :section-id="navList[1].title"
       />
       <Endorsements 
-        class="border-l-4 border-red-200/75"
+        class="border-l-4 sm:border-l-16 md:border-l-24 border-red-200/75"
         :section-id="navList[2].title"
       />
       <About 
