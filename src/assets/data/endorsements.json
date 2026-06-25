@@ -15,7 +15,7 @@
             ]
         },
         "image": {
-            "path": "/src/assets/images/img-endorsements/m-valencia.jpg",
+            "path": "/images/img-endorsements/m-valencia.jpg",
             "altText": ""
         },
         "relationship": "Co-worker",
@@ -36,7 +36,7 @@
             ]
         },
         "image": {
-            "path": "/src/assets/images/img-endorsements/s-dedaux.jpg",
+            "path": "/images/img-endorsements/s-dedaux.jpg",
             "altText": ""
         },
         "relationship": "Instructee",
@@ -59,7 +59,7 @@
             ]
         },
         "image": {
-            "path": "/src/assets/images/img-endorsements/h-brewster.jpeg",
+            "path": "/images/img-endorsements/h-brewster.jpeg",
             "altText": ""
         },
         "relationship": "Co-worker",
@@ -81,7 +81,7 @@
             ]
         },
         "image": {
-            "path": "/src/assets/images/img-endorsements/a-braund-harris.jpeg",
+            "path": "/images/img-endorsements/a-braund-harris.jpeg",
             "altText": ""
         },
         "relationship": "Supervisor",
@@ -103,7 +103,7 @@
             ]
         },
         "image": {
-            "path": "/src/assets/images/img-endorsements/r-harris.jpeg",
+            "path": "/images/img-endorsements/r-harris.jpeg",
             "altText": ""
         },
         "relationship": "Mentor/Supervisor",

@@ -80,19 +80,19 @@
         ],
         "images" : [
             {
-                "path": "/src/assets/images/img-projects/ascii/woman-compare.jpg",
+                "path": "/images/img-projects/ascii/woman-compare.jpg",
                 "altText": "Text and Image Comparison - ASCII Dreaming"
             },
             {
-                "path": "/src/assets/images/img-projects/ascii/dog-compare.jpg",
+                "path": "/images/img-projects/ascii/dog-compare.jpg",
                 "altText": "Dog Image with ASCII Slice - ASCII Dreaming"
             },
             {
-                "path": "/src/assets/images/img-projects/ascii/lighthouse-compare.jpg",
+                "path": "/images/img-projects/ascii/lighthouse-compare.jpg",
                 "altText": "Actual Size Comparison - ASCII Dreaming"
             },
             {
-                "path": "/src/assets/images/img-projects/ascii/in-action.png",
+                "path": "/images/img-projects/ascii/in-action.png",
                 "altText": "App Main Screen - ASCII Dreaming"
             }
         ],
@@ -179,19 +179,19 @@
         ],
         "images" : [
             {
-                "path": "/src/assets/images/img-projects/catan/setup.jpg",
+                "path": "/images/img-projects/catan/setup.jpg",
                 "altText": "Setup Screen - Catan Companion"
             },
             {
-                "path": "/src/assets/images/img-projects/catan/midgame.jpg",
+                "path": "/images/img-projects/catan/midgame.jpg",
                 "altText": "Main Screen - Catan Companion"
             },
             {
-                "path": "/src/assets/images/img-projects/catan/midgame2.jpg",
+                "path": "/images/img-projects/catan/midgame2.jpg",
                 "altText": "After a Dice Roll - Catan Companion"
             },
             {
-                "path": "/src/assets/images/img-projects/catan/endgame.jpg",
+                "path": "/images/img-projects/catan/endgame.jpg",
                 "altText": "Results Screen - Catan Companion"
             }
         ],
