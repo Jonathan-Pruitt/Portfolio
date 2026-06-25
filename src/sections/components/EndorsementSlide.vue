@@ -30,8 +30,11 @@ onMounted(() => {
 
 <template>
   <div 
-    class="h-full bg-peak p-8"
+    class="h-full p-8 rounded-lg"
   >
+  <!-- <div 
+    class="h-full p-8"
+  > -->
     <div class="sm:flex gap-4 ml-4 sm:items-center md:ml-8 md:mt-8">
       <div class="shrink">
         <img :src="cardData.image.path" :alt="altText"

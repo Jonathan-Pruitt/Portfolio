@@ -1,5 +1,6 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue';
+import { TextFormatService } from '../../services/TextFormatService.js';
 import Carousel from './Carousel.vue';
 import Modal from '../partials/Modal.vue';
 import ProjectTagList from '../partials/ProjectTagList.vue';
@@ -16,6 +17,7 @@ const props = defineProps({
 const emit = defineEmits(['update-max-tech'])
 const project = ref(props.project);
 const techTags = ref([]);
+const description = TextFormatService.insertRichText(props.project.description);
 const showDisclaimer = ref(false);
 const showDetails = ref(false);
 
@@ -102,7 +104,7 @@ onMounted(() => {
         </a>
       </div>
       
-      <div class="md:grid md:grid-cols-5 md:gap-4">
+      <div class="md:grid md:grid-cols-5 md:gap-4 mt-2 md:mt-4">
 
         <div class="md:col-span-3">
           <!-- Carousel -->
@@ -118,7 +120,10 @@ onMounted(() => {
         @click="showDetails = true"
         >
           <!-- Description -->
-          <p class="font-light text-sm md:text-lg line-clamp-13">{{ project.description }}{{ project.disclaimer ? '*' : '' }}</p>
+          <p 
+          v-html="description"
+          class="font-light text-sm md:text-lg line-clamp-13" 
+          />
         </div>
         
         <div class="md:col-span-2">
@@ -173,7 +178,7 @@ onMounted(() => {
         <div class="md:col-span-2 md:col-start-4">
           <!-- Descriptive Tags -->
           <div class="my-4">
-            <div class="w-2/5 flex mx-auto justify-center border-b border-brand-muted">
+            <div class="w-3/5 flex mx-auto justify-center border-b border-brand-muted">
               <tagSvg class="size-6 sm:size-8 fill-body/75" />
               <h4 class="text-body/75 sm:text-2xl">Tags</h4>
             </div>
@@ -208,7 +213,7 @@ onMounted(() => {
                 :href="project.links.sample"
                  target="_blank" 
               >
-                Try it
+                Product View
               </a>
             </div>
             <div 
@@ -272,9 +277,7 @@ onMounted(() => {
       <h3 class="text-lg md:text-2xl font-semibold text-body">
         Description
       </h3>
-      <p class="md:text-xl">
-        {{ project.description }}
-      </p>
+      <p v-html="description" class="md:text-xl" />
       <div class="mt-4 flex place-content-center gap-x-4">
         <div 
           v-if="project.links.sample"
@@ -284,7 +287,7 @@ onMounted(() => {
             :href="project.links.sample"
               target="_blank" 
           >
-            Try it out
+            Product View
           </a>
         </div>
         <div 
@@ -295,7 +298,7 @@ onMounted(() => {
             :href="project.links.repo"
               target="_blank" 
           >
-            See the code
+            See the Codebase
           </a>
         </div>
 
@@ -303,3 +306,14 @@ onMounted(() => {
     </template>
   </Modal>
 </template>
+
+<style scoped>
+@reference 'tailwindcss';
+  :deep(p strong) {
+    color: var(--color-brand);
+    @apply text-base md:text-xl font-bold;
+  }
+  :deep(ul) {
+    @apply list-decimal list-inside ml-4
+  }
+</style>

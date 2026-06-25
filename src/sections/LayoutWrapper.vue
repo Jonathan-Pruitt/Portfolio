@@ -45,19 +45,20 @@ const navList = [
         class=""
       />
       <Proficiencies 
-        class="border-l-4 sm:border-l-16 md:border-l-24 border-yellow-200/75"
-        :section-id="navList[0].title"
+      class="sm:pb-24 border-l-4 sm:border-l-16 md:border-l-24 border-yellow-200/75"
+      :section-id="navList[0].title"
       />
       <Projects 
-        class="border-l-4 sm:border-l-16 md:border-l-24 border-blue-200/75"
-        :section-id="navList[1].title"
+      class="sm:pb-24 border-l-4 sm:border-l-16 md:border-l-24 border-blue-200/75"
+      :section-id="navList[1].title"
       />
       <Endorsements 
-        class="border-l-4 sm:border-l-16 md:border-l-24 border-red-200/75"
-        :section-id="navList[2].title"
+      class="sm:pb-24 border-l-4 sm:border-l-16 md:border-l-24 border-red-200/75"
+      :section-id="navList[2].title"
       />
       <About 
-        :section-id="navList[3].title"
+      class="sm:pb-16"
+      :section-id="navList[3].title"
       />
     </main>
   <Footer 

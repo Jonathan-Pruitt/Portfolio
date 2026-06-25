@@ -52,7 +52,7 @@ const showDetails = ref(false);
             />
           </div>
           <div class="dark:border-none border-subtle">
-            <h5 class="text-sm sm:text-md md:text-lg text-brand-muted/80  font-semibold tracking-tight">{{ tag.title }}</h5>
+            <h5 class="text-sm sm:text-md md:text-lg text-brand-muted font-semibold tracking-tight">{{ tag.title }}</h5>
             <p  class="text-xs sm:text-sm text-content font-light">{{ tag.useFrequency }}</p>
           </div>
         </div>

@@ -43,9 +43,21 @@ onMounted(() => {
             about my
             <strong>work ethic</strong>
           </p>
+          <p class="text-sm md:text-lg text-subtle">
+            <em>
+              All endorsements are visible on my
+              <a 
+              href="https://linkedin.com/in/jonathan-pruitt-developer" 
+              target="_blank"
+              class="underline text-brand-muted"
+              >
+                LinkedIn
+              </a>
+            </em>
+          </p>
         </div>
-        <div class="max-w-3xl mx-auto">
-          <div class="my-8 shadow-tag/30 shadow-xs dark:bg-linear-to-b dark:from-flat dark:via-brand/15 dark:via-25% dark:to-flat rounded-lg">
+        <div class="max-w-3xl min-w-2xs mx-auto">
+          <div class="my-8 mx-4 shadow-lg dark:bg-linear-to-b dark:from-flat dark:via-brand/15 dark:via-25% dark:to-flat rounded-lg">
             <TestCarousel type="endorsements" :cards="shuffledEndorsements"/>
           </div>
         </div>
