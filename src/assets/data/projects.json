@@ -1,54 +1,9 @@
 [
     {
-        "title" : "Catan Companion",
-        "iconPath" : "src/assets/icons/logo.png",
-        "description" : "From initial setup to the moment of final victory, Catan Companion keeps track of the various dice rolls, settlements, and other data generated during a game of Settlers of Catan.",
-        "techStack" : [
-            "csharp",
-            "xaml",
-            "wpf"
-        ],
-        "tags" : [
-            {
-                "textIndicator" : "personal",
-                "colorIndicator" : "personal",
-                "iconPath" : "/src/assets/icons/tags/personal.svg"
-            },
-            {
-                "textIndicator" : "entertain&shy;ment",
-                "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
-            },
-            {
-                "textIndicator" : "utility",
-                "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/utility.svg"
-            }
-        ],
-        "images" : [
-            {
-                "path": "https://picsum.photos/id/6/400/400",
-                "altText": "A computer"
-            },
-            {
-                "path": "https://picsum.photos/id/28/400/400",
-                "altText": "A forrested area"
-            },
-            {
-                "path": "https://picsum.photos/id/16/400/400",
-                "altText": "Some old shoe"
-            }
-        ],
-        "links" : {
-            "sample": "https://github.com/Jonathan-Pruitt/Catan-Data-Tracker/releases/tag/v1.0.0-rc1",
-            "repo": "https://github.com/Jonathan-Pruitt/Catan-Data-Tracker"
-        }
-    },
-    {
         "title" : "Hardly",
         "iconPath" : "src/assets/icons/hardly-icon.webp",
-        "description" : "Developed 4 full features and added functionality to many other existing web-features. My contributions include: Audio Transciption (ripping the audio from video and storing the transcription as text), Email Generator (generating a professional email from a few user entries), Resume Templates (allows a user to save a template of their resume for re-use), and User Tasks (a task management system that lets users and coaches assign and disposition tasks.)",
-        "disclaimer" : "Note: The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
+        "description" : "Focused on architecting and delivering these four high-impact, standalone features in response to client requests: <ul><li>$*Interview Practice Auto-Transcription$</li><li>$*Email Generator$</li><li>$*Resume Templates$</li><li>$*Task Manager$</li></ul>Upgraded the $*Interview Practice$ tool by building an async pipeline using FFmpeg and Whisper to extract and transcribe audio for instant AI-coaching feedback, drastically reducing turnaround times. Developed the $*Email Generator$ from scratch, leveraging AI prompt engineering and <code>:mailto</code> protocols to facilitate professional email generation and delivery with minimal necessary input. Designed and deployed the $*Resume Template$ feature to eliminate the repetetive administrative task of creating multiple individual Resumes in cases where client profiles shared commonality. And developed the $*User Tasks$ management system, which allows for the creation of custom tasks and additionally uses automation to update and close out certain predefined tasks",
+        "disclaimer" : "The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
             "javascript",
             "html",
@@ -100,7 +55,7 @@
     {
         "title" : "ASCII Dreaming",
         "iconPath" : "src/assets/icons/logo.png",
-        "description" : "This was one of my first explorations with WPF and XAML. The program reads in a jpg as pixel data, normalizes pixel clusters, then generates an ASCII representation of the provided image. Higher resolution images result in a longer processing time (since I created this application before I had learned how to implement async processes in C#)",
+        "description" : "This was one of my first explorations with $*WPF$ and $*XAML$. The program reads in a jpg image's pixel data, normalizes pixel clusters, then $*generates an ASCII$ representation of the provided image. <br/>Higher resolution images result in a longer processing time $%(I created this application before I learned how to implement async processes in C#)$",
         "techStack" : [
             "csharp",
             "xaml",
@@ -125,16 +80,20 @@
         ],
         "images" : [
             {
-                "path": "https://picsum.photos/id/64/400/400",
-                "altText": "A computer"
+                "path": "/src/assets/images/img-projects/ascii/woman-compare.jpg",
+                "altText": "Text and Image Comparison - ASCII Dreaming"
             },
             {
-                "path": "https://picsum.photos/id/45/400/400",
-                "altText": "A forrested area"
+                "path": "/src/assets/images/img-projects/ascii/dog-compare.jpg",
+                "altText": "Dog Image with ASCII Slice - ASCII Dreaming"
             },
             {
-                "path": "https://picsum.photos/id/5/400/400",
-                "altText": "Some old shoe"
+                "path": "/src/assets/images/img-projects/ascii/lighthouse-compare.jpg",
+                "altText": "Actual Size Comparison - ASCII Dreaming"
+            },
+            {
+                "path": "/src/assets/images/img-projects/ascii/in-action.png",
+                "altText": "App Main Screen - ASCII Dreaming"
             }
         ],
         "links" : {
@@ -145,7 +104,7 @@
     {
         "title" : "Slasher",
         "iconPath" : "src/assets/icons/logo.png",
-        "description" : "A one-week self-educational project built entirely in vanilla JavaScript in an HTML Canvas tag. I bypassed external frameworks to focus on improving my understanding of game creation, core game logic, state management, rendering objects, and player/enemy controls and movement",
+        "description" : "A one-week, $*self-educational$ project built entirely in $*vanilla JavaScript$ and an HTML Canvas tag. I chose to $*bypass external frameworks$, opting instead to focus on improving my understanding of game creation, core game logic, $*state management$, rendering objects, and player/enemy controls/movement",
         "disclaimer": "Browser Compatability Notice: This tool was developed and last tested March 2023 using Google Chrome (v111). The game might not function on other browsers",
         "techStack" : [
             "html",
@@ -190,6 +149,55 @@
         "links" : {
             "sample": "https://jonathan-pruitt.github.io/SLASHER/",
             "repo": "https://github.com/Jonathan-Pruitt/SLASHER"
+        }
+    },
+    {
+        "title" : "Catan Companion",
+        "iconPath" : "src/assets/icons/logo.png",
+        "description" : "From initial setup to the moment of final victory, $*Catan Companion$ keeps track of the various dice rolls, settlements, and other data generated during a game of $*Settlers of Catan$. The app collects $*game data$ throughout the session $%(including dice rolls, victory points, resources, etc)$ and creates a report of this $*aggregate data$ at the end of the game",
+        "techStack" : [
+            "csharp",
+            "xaml",
+            "wpf"
+        ],
+        "tags" : [
+            {
+                "textIndicator" : "personal",
+                "colorIndicator" : "personal",
+                "iconPath" : "/src/assets/icons/tags/personal.svg"
+            },
+            {
+                "textIndicator" : "entertain&shy;ment",
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
+            },
+            {
+                "textIndicator" : "utility",
+                "colorIndicator" : "usage",
+                "iconPath" : "/src/assets/icons/tags/utility.svg"
+            }
+        ],
+        "images" : [
+            {
+                "path": "/src/assets/images/img-projects/catan/setup.jpg",
+                "altText": "Setup Screen - Catan Companion"
+            },
+            {
+                "path": "/src/assets/images/img-projects/catan/midgame.jpg",
+                "altText": "Main Screen - Catan Companion"
+            },
+            {
+                "path": "/src/assets/images/img-projects/catan/midgame2.jpg",
+                "altText": "After a Dice Roll - Catan Companion"
+            },
+            {
+                "path": "/src/assets/images/img-projects/catan/endgame.jpg",
+                "altText": "Results Screen - Catan Companion"
+            }
+        ],
+        "links" : {
+            "sample": "https://github.com/Jonathan-Pruitt/Catan-Data-Tracker/releases/tag/v1.0.0-rc1",
+            "repo": "https://github.com/Jonathan-Pruitt/Catan-Data-Tracker"
         }
     }
 ]
