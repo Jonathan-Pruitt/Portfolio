@@ -23,7 +23,7 @@ const props = defineProps({
         <!-- Left side -->
         <div class="text-center content-center sm:text-right px-2 relative sm:order-1">
           <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-2">JONATHAN PRUITT</h1>
-          <h2 class="text-xl sm:text-2xl text-body font-content font-light italic tracking-widest mb-4">Full Stack Developer</h2>
+          <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-body font-content font-light italic tracking-widest mb-4">Full Stack Developer</h2>
           <div class="text-brand">
             <a href="https://github.com/Jonathan-Pruitt" target="_blank" class="ml-2">
               <SvgIcon class="hover:brightness-75 transition-all duration-200" size="md" name="github"/>

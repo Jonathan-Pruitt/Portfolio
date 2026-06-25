@@ -7,6 +7,11 @@
     --font-content: "Inter Tight";
     --font-code: "Ubuntu Sans Mono";
     --font-cmd: "Segoe UI";
+
+    --text-md: { 
+        font-size: var(--text-base);
+        line-height: var(--text-base--line-height);
+    };
     
     /*---------- COLORS  ----------*/
     --color-brand: var(--primary);

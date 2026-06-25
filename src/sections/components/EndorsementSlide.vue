@@ -30,32 +30,32 @@ onMounted(() => {
 
 <template>
   <div 
-    class="m-8 h-full bg-peak grid grid-rows-[auto_auto] sm:grid-rows-2 p-4"
+    class="h-full bg-peak p-8"
   >
-    <div class="sm:flex gap-4">
+    <div class="sm:flex gap-4 ml-4 sm:items-center md:ml-8 md:mt-8">
       <div class="shrink">
         <img :src="cardData.image.path" :alt="altText"
-          class="w-24 aspect-square rounded-full ring-4"
+          class="w-24 md:w-42 aspect-square rounded-full ring-4"
         >
       </div>
-      <div class="shrink">
+      <div class="shrink text-lg md:text-4xl">
         <h3 
-          class="text-lg font-semibold"
+          class="font-semibold"
         >
           {{ cardData.name }}
         </h3>
         <h4 
-          class="brightness-80 font-medium"
+          class="md:text-3xl brightness-80 font-medium"
         >
           {{ cardData["current-role"].title }}
         </h4>
         <h4 
-          class="brightness-80 font-medium"
+          class="md:text-3xl brightness-80 font-medium"
         >
           {{ cardData["current-role"].organization }}
         </h4>
         <h5 
-          class="font-light"
+          class="md:text-2xl font-light"
         >
           {{ cardData.relationship }}
         </h5>
@@ -64,11 +64,16 @@ onMounted(() => {
     </div>
     <div 
       @click="openFullTextModal"
-      class="w-4/5 mx-auto px-4 py-2 hover:scale-105 text-sm sm:text-none md:text-lg rounded-lg shadow-lg shadow-brand/20 hover:bg-brand/5 dark:shadow-none dark:bg-base/10 dark:inset-shadow-sm dark:inset-shadow-gray-500/50 transition-all duration-300 cursor-pointer"
+      class="w-4/5 mx-auto mt-4 md:mt-8 px-4 py-2 hover:scale-105 rounded-lg shadow-lg shadow-brand/20 hover:bg-brand/5 dark:shadow-none dark:bg-base/10 dark:inset-shadow-sm dark:inset-shadow-gray-500/50 transition-all duration-300 cursor-pointer"
       title="Click to read the full endorsement"
     >
-      <div v-html="highlights"/>
-      <em class="text-subtle text-xs">Click to read the full context</em>
+      <div class="p-4">
+        <div 
+        v-html="highlights"
+        class="text-sm sm:text-md md:text-2xl"
+        />
+        <em class="text-subtle text-xs sm:text-lg">Click to read the full context</em>
+      </div>
     </div>
   </div>
 
@@ -99,7 +104,7 @@ onMounted(() => {
   @reference 'tailwindcss';
   :deep(p strong) {
     color: var(--color-brand);
-    @apply sm:text-lg md:text-xl;
+    @apply sm:text-lg md:text-2xl;
   }
   :deep(.full-text) {
     @apply mt-2 tracking-tight leading-8

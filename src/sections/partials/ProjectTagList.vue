@@ -8,12 +8,12 @@ const props = defineProps({
 </script>
 
 <template>
-  <h5 class="text-sm sm:text-xl font-semibold mt-2">{{ title }}</h5>
+  <h5 class="text-sm sm:text-xl md:text-2xl font-semibold mt-2">{{ title }}</h5>
   <div class="grid" :class="maxLogos">
     <div class="justify-self-center text-center"
       v-for="tag in tagArray"  
     >
-      <div class="size-12">
+      <div class="size-12 md:size-16">
         <TechTag 
           :tag="tag"
           class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"

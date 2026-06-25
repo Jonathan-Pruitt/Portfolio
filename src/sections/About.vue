@@ -65,10 +65,10 @@ const setAboutMeData = () => {
     
     <div class="sm:flex relative w-full">  
       <!-- SECTION HEADER TEXT : VERTICAL -->
-      <div class="absolute sm:static flex flex-col h-full invisible sm:visible ml-8 cursor-default">
-        <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-16">WHO</h2>
-        <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-8">I</h2>
-        <h2 class="text-4xl font-black vertical-text tracking-[-0.30em] mt-8">AM</h2>
+      <div class="absolute text-4xl sm:text-6xl tracking-[-0.30em] font-black sm:static flex flex-col h-full invisible sm:visible ml-8 cursor-default">
+        <h2 class="vertical-text mt-16">WHO</h2>
+        <h2 class="vertical-text mt-8">I</h2>
+        <h2 class="vertical-text mt-8">AM</h2>
       </div>
       
       <!-- COMMAND PROMPT MIMIC -->
@@ -83,7 +83,7 @@ const setAboutMeData = () => {
               <img src="../assets/images/cmd-x.png"      class="h-full box-content px-2.5 hover:bg-red-500" alt="">
             </div>
           </div>
-          <div class="pt-4 text-white">
+          <div class="pt-4 text-white md:text-lg">
             <code class="block">C:\> cd About/Me</code>
             <code class="block mt-4">C:\About\Me> run Jonathan.exe</code>
             <code class="block mt-4 text-yellow-300">{{ aboutMeData.header }}</code>
@@ -104,12 +104,8 @@ const setAboutMeData = () => {
 </template>
 
 <style scoped>
+@reference 'tailwindcss';
 p > strong {
-  /* color: var(--color-brand); */
-  color: black;
-  font-size: 1.15rem;
-  padding-left: var(--spacing);
-  padding-left: var(--spacing);
-  background-color: var(--color-brand);
+  @apply text-black bg-[var(--color-brand)] md:text-xl
 }
 </style>

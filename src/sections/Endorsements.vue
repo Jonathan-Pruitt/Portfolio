@@ -36,7 +36,7 @@ onMounted(() => {
         <div class="sm:ml-16">
           <h2 class="text-4xl sm:text-6xl font-black cursor-default">ENDORSEMENTS</h2>
           <p 
-            class="pt-8 md:text-xl"
+            class="pt-8 md:text-2xl"
           >
             Here are some 
             <strong>testimonials</strong>

@@ -84,7 +84,7 @@ onMounted(() => {
      <div class="sm:ml-16">
       <h2 class="text-4xl sm:text-6xl font-black cursor-default">PROFICIENCIES</h2>
       <p 
-        class="pt-8 md:text-xl"
+        class="pt-8 md:text-2xl"
       >
         Let's break down my 
         <strong>tools</strong>

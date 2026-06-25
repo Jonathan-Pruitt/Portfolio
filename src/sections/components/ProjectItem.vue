@@ -17,6 +17,7 @@ const emit = defineEmits(['update-max-tech'])
 const project = ref(props.project);
 const techTags = ref([]);
 const showDisclaimer = ref(false);
+const showDetails = ref(false);
 
 const COLORS = {
     "backend" :             'bg-[hsl(0,50%,50%)]/20 inset-ring-[hsl(0,50%,50%)] text-[hsl(0,50%,50%)]',
@@ -111,9 +112,13 @@ onMounted(() => {
           />
         </div>
 
-        <div class="w-100 md:w-auto md:col-span-2 px-4 py-2 border border-subtle bg-base/50 rounded-lg mx-auto">
-        <!-- Description -->
-          <p class="font-light text-sm">{{ project.description }}{{ project.disclaimer ? '*' : '' }}</p>
+        <div 
+        class="w-100 max-w-full md:w-auto md:col-span-2 mt-4 md:m-0 px-4 py-2 border border-subtle bg-base/50 rounded-lg mx-auto cursor-pointer hover:scale-105 hover:bg-brand/10 transition"
+        title="Read full description"
+        @click="showDetails = true"
+        >
+          <!-- Description -->
+          <p class="font-light text-sm md:text-lg line-clamp-13">{{ project.description }}{{ project.disclaimer ? '*' : '' }}</p>
         </div>
         
         <div class="md:col-span-2">
@@ -176,7 +181,7 @@ onMounted(() => {
               <div class="text-center"
                 v-for="tag in project.tags"  
               >
-                <div class="size-12 mx-auto">
+                <div class="size-12 md:size-16 mx-auto">
                   <Tag 
                     :tag="tag"
                     class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
@@ -197,7 +202,7 @@ onMounted(() => {
           <div class="flex place-content-center gap-x-4">
             <div 
               v-if="project.links.sample"
-              class="text-sm sm:text-xl font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
+              class="min-w-18 md:min-w-32 text-sm sm:text-xl font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
             >
               <a 
                 :href="project.links.sample"
@@ -208,13 +213,13 @@ onMounted(() => {
             </div>
             <div 
             v-if="project.links.repo"
-            class="text-sm sm:text-xl font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
+            class="min-w-18 md:min-w-32 text-sm sm:text-xl font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
             >
               <a 
                 :href="project.links.repo"
                  target="_blank" 
               >
-                Repo
+                Codebase
               </a>
             </div>
             <!-- Disclaimer (if any) -->
@@ -223,7 +228,7 @@ onMounted(() => {
               class=""
             >
               <button
-                class="text-sm sm:text-xl font-bold bg-peak text-header italic my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150"
+                class="min-w-18 md:min-w-32 text-sm sm:text-xl font-bold bg-peak text-header italic my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 cursor-pointer"
                 @click="showDisclaimer = true"
               >
                 *Disclaimer
@@ -239,16 +244,62 @@ onMounted(() => {
     @close="showDisclaimer = false"
   >
     <template #title>
-      <h2 class="font-bold">
-        Disclaimer
+      <h2 class="text-2xl md:text-4xl font-bold">
+        {{ project.title }}
       </h2>
     </template>
     <template #content>
+      <h3 class="text-lg md:text-2xl font-semibold text-body">
+        Disclaimer
+      </h3>
       <p>
-        <em class="">
+        <em class="md:text-xl">
           {{ project.disclaimer }}
         </em>
       </p>
+    </template>
+  </Modal>
+  <Modal
+    :show="showDetails"
+    @close="showDetails = false"
+  >
+    <template #title>
+      <h2 class="text-2xl md:text-4xl font-bold">
+        {{ project.title }}
+      </h2>
+    </template>
+    <template #content>
+      <h3 class="text-lg md:text-2xl font-semibold text-body">
+        Description
+      </h3>
+      <p class="md:text-xl">
+        {{ project.description }}
+      </p>
+      <div class="mt-4 flex place-content-center gap-x-4">
+        <div 
+          v-if="project.links.sample"
+          class="text-sm sm:text-xl min-w-18 md:min-w-32 font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
+        >
+          <a 
+            :href="project.links.sample"
+              target="_blank" 
+          >
+            Try it out
+          </a>
+        </div>
+        <div 
+        v-if="project.links.repo"
+        class="text-sm sm:text-xl min-w-18 md:min-w-32 font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
+        >
+          <a 
+            :href="project.links.repo"
+              target="_blank" 
+          >
+            See the code
+          </a>
+        </div>
+
+      </div>
     </template>
   </Modal>
 </template>

@@ -24,7 +24,7 @@ const handleMaxTechCount = (e) => {
       
       <div class="mx-auto my-4">
         <p 
-          class="pt-4 sm:pt-0 md:text-xl"
+          class="pt-4 sm:pt-0 md:text-2xl"
         >
           Check out some of the 
           <strong>projects</strong>

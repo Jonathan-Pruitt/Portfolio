@@ -122,7 +122,7 @@ const maxWidthClass = computed(() => {
                   <button
                     v-if="closeable"
                     @click="close"
-                    class="p-1 text-sm md:text-lg bg-subtle rounded-lg absolute top-2 right-2 cursor-pointer"
+                    class="p-1 text-sm md:text-lg bg-subtle rounded-lg absolute top-2 right-2 cursor-pointer hover:brightness-85"
                   >
                     <exit_svg/>
                   </button>
