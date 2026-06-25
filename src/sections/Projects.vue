@@ -17,10 +17,10 @@ const handleMaxTechCount = (e) => {
 
 <template>
   <section :id="sectionId">
-    <h2 class="text-4xl sm:text-6xl font-black sm:vertical-text sm:tracking-[-0.25em] inline pr-4 cursor-default sm:absolute">
+    <h2 class="text-4xl sm:text-6xl lg:ml-16 transition sm:absolute sm:vertical-text sm:tracking-[-0.25em] inline cursor-default font-black">
       PROJECTS
     </h2>
-    <div class="max-w-3xl mx-auto sm:flex pb-12 sm:px-24">
+    <div class="max-w-4xl mx-auto sm:flex pb-12 sm:px-24">
       
       <div class="mx-auto my-4">
         <p 

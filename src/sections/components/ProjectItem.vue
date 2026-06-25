@@ -31,7 +31,7 @@ const TAG_COLORS = {
     "frontend" :    'bg-[hsl(210,50%,40%)]/20 inset-ring-[hsl(210,50%,40%)] text-[hsl(210,50%,40%)]',
     "framework" :   'bg-[hsl(180,70%,30%)]/20 inset-ring-[hsl(180,70%,30%)] text-[hsl(180,70%,30%)]',
     "personal" :    'bg-[hsl(120,50%,35%)]/20 inset-ring-[hsl(120,50%,35%)] text-[hsl(120,50%,35%)]',
-    "usage":        'bg-[hsl(320,50%,50%)]/20 inset-ring-[hsl(320,50%,50%)] text-[hsl(320,50%,50%)]',
+    "usage":        'bg-[hsl(320,30%,50%)]/20 inset-ring-[hsl(320,30%,50%)] text-[hsl(320,30%,50%)]',
     "professional": 'bg-[hsl(30,50%,40%)]/20 inset-ring-[hsl(30,50%,40%)] text-[hsl(30,50%,40%)]',
 }
 
@@ -92,135 +92,144 @@ onMounted(() => {
       class="flex"
       >
         <a 
-          :href="project.links.sample || '#'" 
+          :href="project.links.sample || project.links.repo || '#'" 
           target="_blank" 
           class="flex gap-2 items-center hover:scale-105 transition-all duration-150"
         >
-          <img :src="project.iconPath" class="size-8 sm:size-16 rounded-lg dark:bg-blue-300/20" :alt="project.title + ' logo'">
-          <h3 class="text-xl font-bold tracking-wider">{{ project.title }}</h3>
+          <img :src="project.iconPath" class="size-8 sm:size-16 md:size-24 rounded-lg" :alt="project.title + ' logo'">
+          <h3 class="text-xl sm:text-2xl md:text-4xl font-bold tracking-wider">{{ project.title }}</h3>
         </a>
       </div>
       
-      <!-- Carousel -->
-      <div class="">
-        <Carousel 
-          :slides="project.images"
-          type="projects"
-        />
-      </div>
+      <div class="md:grid md:grid-cols-5 md:gap-4">
 
-      <!-- Description -->
-       <div class="mt-4">
-        <p class="font-light text-sm">{{ project.description }}{{ project.disclaimer ? '*' : '' }}</p>
-      </div>
-
-      <!-- Tech Tags -->
-      <div class="my-4">
-        <div class="w-2/5 flex mx-auto justify-center border-b border-brand-muted"> 
-          <techTagSvg class="size-6 fill-body/75" />
-          <h4 class="text-body/75">Tech</h4>
-        </div>
-
-        <div v-if="techTags.frontend">
-          <ProjectTagList 
-            :tag-array="techTags.frontend"
-            title="Frontend"
-            :max-logos="maxLogos"
+        <div class="md:col-span-3">
+          <!-- Carousel -->
+          <Carousel 
+            :slides="project.images"
+            type="projects"
           />
         </div>
-        <div v-if="techTags.backend">
-          <ProjectTagList 
-            :tag-array="techTags.backend"
-            title="Backend"
-            :max-logos="maxLogos"
-          />
+
+        <div class="w-100 md:w-auto md:col-span-2 px-4 py-2 border border-subtle bg-base/50 rounded-lg mx-auto">
+        <!-- Description -->
+          <p class="font-light text-sm">{{ project.description }}{{ project.disclaimer ? '*' : '' }}</p>
         </div>
         
-        <div v-if="techTags.framework">
-          <ProjectTagList
-            :tag-array="techTags.framework"
-            title="Framework"
-            :max-logos="maxLogos"
-          />
-        </div>
+        <div class="md:col-span-2">
+          <!-- Tech Tags -->
+          <div class="my-4">
+            <div class="w-3/5 flex mx-auto justify-center border-b border-brand-muted"> 
+              <techTagSvg class="size-6 sm:size-8 fill-body/75" />
+              <h4 class="text-body/75 sm:text-2xl">Tech</h4>
+            </div>
 
-        <div v-if="techTags['version control']">
-          <ProjectTagList
-            :tag-array="techTags['version control']"
-            title="Versioning"
-            :max-logos="maxLogos"
-          />
-        </div>
-
-        <div v-if="techTags['project management']">
-          <ProjectTagList
-            :tag-array="techTags['project management']"
-            title="Project Mgmt"
-            :max-logos="maxLogos"
-          />
-        </div>
-      </div>
-          
-      <!-- Descriptive Tags -->
-      <div class="my-4">
-        <div class="w-2/5 flex mx-auto justify-center border-b border-brand-muted">
-          <tagSvg class="size-6 fill-body/75" />
-          <h4 class="text-body/75">Tags</h4>
-        </div>
-        <div class="grid grid-cols-3">
-          <div class="text-center mx-auto"
-            v-for="tag in project.tags"  
-          >
-            <div class="size-12 mx-auto">
-              <Tag 
-                :tag="tag"
-                class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
+            <div v-if="techTags.frontend">
+              <ProjectTagList 
+                :tag-array="techTags.frontend"
+                title="Frontend"
+                :max-logos="maxLogos"
               />
             </div>
-            <h6 
-              class="text-xs font-semibold my-auto px-2 py-1 rounded-lg inset-ring-2 text-center mx-auto"
-              :class="TAG_COLORS[tag.textIndicator]"
-            >
-              {{ tag.textIndicator }}
-            </h6>
-            <h6 class="text-xs text-body/75 font-content">{{ tag.title }}</h6>
+            <div v-if="techTags.backend">
+              <ProjectTagList 
+                :tag-array="techTags.backend"
+                title="Backend"
+                :max-logos="maxLogos"
+              />
+            </div>
+            
+            <div v-if="techTags.framework">
+              <ProjectTagList
+                :tag-array="techTags.framework"
+                title="Framework"
+                :max-logos="maxLogos"
+              />
+            </div>
+
+            <div v-if="techTags['version control']">
+              <ProjectTagList
+                :tag-array="techTags['version control']"
+                title="Versioning"
+                :max-logos="maxLogos"
+              />
+            </div>
+
+            <div v-if="techTags['project management']">
+              <ProjectTagList
+                :tag-array="techTags['project management']"
+                title="Project Mgmt"
+                :max-logos="maxLogos"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      
-      <!-- Links / CTA -->
-      <div class="flex justify-between">
-        <div 
-          v-if="project.links.sample"
-          class="text-sm font-bold bg-gray-500 text-white my-2 rounded-lg border border-header px-2 py-1 hover:brightness-85 transition duration-150 text-center"
-        >
-          <a 
-            :href="project.links.sample"
-          >
-            Try it
-          </a>
+
+        <div class="md:col-span-2 md:col-start-4">
+          <!-- Descriptive Tags -->
+          <div class="my-4">
+            <div class="w-2/5 flex mx-auto justify-center border-b border-brand-muted">
+              <tagSvg class="size-6 sm:size-8 fill-body/75" />
+              <h4 class="text-body/75 sm:text-2xl">Tags</h4>
+            </div>
+            <div class="mt-2 grid grid-cols-3">
+              <div class="text-center"
+                v-for="tag in project.tags"  
+              >
+                <div class="size-12 mx-auto">
+                  <Tag 
+                    :tag="tag"
+                    class="dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded-lg"
+                  />
+                </div>
+                <h6 
+                  v-html="tag.textIndicator"
+                  class="text-xs w-fit font-semibold px-2 py-1 rounded-lg inset-ring-2 text-center mx-auto"
+                  :class="TAG_COLORS[tag.colorIndicator]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div 
-        v-if="project.links.repo"
-        class="text-sm font-bold bg-gray-500 text-white my-2 rounded-lg border border-header px-2 py-1 hover:brightness-85 transition duration-150 text-center"
-        >
-          <a 
-            :href="project.links.repo"
-          >
-            Repo
-          </a>
-        </div>
-        <!-- Disclaimer (if any) -->
-        <div 
-          v-if="project.disclaimer"
-          class=""
-        >
-          <button
-            class="text-sm font-bold bg-gray-500 text-white italic my-2 rounded-lg border border-header px-2 py-1 hover:brightness-85 transition duration-150"
-            @click="showDisclaimer = true"
-          >
-            *Disclaimer
-          </button>
+        
+        <div class="md:col-span-full">
+          <!-- Links / CTA -->
+          <div class="flex place-content-center gap-x-4">
+            <div 
+              v-if="project.links.sample"
+              class="text-sm sm:text-xl font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
+            >
+              <a 
+                :href="project.links.sample"
+                 target="_blank" 
+              >
+                Try it
+              </a>
+            </div>
+            <div 
+            v-if="project.links.repo"
+            class="text-sm sm:text-xl font-bold bg-peak text-header my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150 text-center"
+            >
+              <a 
+                :href="project.links.repo"
+                 target="_blank" 
+              >
+                Repo
+              </a>
+            </div>
+            <!-- Disclaimer (if any) -->
+            <div 
+              v-if="project.disclaimer"
+              class=""
+            >
+              <button
+                class="text-sm sm:text-xl font-bold bg-peak text-header italic my-2 rounded-lg border-2 border-header px-2 py-1 hover:brightness-125 hover:outline-1 hover:outline-brand transition duration-150"
+                @click="showDisclaimer = true"
+              >
+                *Disclaimer
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

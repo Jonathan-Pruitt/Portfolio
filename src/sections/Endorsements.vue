@@ -33,9 +33,21 @@ onMounted(() => {
 <template>
     <section :id="sectionId">
       <div class="pb-4">
-        <h2 class="text-4xl font-black cursor-default">ENDORSEMENTS</h2>
-        <div class="my-8 mx-4 shadow-tag/30 shadow-xs dark:bg-linear-to-b dark:from-flat dark:via-brand/30 dark:via-25% dark:to-flat rounded-lg">
-          <TestCarousel type="endorsements" :cards="shuffledEndorsements"/>
+        <div class="sm:ml-16">
+          <h2 class="text-4xl sm:text-6xl font-black cursor-default">ENDORSEMENTS</h2>
+          <p 
+            class="pt-8 md:text-xl"
+          >
+            Here are some 
+            <strong>testimonials</strong>
+            about my
+            <strong>work ethic</strong>
+          </p>
+        </div>
+        <div class="max-w-3xl mx-auto">
+          <div class="my-8 shadow-tag/30 shadow-xs dark:bg-linear-to-b dark:from-flat dark:via-brand/15 dark:via-25% dark:to-flat rounded-lg">
+            <TestCarousel type="endorsements" :cards="shuffledEndorsements"/>
+          </div>
         </div>
       </div>
     </section>

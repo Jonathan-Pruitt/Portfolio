@@ -30,39 +30,37 @@ onMounted(() => {
 
 <template>
   <div 
-    class="w-full grid grid-rows-[auto_auto] sm:grid-rows-2 p-4"
+    class="m-8 h-full bg-peak grid grid-rows-[auto_auto] sm:grid-rows-2 p-4"
   >
-    <div class="flex">
-      <div class="sm:flex gap-4">
-        <div class="shrink">
-          <img :src="cardData.image.path" :alt="altText"
-            class="w-24 aspect-square rounded-full ring-4"
-          >
-        </div>
-        <div class="shrink">
-          <h3 
-            class="text-lg font-semibold"
-          >
-            {{ cardData.name }}
-          </h3>
-          <h4 
-            class="brightness-80 font-medium"
-          >
-            {{ cardData["current-role"].title }}
-          </h4>
-          <h4 
-            class="brightness-80 font-medium"
-          >
-            {{ cardData["current-role"].organization }}
-          </h4>
-          <h5 
-            class="text-gray-600 font-light"
-          >
-            {{ cardData.relationship }}
-          </h5>
-        </div>
-
+    <div class="sm:flex gap-4">
+      <div class="shrink">
+        <img :src="cardData.image.path" :alt="altText"
+          class="w-24 aspect-square rounded-full ring-4"
+        >
       </div>
+      <div class="shrink">
+        <h3 
+          class="text-lg font-semibold"
+        >
+          {{ cardData.name }}
+        </h3>
+        <h4 
+          class="brightness-80 font-medium"
+        >
+          {{ cardData["current-role"].title }}
+        </h4>
+        <h4 
+          class="brightness-80 font-medium"
+        >
+          {{ cardData["current-role"].organization }}
+        </h4>
+        <h5 
+          class="font-light"
+        >
+          {{ cardData.relationship }}
+        </h5>
+      </div>
+
     </div>
     <div 
       @click="openFullTextModal"

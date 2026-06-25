@@ -15,7 +15,7 @@
                 "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
-                "textIndicator" : "entertainment",
+                "textIndicator" : "entertain&shy;ment",
                 "colorIndicator" : "usage",
                 "iconPath" : "/src/assets/icons/tags/entertainment.svg"
             },
@@ -63,7 +63,7 @@
         ],
         "tags" : [
             {
-                "textIndicator" : "professional",
+                "textIndicator" : "profession&shy;al",
                 "colorIndicator" : "professional",
                 "iconPath" : "/src/assets/icons/tags/business.svg"
             },
@@ -113,7 +113,7 @@
                 "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
-                "textIndicator" : "entertainment",
+                "textIndicator" : "entertain&shy;ment",
                 "colorIndicator" : "usage",
                 "iconPath" : "/src/assets/icons/tags/entertainment.svg"
             },
