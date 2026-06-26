@@ -50,7 +50,7 @@ const ICON_COLORS = {
         class="w-full h-full"
     >
         <component 
-          :is="svgTags[tag.iconPath ?? '']" 
+          :is="svgTags[tag.iconPath]?.default" 
           :class="tag.iconPath ? '' : 'hidden'"
           class="w-full h-full"
           />
