@@ -15,7 +15,7 @@ const props = defineProps({
         <div class="container mx-auto flex flex-col items-center justify-center text-center">
           <div class="my-8">
             <div class="mx-auto">
-              <img src="icons/logo.png" alt="Jonathan Pruitt Dev Logo" class="w-24 md:w-32 content-center mx-auto">
+              <img src="/icons/logo.png" alt="Jonathan Pruitt Dev Logo" class="w-24 md:w-32 content-center mx-auto">
               <h2 class="text-3xl font-black mt-2">Jonathan Pruitt</h2>
               <p class="mx-auto font-content text-gray-400 max-w-sm text-lg md:text-2xl tracking-wide font-light">Full Stack Developer focusing on workflow improvement tools and utility automation</p>
             </div>

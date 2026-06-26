@@ -75,12 +75,12 @@ const setAboutMeData = () => {
       <div class="mx-auto">
         <div class="bg-black border-gray-200 border w-full pb-8 mx-auto my-16 max-w-4xl shadow-lg shadow-black/50">
           <div class="flex bg-white w-full text-black h-8 border-b border-gray-200">
-            <img src="images/cmd-icon.png" class="size-5 place-self-center ml-1 shrink">
+            <img src="/images/cmd-icon.png" class="size-5 place-self-center ml-1 shrink">
             <h6 class="font-cmd text-sm text-black px-1 content-center whitespace-nowrap">{{ aboutMeData.title }}</h6>
             <div class="flex grow justify-end">
-              <img src="images/cmd-line.png"   class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
-              <img src="images/cmd-square.png" class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
-              <img src="images/cmd-x.png"      class="h-full box-content px-2.5 hover:bg-red-500" alt="">
+              <img src="/images/cmd-line.png"   class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
+              <img src="/images/cmd-square.png" class="h-full box-content px-2.5 hover:bg-gray-200"  alt="">
+              <img src="/images/cmd-x.png"      class="h-full box-content px-2.5 hover:bg-red-500" alt="">
             </div>
           </div>
           <div class="pt-4 text-white md:text-lg">
