@@ -35,15 +35,15 @@
         ],
         "images" : [
             {
-                "path": "src/assets/images/img-projects/hardly/homepage.jpg",
+                "path": "images/img-projects/hardly/homepage.jpg",
                 "altText": "hardly-work.com -- Website homepage"
             },
             {
-                "path": "src/assets/images/img-projects/hardly/interview-practice.jpg",
+                "path": "images/img-projects/hardly/interview-practice.jpg",
                 "altText": "hardly-work.com -- Interview practice description"
             },
             {
-                "path": "src/assets/images/img-projects/hardly/email-generator.jpg",
+                "path": "images/img-projects/hardly/email-generator.jpg",
                 "altText": "hardly-work.com -- Email generator description"
             }
         ],
@@ -80,19 +80,19 @@
         ],
         "images" : [
             {
-                "path": "/images/img-projects/ascii/woman-compare.jpg",
+                "path": "images/img-projects/ascii/woman-compare.jpg",
                 "altText": "Text and Image Comparison - ASCII Dreaming"
             },
             {
-                "path": "/images/img-projects/ascii/dog-compare.jpg",
+                "path": "images/img-projects/ascii/dog-compare.jpg",
                 "altText": "Dog Image with ASCII Slice - ASCII Dreaming"
             },
             {
-                "path": "/images/img-projects/ascii/lighthouse-compare.jpg",
+                "path": "images/img-projects/ascii/lighthouse-compare.jpg",
                 "altText": "Actual Size Comparison - ASCII Dreaming"
             },
             {
-                "path": "/images/img-projects/ascii/in-action.png",
+                "path": "images/img-projects/ascii/in-action.png",
                 "altText": "App Main Screen - ASCII Dreaming"
             }
         ],
@@ -130,19 +130,19 @@
         ],
         "images" : [
             {
-                "path": "src/assets/images/img-projects/slasher/gmply1.gif",
+                "path": "images/img-projects/slasher/gmply1.gif",
                 "altText": "Short clip of 'Slasher' gameplay"
             },
             {
-                "path": "src/assets/images/img-projects/slasher/gmply3.gif",
+                "path": "images/img-projects/slasher/gmply3.gif",
                 "altText": "Long clip of 'Slasher' gameplay"
             },
             {
-                "path": "src/assets/images/img-projects/slasher/gmply2.gif",
+                "path": "images/img-projects/slasher/gmply2.gif",
                 "altText": "Slasher 'game over' clip"
             },
             {
-                "path": "src/assets/images/img-projects/slasher/slasher-intro.jpg",
+                "path": "images/img-projects/slasher/slasher-intro.jpg",
                 "altText": "Slasher intdroduction screenshot"
             }
         ],
@@ -179,19 +179,19 @@
         ],
         "images" : [
             {
-                "path": "/images/img-projects/catan/setup.jpg",
+                "path": "images/img-projects/catan/setup.jpg",
                 "altText": "Setup Screen - Catan Companion"
             },
             {
-                "path": "/images/img-projects/catan/midgame.jpg",
+                "path": "images/img-projects/catan/midgame.jpg",
                 "altText": "Main Screen - Catan Companion"
             },
             {
-                "path": "/images/img-projects/catan/midgame2.jpg",
+                "path": "images/img-projects/catan/midgame2.jpg",
                 "altText": "After a Dice Roll - Catan Companion"
             },
             {
-                "path": "/images/img-projects/catan/endgame.jpg",
+                "path": "images/img-projects/catan/endgame.jpg",
                 "altText": "Results Screen - Catan Companion"
             }
         ],
