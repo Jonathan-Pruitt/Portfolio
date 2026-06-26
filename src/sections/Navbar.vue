@@ -33,7 +33,7 @@ window.addEventListener('scroll', handleScroll)
           class="h-24 w-18 sm:size-24 shrink-0 self-center content-center hover:backdrop-brightness-115"
         >
           <img 
-            src="icons/logo.png" 
+            src="/icons/logo.png" 
             alt="Jonathan Pruitt Dev Logo" 
             class="brightness-150 h-3/4 w-full sm:h-full sm:w-full content-center mx-auto transition-all duration-300 ease-out"
             :class="isScrolled ? 'sm-logo' : ''"

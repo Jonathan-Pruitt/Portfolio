@@ -15,7 +15,7 @@ const props = defineProps({
         <!-- Right side -->
         <div class="sm:order-2">
           <img 
-          src="images/hero-jp.png" 
+          src="/images/hero-jp.png" 
           alt="Jonathan Pruitt" 
           class="rounded-full border-10 border-header mx-auto sm:m-0 w-2xs"/>
         </div>
