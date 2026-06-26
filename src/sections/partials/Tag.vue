@@ -13,7 +13,7 @@ const svgTags = import.meta.glob('@/assets/icons/tags/*.svg', {
   query : '?component',
   eager: true
 });
-console.log(svgTags)
+
 const text = props.tag.textIndicator;
 
 const color = computed(() => {

@@ -20,17 +20,17 @@
             {
                 "textIndicator" : "profession&shy;al",
                 "colorIndicator" : "professional",
-                "iconPath" : "icons/tags/business.svg"
+                "iconPath" : "/src/assets/icons/tags/business.svg"
             },
             {
                 "textIndicator" : "utility",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/utility.svg"
+                "iconPath" : "/src/assets/icons/tags/utility.svg"
             },
             {
                 "textIndicator" : "client-driven",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/client.svg"
+                "iconPath" : "/src/assets/icons/tags/client.svg"
             }
         ],
         "images" : [
@@ -65,17 +65,17 @@
             {
                 "textIndicator" : "personal",
                 "colorIndicator" : "personal",
-                "iconPath" : "icons/tags/personal.svg"
+                "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "entertain&shy;ment",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/entertainment.svg"
+                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
             },
             {
                 "textIndicator" : "art",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/art.svg"
+                "iconPath" : "/src/assets/icons/tags/art.svg"
             }
         ],
         "images" : [
@@ -115,17 +115,17 @@
             {
                 "textIndicator" : "personal",
                 "colorIndicator" : "personal",
-                "iconPath" : "icons/tags/personal.svg"
+                "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "game",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/game.svg"
+                "iconPath" : "/src/assets/icons/tags/game.svg"
             },
             {
                 "textIndicator" : "self-education",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/self-improvement.svg"
+                "iconPath" : "/src/assets/icons/tags/self-improvement.svg"
             }
         ],
         "images" : [
@@ -164,17 +164,17 @@
             {
                 "textIndicator" : "personal",
                 "colorIndicator" : "personal",
-                "iconPath" : "icons/tags/personal.svg"
+                "iconPath" : "/src/assets/icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "entertain&shy;ment",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/entertainment.svg"
+                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
             },
             {
                 "textIndicator" : "utility",
                 "colorIndicator" : "usage",
-                "iconPath" : "icons/tags/utility.svg"
+                "iconPath" : "/src/assets/icons/tags/utility.svg"
             }
         ],
         "images" : [
