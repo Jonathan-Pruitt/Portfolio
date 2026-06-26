@@ -56,7 +56,7 @@ const setAboutMeData = () => {
           sm:h-[300px]
           h-[150px]
           bg-top
-          bg-[url(@/images/big-sky.png)] 
+          bg-[url(./images/big-sky.png)] 
           sm:bg-center
           bg-no-repeat
           ">
