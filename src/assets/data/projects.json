@@ -103,7 +103,7 @@
     },
     {
         "title" : "Slasher",
-        "iconPath" : "src/assets/icons/logo.png",
+        "iconPath" : "icons/logo.png",
         "description" : "A one-week, $*self-educational$ project built entirely in $*vanilla JavaScript$ and an HTML Canvas tag. I chose to $*bypass external frameworks$, opting instead to focus on improving my understanding of game creation, core game logic, $*state management$, rendering objects, and player/enemy controls/movement",
         "disclaimer": "Browser Compatability Notice: This tool was developed and last tested March 2023 using Google Chrome (v111). The game might not function on other browsers",
         "techStack" : [
@@ -153,7 +153,7 @@
     },
     {
         "title" : "Catan Companion",
-        "iconPath" : "src/assets/icons/logo.png",
+        "iconPath" : "icons/logo.png",
         "description" : "From initial setup to the moment of final victory, $*Catan Companion$ keeps track of the various dice rolls, settlements, and other data generated during a game of $*Settlers of Catan$. The app collects $*game data$ throughout the session $%(including dice rolls, victory points, resources, etc)$ and creates a report of this $*aggregate data$ at the end of the game",
         "techStack" : [
             "csharp",
