@@ -1,7 +1,7 @@
 [
     {
         "title" : "Hardly",
-        "iconPath" : "src/assets/icons/hardly-icon.webp",
+        "iconPath" : "icons/hardly-icon.webp",
         "description" : "Focused on architecting and delivering these four high-impact, standalone features in response to client requests: <ul><li>$*Interview Practice Auto-Transcription$</li><li>$*Email Generator$</li><li>$*Resume Templates$</li><li>$*Task Manager$</li></ul>Upgraded the $*Interview Practice$ tool by building an async pipeline using FFmpeg and Whisper to extract and transcribe audio for instant AI-coaching feedback, drastically reducing turnaround times. Developed the $*Email Generator$ from scratch, leveraging AI prompt engineering and <code>:mailto</code> protocols to facilitate professional email generation and delivery with minimal necessary input. Designed and deployed the $*Resume Template$ feature to eliminate the repetetive administrative task of creating multiple individual Resumes in cases where client profiles shared commonality. And developed the $*User Tasks$ management system, which allows for the creation of custom tasks and additionally uses automation to update and close out certain predefined tasks",
         "disclaimer" : "The core architecture and overarching design of Hardly was established by the CTO. My contributions focused on the development, deployment, and optimization of the projects and features listed in the description. Source code is omitted out of respect for the company",
         "techStack" : [
@@ -20,17 +20,17 @@
             {
                 "textIndicator" : "profession&shy;al",
                 "colorIndicator" : "professional",
-                "iconPath" : "/src/assets/icons/tags/business.svg"
+                "iconPath" : "icons/tags/business.svg"
             },
             {
                 "textIndicator" : "utility",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/utility.svg"
+                "iconPath" : "icons/tags/utility.svg"
             },
             {
                 "textIndicator" : "client-driven",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/client.svg"
+                "iconPath" : "icons/tags/client.svg"
             }
         ],
         "images" : [
@@ -54,7 +54,7 @@
     },
     {
         "title" : "ASCII Dreaming",
-        "iconPath" : "src/assets/icons/logo.png",
+        "iconPath" : "icons/logo.png",
         "description" : "This was one of my first explorations with $*WPF$ and $*XAML$. The program reads in a jpg image's pixel data, normalizes pixel clusters, then $*generates an ASCII$ representation of the provided image. <br/>Higher resolution images result in a longer processing time $%(I created this application before I learned how to implement async processes in C#)$",
         "techStack" : [
             "csharp",
@@ -65,17 +65,17 @@
             {
                 "textIndicator" : "personal",
                 "colorIndicator" : "personal",
-                "iconPath" : "/src/assets/icons/tags/personal.svg"
+                "iconPath" : "icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "entertain&shy;ment",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
+                "iconPath" : "icons/tags/entertainment.svg"
             },
             {
                 "textIndicator" : "art",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/art.svg"
+                "iconPath" : "icons/tags/art.svg"
             }
         ],
         "images" : [
@@ -115,17 +115,17 @@
             {
                 "textIndicator" : "personal",
                 "colorIndicator" : "personal",
-                "iconPath" : "/src/assets/icons/tags/personal.svg"
+                "iconPath" : "icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "game",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/game.svg"
+                "iconPath" : "icons/tags/game.svg"
             },
             {
                 "textIndicator" : "self-education",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/self-improvement.svg"
+                "iconPath" : "icons/tags/self-improvement.svg"
             }
         ],
         "images" : [
@@ -164,17 +164,17 @@
             {
                 "textIndicator" : "personal",
                 "colorIndicator" : "personal",
-                "iconPath" : "/src/assets/icons/tags/personal.svg"
+                "iconPath" : "icons/tags/personal.svg"
             },
             {
                 "textIndicator" : "entertain&shy;ment",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/entertainment.svg"
+                "iconPath" : "icons/tags/entertainment.svg"
             },
             {
                 "textIndicator" : "utility",
                 "colorIndicator" : "usage",
-                "iconPath" : "/src/assets/icons/tags/utility.svg"
+                "iconPath" : "icons/tags/utility.svg"
             }
         ],
         "images" : [

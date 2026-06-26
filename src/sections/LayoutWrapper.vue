@@ -39,7 +39,7 @@ const navList = [
     <!-- rescue -- cool dropping things go here  -->
     <!-- probably best bet to use 'hue-rotate' combined with 'mask' to play with colors -->
     <main>
-      <Debug />
+      <!-- <Debug /> -->
       <Hero 
         section-id="home"
         class=""
