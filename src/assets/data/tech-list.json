@@ -3,126 +3,126 @@
         "id": "backendjs",
         "title": "JavaScript",
         "domain": "backend",
-        "iconPath" : "/src/assets/icons/tech/js.svg",
+        "iconPath" : "icons/tech/js.svg",
         "useFrequency" : 3
     },
     {
         "id": "csharp",
         "title" :       "C#",
         "domain" :      "backend",
-        "iconPath" :    "/src/assets/icons/tech/csharp.svg",
+        "iconPath" :    "icons/tech/csharp.svg",
         "useFrequency" : 1
     },
     {
         "id": "css",
         "title": "CSS",
         "domain": "frontend",
-        "iconPath": "/src/assets/icons/tech/css.svg",
+        "iconPath": "icons/tech/css.svg",
         "useFrequency" : 3
     },
     {
         "id": "github",
         "title" : "GitHub",
         "domain" : "version control",
-        "iconPath" : "/src/assets/icons/tech/github.svg",
+        "iconPath" : "icons/tech/github.svg",
         "useFrequency" : 3
     },
     {
         "id": "html",
         "title" : "HTML",
         "domain" : "frontend",
-        "iconPath" : "/src/assets/icons/tech/html5.svg",
+        "iconPath" : "icons/tech/html5.svg",
         "useFrequency" : 3
     },
     {
         "id": "javascript",
         "title": "JavaScript",
         "domain": "frontend",
-        "iconPath" : "/src/assets/icons/tech/js.svg",
+        "iconPath" : "icons/tech/js.svg",
         "useFrequency" : 3
     },
     {
         "id": "laravel",
         "title": "Laravel",
         "domain": "framework",
-        "iconPath" : "/src/assets/icons/tech/laravel.svg",
+        "iconPath" : "icons/tech/laravel.svg",
         "useFrequency" : 2
     },
     {
         "id": "linear",
         "title" : "Linear",
         "domain" : "project management",
-        "iconPath" : "/src/assets/icons/tech/linear.svg",
+        "iconPath" : "icons/tech/linear.svg",
         "useFrequency" : 2
     },
     {
         "id": "linux",
         "title" : "Linux",
         "domain" : "OS",
-        "iconPath" : "/src/assets/icons/tech/linux.svg",
+        "iconPath" : "icons/tech/linux.svg",
         "useFrequency" : 3
     },
     {
         "id": "mysql",
         "title": "MySQL",
         "domain": "backend",
-        "iconPath" : "/src/assets/icons/tech/mysql.svg",
+        "iconPath" : "icons/tech/mysql.svg",
         "useFrequency" : 2
     },
     {
         "id": "php",
         "title": "PHP",
         "domain": "backend",
-        "iconPath" : "/src/assets/icons/tech/php.svg",
+        "iconPath" : "icons/tech/php.svg",
         "useFrequency" : 2
     },
     {
         "id": "python",
         "title" : "Python",
         "domain" : "backend",
-        "iconPath" : "/src/assets/icons/tech/python.svg",
+        "iconPath" : "icons/tech/python.svg",
         "useFrequency" : 1
     },
     {
         "id": "react",
         "title" : "React.js",
         "domain" : "frontend",
-        "iconPath" : "/src/assets/icons/tech/react.svg",
+        "iconPath" : "icons/tech/react.svg",
         "useFrequency" : 0
     },
     {
         "id": "tailwind",
         "title": "Tailwind",
         "domain": "framework",
-        "iconPath" : "/src/assets/icons/tech/tailwind.svg",
+        "iconPath" : "icons/tech/tailwind.svg",
         "useFrequency" : 3
     },
     {
         "id": "vue",
         "title": "Vue.js",
         "domain": "framework",
-        "iconPath" : "/src/assets/icons/tech/vue.svg",
+        "iconPath" : "icons/tech/vue.svg",
         "useFrequency" : 3
     },
     {
         "id": "windows",
         "title" : "Windows",
         "domain" : "OS",
-        "iconPath" : "/src/assets/icons/tech/windows.svg",
+        "iconPath" : "icons/tech/windows.svg",
         "useFrequency" : 2
     },
     {
         "id": "wpf",
         "title" :       "WPF",
         "domain" :      "framework",
-        "iconPath" :    "/src/assets/icons/tech/wpf.svg",
+        "iconPath" :    "icons/tech/wpf.svg",
         "useFrequency": 0
     },
     {
         "id": "xaml",
         "title" :       "XAML",
         "domain" :      "frontend",
-        "iconPath" :    "/src/assets/icons/tech/xaml.svg",
+        "iconPath" :    "icons/tech/xaml.svg",
         "useFrequency" : 0
     }
 ]
