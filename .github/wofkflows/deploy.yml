@@ -31,13 +31,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
+      # 1. Install Node.js so the machine can run npm commands
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
+      # 2. Install dependencies and compile the Vue project
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
