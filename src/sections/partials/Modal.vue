@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onMounted, onUnmounted, watch } from "vue";
-import exit_svg from "exit.svg?component"
+import exit_svg from "@/assets/component_svgs/exit.svg?component"
 
 const props = defineProps({
   show: {
