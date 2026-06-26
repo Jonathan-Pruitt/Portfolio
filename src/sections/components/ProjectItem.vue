@@ -6,8 +6,8 @@ import Modal from '../partials/Modal.vue';
 import ProjectTagList from '../partials/ProjectTagList.vue';
 import TechTag from '../partials/TechTag.vue';
 import Tag from '../partials/Tag.vue';
-import tagSvg from '/src/assets/icons/tags/tag.svg?component';
-import techTagSvg from '/src/assets/icons/tags/tech.svg?component';
+import tagSvg from 'tags/tag.svg?component';
+import techTagSvg from 'tags/tech.svg?component';
 import { TechTagObject } from '/src/services/TechTagObject.js';
 
 const props = defineProps({
