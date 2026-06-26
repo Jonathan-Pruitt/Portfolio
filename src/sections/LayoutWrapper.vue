@@ -7,10 +7,10 @@ import Endorsements from './Endorsements.vue';
 import About from './About.vue';
 import Footer from './Footer.vue';
 import Debug from './Debug.vue';
-import projects_svg from 'tags/projects.svg?component';
-import about_svg from 'tags/about-me.svg?component';
-import proficiency_svg from 'tags/proficiency.svg?component';
-import social_svg from 'tags/social.svg?component';
+import projects_svg from '@/assets/component_svgs/projects.svg?component';
+import about_svg from '@/assets/component_svgs/about-me.svg?component';
+import proficiency_svg from '@/assets/component_svgs/proficiency.svg?component';
+import social_svg from '@/assets/component_svgs/social.svg?component';
 
 const navList = [
   {
