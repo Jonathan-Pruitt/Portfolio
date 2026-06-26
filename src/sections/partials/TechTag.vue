@@ -36,7 +36,7 @@ const TAG_COLORS = {
         class="w-full h-full"
     >
         <component
-            :is="techSvgs[tag.iconPath]"
+            :is="techSvgs[tag.iconPath]?.default"
             class="w-full h-full rounded sm:rounded-lg"
         />
         <h5 
