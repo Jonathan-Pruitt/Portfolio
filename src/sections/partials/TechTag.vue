@@ -10,7 +10,7 @@ const props = defineProps({
     showDomain: Boolean,
     showFrequency: Boolean,
 })
-const techSvgs = import.meta.glob('/src/assets/icons/tech/*.svg', {
+const techSvgs = import.meta.glob('tech/*.svg', {
   query : '?component',
   eager: true
 });
