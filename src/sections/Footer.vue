@@ -1,7 +1,7 @@
 <script setup>
 import SvgIcon from './partials/SvgIcon.vue';
-import adhd_svg from '@/assets/component_svgs/adhd.svg?component'
-import coffee_svg from '@/assets/component_svgs/coffee.svg?component'
+import adhd_svg from '@/assets/icons/tags/adhd.svg?component'
+import coffee_svg from '@/assets/icons/tags/coffee.svg?component'
 const props = defineProps({
   sectionId: String
 })

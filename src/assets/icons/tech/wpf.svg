@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg3208"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3210"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true" />
+  <defs
+     id="defs3205" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect3381"
+       style="fill:#0000a7;stroke-width:2.64583;stroke-linejoin:round;paint-order:markers stroke fill"
+       d="m 117.41348,0 c 8.24252,0 14.87819,6.6356728 14.87819,14.87819 v 102.53529 c 0,8.24252 -6.63567,14.87819 -14.87819,14.87819 H 14.87819 C 6.6356728,132.29167 0,125.656 0,117.41348 V 0 c 0,0 86.414613,0 117.41348,0 z"
+       sodipodi:nodetypes="cssssscc" />
+    <g
+       aria-label="WPF"
+       id="text4727"
+       style="font-size:52.9167px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';fill:#0000a7;stroke-width:2.64583;stroke-linejoin:round;paint-order:markers stroke fill">
+      <path
+         d="m 30.907294,119.39822 h 5.715003 l 6.455837,-25.876269 6.297087,25.876269 h 5.767921 L 66.573148,80.292776 H 59.164811 L 52.232723,107.59779 45.671052,80.292776 H 40.379383 L 33.711879,107.59779 26.832708,80.292776 H 19.42437 Z"
+         style="font-weight:bold;-inkscape-font-specification:'TeX Gyre Adventor Bold';fill:#90f75c"
+         id="path11783" />
+      <path
+         d="m 70.277296,119.39822 h 7.249588 v -14.8696 h 2.328335 c 5.556253,0 8.096255,-0.42333 10.265839,-1.74625 3.175002,-2.01083 5.13292,-5.926667 5.13292,-10.424587 0,-4.497919 -1.905001,-8.202088 -5.29167,-10.265839 -2.222501,-1.322918 -4.868336,-1.799168 -10.001256,-1.799168 H 70.277296 Z M 77.526884,97.596536 V 87.224864 h 2.434168 c 2.381252,0 3.492502,0.105833 4.603753,0.370416 2.116668,0.582084 3.386669,2.434169 3.386669,4.868337 0,1.905001 -0.846668,3.386668 -2.381252,4.233336 -1.111251,0.582083 -3.069168,0.899583 -5.92667,0.899583 z"
+         style="font-weight:bold;-inkscape-font-specification:'TeX Gyre Adventor Bold';fill:#90f75c"
+         id="path11785" />
+      <path
+         d="m 99.751852,119.39822 h 7.249588 v -16.03376 h 12.06501 v -6.932091 h -12.06501 v -9.207505 h 12.64709 V 80.292776 H 99.751852 Z"
+         style="font-weight:bold;-inkscape-font-specification:'TeX Gyre Adventor Bold';fill:#90f75c"
+         id="path11787" />
+    </g>
+  </g>
+</svg>

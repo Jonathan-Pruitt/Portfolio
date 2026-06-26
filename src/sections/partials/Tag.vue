@@ -9,7 +9,7 @@ const props = defineProps({
     },
 })
 
-const svgTags = import.meta.glob('/icons/tags/*.svg', {
+const svgTags = import.meta.glob('@/assets/icons/tags/*.svg', {
   query : '?component',
   eager: true
 });
