@@ -80,12 +80,16 @@
         ],
         "images" : [
             {
-                "path": "images/img-projects/ascii/woman-compare.jpg",
-                "altText": "Text and Image Comparison - ASCII Dreaming"
-            },
-            {
                 "path": "images/img-projects/ascii/dog-compare.jpg",
                 "altText": "Dog Image with ASCII Slice - ASCII Dreaming"
+            },
+            {
+                "path": "images/img-projects/ascii/zoom.gif",
+                "altText": "Zoom In/Out of Dog ASCII - ASCII Dreaming"
+            },
+            {
+                "path": "images/img-projects/ascii/woman-compare.jpg",
+                "altText": "Text and Image Comparison - ASCII Dreaming"
             },
             {
                 "path": "images/img-projects/ascii/lighthouse-compare.jpg",
