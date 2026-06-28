@@ -67,13 +67,13 @@ onMounted(() => {
     </div>
     <div 
       @click="openFullTextModal"
-      class="w-4/5 mx-auto mt-4 md:mt-8 px-4 py-2 hover:scale-105 rounded-lg shadow-lg shadow-brand/20 hover:bg-brand/5 dark:shadow-none dark:bg-base/10 dark:inset-shadow-sm dark:inset-shadow-gray-500/50 transition-all duration-300 cursor-pointer"
+      class="w-4/5 mx-auto mt-4 md:mt-8 px-4 py-2 hover:scale-105 rounded-lg shadow-lg shadow-brand/20 hover:bg-brand/5 dark:shadow-none dark:bg-background/10 dark:inset-shadow-sm dark:inset-shadow-gray-500/50 transition-all duration-300 cursor-pointer"
       title="Click to read the full endorsement"
     >
       <div class="p-4">
         <div 
         v-html="highlights"
-        class="text-sm sm:text-md md:text-2xl"
+        class="text-sm sm:text-base md:text-2xl"
         />
         <em class="text-subtle text-xs sm:text-lg">Click to read the full context</em>
       </div>

@@ -86,7 +86,7 @@ onMounted(() => {
 
 <template>
   <!-- PROJECT CONTAINER -->
-  <div class="mx-auto mt-8 bg-peak rounded-lg shadow-lg dark:inset-shadow-sm dark:inset-shadow-gray-500/50 dark:bg-linear-to-b dark:from-base dark:via-brand/30 dark:via-15% dark:to-base">
+  <div class="mx-auto mt-8 bg-peak rounded-lg shadow-lg dark:inset-shadow-sm dark:inset-shadow-gray-500/50 dark:bg-linear-to-b dark:from-background dark:via-brand/30 dark:via-15% dark:to-background">
     <div class="w-full p-4">
         
       <!-- Header -->
@@ -115,7 +115,7 @@ onMounted(() => {
         </div>
 
         <div 
-        class="w-100 max-w-full md:w-auto md:col-span-2 mt-4 md:m-0 px-4 py-2 border border-subtle bg-base/50 rounded-lg mx-auto cursor-pointer hover:scale-105 hover:bg-brand/10 transition"
+        class="w-100 max-w-full md:w-auto md:col-span-2 mt-4 md:m-0 px-4 py-2 border border-subtle bg-background/50 rounded-lg mx-auto cursor-pointer hover:scale-105 hover:bg-brand/10 transition"
         title="Read full description"
         @click="showDetails = true"
         >

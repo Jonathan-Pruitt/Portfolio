@@ -48,14 +48,14 @@ const ICON_COLORS = {
     <div 
         :class="iconColor"
         :title="text || 'icon'"
-        class="w-full h-full"
+        class="w-full h-full hover:scale-115 transition duration-75"
     >
         <component 
           :is="svgTags[tag.iconPath]?.default" 
           :class="tag.iconPath ? '' : 'hidden'"
-          class="w-full h-full"
+          class="w-full h-full shadow-sm"
           />
-          <!-- class="size-6 sm:size-8 md:size-10 lg:size-12 rounded-lg bg-base/25 mx-auto" -->
+          <!-- class="size-6 sm:size-8 md:size-10 lg:size-12 rounded-lg bg-background/25 mx-auto" -->
         <!-- <h5 
           class="text-xs font-semibold my-auto px-2 py-1 rounded-lg inset-ring-2 text-center mx-auto"
           :class="color"

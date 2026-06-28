@@ -45,14 +45,14 @@ const showDetails = ref(false);
       <div class="justify-self-start"
         v-for="tag in tags"
       >
-        <div class="flex items-center hover:scale-110 cursor-default transition-all duration-75">
+        <div class="flex items-center cursor-default">
           <div class="size-8 sm:size-12 md:size-16 box-content p-1 dark:bg-linear-to-br dark:to-info/40 dark:from-brand/20 rounded sm:rounded-lg">
             <TechTag 
               :tag="tag"
             />
           </div>
           <div class="dark:border-none border-subtle">
-            <h5 class="text-sm sm:text-md md:text-lg text-brand-muted font-semibold tracking-tight">{{ tag.title }}</h5>
+            <h5 class="text-sm sm:text-base md:text-lg text-header2 font-semibold tracking-tight">{{ tag.title }}</h5>
             <p  class="text-xs sm:text-sm text-content font-light">{{ tag.useFrequency }}</p>
           </div>
         </div>

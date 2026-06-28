@@ -48,7 +48,7 @@ const setAboutMeData = () => {
 
 <template>
   <section :id="sectionId" class="pb-1">
-    <h2 class="text-4xl font-black sm:hidden cursor-default bg-base">WHO I AM</h2>
+    <h2 class="text-4xl font-black sm:hidden cursor-default bg-background">WHO I AM</h2>
     <div class="bg-[#6c85a4] border-y-4 border-brand">
       <div 
         class="
