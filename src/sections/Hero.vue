@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <section :id="sectionId">
-    <div class="bg-radial from-brand/30 to-base to-70%">
+    <div class="bg-radial from-brand/30 to-background to-70%">
     <div class="mx-auto min-h-screen flex flex-col place-content-center">
       <div class="sm:grid sm:grid-cols-2 p-4 m-4">
         

@@ -7,11 +7,6 @@
     --font-content: "Inter Tight";
     --font-code: "Ubuntu Sans Mono";
     --font-cmd: "Segoe UI";
-
-    --text-md: { 
-        font-size: var(--text-base);
-        line-height: var(--text-base--line-height);
-    };
     
     /*---------- COLORS  ----------*/
     --color-brand: var(--primary);
@@ -22,11 +17,12 @@
     --color-info: var(--info);
     --color-tag: var(--color-teal-900);
 
-    --color-base: var(--bg-0);
+    --color-background: var(--bg-0);
     --color-flat: var(--bg-1);
     --color-raised: var(--bg-2);
     --color-peak: var(--bg-3);
     --color-header: var(--text);
+    --color-header2: var(--brand-light-purple);
     --color-body: var(--text-muted);
     --color-subtle: var(--subtle);
 
@@ -44,6 +40,7 @@
     --bg-2: hsl(0,0%,87%);
     --bg-3: hsl(0,0%,91%);
     --brand-purple: hsl(273, 100%, 20%);
+    --brand-light-purple: hsl(273,30%,50%); 
     --text: var(--brand-purple);
     --text-muted: hsl(0,0%,40%);
     --subtle: hsl(0,0%,60%);
@@ -66,6 +63,7 @@
         --bg-2: hsl(0,0%,13%);
         --bg-3: hsl(0,0%,16%);
         --brand-purple: hsl(255, 50%, 80%);
+        --brand-light-purple: hsl(273,40%,50%); 
         --primary-muted: hsl(272,30%,40%);
         --text: var(--brand-purple);
         --text-muted: hsl(0,0%,60%);
