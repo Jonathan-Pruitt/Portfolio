@@ -8,11 +8,13 @@ export class TechTagObject {
 
         if (record) {
             this._title = record.title;
+            this._description = record.description;
             this._domain = record.domain;
             this._iconPath = record.iconPath || TechTagObject.DEFAULT_PATH;
             this._useFrequency = record.useFrequency;
         } else {
             this._title = "Unkown";
+            this._description = 'Unknown';
             this._domain = "Unknown";
             this._iconPath = TechTagObject.DEFAULT_PATH;
             this._useFrequency = 'Unknown';
@@ -21,6 +23,9 @@ export class TechTagObject {
 
     get title() {
         return this._title
+    }
+    get description() {
+        return this._description
     }
     get domain() {
         return this._domain;
@@ -44,6 +49,7 @@ export class TechTagObject {
     getTechTagItem() {
         return {
             title: this.title,
+            description: this.description,
             domain: this.domain,
             iconPath: this.iconPath,
             useFrequency: this.useFrequency

@@ -1,7 +1,5 @@
 <script setup>
-import Proficiency from './components/Proficiency.vue';
-import SvgIcon from './partials/SvgIcon.vue';
-import TechTag from './partials/TechTag.vue';
+import ProficiencyItem from './components/ProficiencyItem.vue';
 import { TechTagObject } from '../services/TechTagObject.js';
 import { onMounted, ref } from 'vue';
 
@@ -35,7 +33,6 @@ const props = defineProps({
   sectionId: String
 })
 
-const showDetails = ref('');
 const coreTags = ref([]);
 const proficientTags = ref([]);
 const familiarTags = ref([]);
@@ -65,14 +62,6 @@ const getTagArray = (stringArray) => {
   return tagArray;
 }
 
-const handleClickCategories = (category) => {
-  if (category == showDetails.value) {
-    showDetails.value = ''
-  } else {
-    showDetails.value = category
-  }
-}
-
 onMounted(() => {
   getAllTags();
 })
@@ -81,37 +70,21 @@ onMounted(() => {
 <template>
   <section :id="sectionId">
     <!-- Proficiencies -->
-     <div class="sm:ml-16">
-      <h2 class="text-4xl sm:text-6xl font-black cursor-default">PROFICIENCIES</h2>
-      <p 
-        class="pt-8 md:text-2xl"
-      >
-        Let's break down my 
-        <strong>tools</strong>
-        and how
-        <strong>frequently</strong>
-        I use them
-      </p>
+    <div 
+      v-if="coreTags.length > 0"
+    >
+      <ProficiencyItem :category="prof.title" :description="prof.description" :tags="coreTags"/>
+    </div>
+
+    <div 
+      v-if="proficientTags.length > 0"
+    >
+      <ProficiencyItem :category="comf.title" :description="comf.description" :tags="proficientTags"/>
     </div>
     <div 
-    class="px-4 pb-12 mx-auto sm:w-xl"
+      v-if="familiarTags.length > 0"
     >
-      <div 
-        v-if="coreTags.length > 0"
-      >
-        <Proficiency :category="prof.title" :description="prof.description" :tags="coreTags"/>
-      </div>
-
-      <div 
-        v-if="proficientTags.length > 0"
-      >
-        <Proficiency :category="comf.title" :description="comf.description" :tags="proficientTags"/>
-      </div>
-      <div 
-        v-if="familiarTags.length > 0"
-      >
-        <Proficiency :category="fami.title" :description="fami.description" :tags="familiarTags" />
-      </div>
+      <ProficiencyItem :category="fami.title" :description="fami.description" :tags="familiarTags" />
     </div>
   </section>
 </template>

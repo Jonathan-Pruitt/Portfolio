@@ -1,4 +1,5 @@
 <script setup>
+import SectionWrapper from './components/SectionWrapper.vue';
 import Navbar from './Navbar.vue';
 import Hero from './Hero.vue';
 import Proficiencies from './Proficiencies.vue';
@@ -42,24 +43,53 @@ const navList = [
       <!-- <Debug /> -->
       <Hero 
         section-id="home"
-        class=""
       />
-      <Proficiencies 
-      class="sm:pb-24 border-l-4 sm:border-l-16 md:border-l-24 border-yellow-200/75"
-      :section-id="navList[0].title"
-      />
-      <Projects 
-      class="sm:pb-24 border-l-4 sm:border-l-16 md:border-l-24 border-blue-200/75"
-      :section-id="navList[1].title"
-      />
-      <Endorsements 
-      class="sm:pb-24 border-l-4 sm:border-l-16 md:border-l-24 border-red-200/75"
-      :section-id="navList[2].title"
-      />
-      <About 
-      class="sm:pb-16"
-      :section-id="navList[3].title"
-      />
+      <!--------------------- PROFICIENCIES --------------------->
+      <SectionWrapper 
+        title="PROFICIENCIES" 
+        stripe-color="--color-proficiencies"
+        subtitle="An overview of my $*tools$ and how $*frequently$ I use them"
+      >
+        <Proficiencies :section-id="navList[0].title"/>
+      </SectionWrapper>
+      <!--------------------- PROJECTS --------------------->
+      <SectionWrapper 
+        title="PROJECTS" 
+        stripe-color="--color-projects"
+        subtitle="Check out some of the $*projects$ I've worked on"
+      >
+        <Projects :section-id="navList[1].title"/>
+      </SectionWrapper>
+      <!--------------------- ENDORSEMENTS --------------------->
+      <SectionWrapper 
+        title="ENDORSEMENTS" 
+        stripe-color="--color-endorsements"
+        subtitle="Here are some $*testimonials$ about my $*work ethic$"
+      >
+        <Endorsements :section-id="navList[2].title"/>
+      </SectionWrapper>
+      <!------------------- SPLASH IMAGE ------------------->
+      <div class="bg-[#6c85a4] border-y-4 border-brand">
+        <div 
+          class="
+            w-full
+            sm:h-[300px]
+            h-[150px]
+            bg-top
+            bg-[url(/images/big-sky.png)] 
+            sm:bg-center
+            bg-no-repeat
+          ">
+        </div>
+      </div>
+      <!--------------------- ABOUT ME --------------------->
+      <SectionWrapper 
+        title="WHO I AM" 
+        stripe-color="--color-about"
+        subtitle="A little bit about me and my $*background$"
+      >
+        <About :section-id="navList[3].title"/>
+      </SectionWrapper>
     </main>
   <Footer 
     

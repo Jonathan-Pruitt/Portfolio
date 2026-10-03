@@ -5,6 +5,7 @@ import LayoutWrapper from './sections/LayoutWrapper.vue';
 
 <template>
   <div class="relative">
+    <!-- <Debug/> -->
     <LayoutWrapper/>
   </div>
 </template>

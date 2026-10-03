@@ -1,46 +1,60 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import ProjectItem from './components/ProjectItem.vue';
 import projectData from "../assets/data/projects.json";
-import { TechTagObject } from '../services/TechTagObject.js';
+import ProjectThumbnail from './partials/ProjectThumbnail.vue';
 
 const props = defineProps({
   sectionId: String,
 })
 const projects = ref(projectData)
 const maxTechItems = ref(0)
+const activeIndex = ref(0);
+const activeProject = ref(projects.value[0]);
 
 const handleMaxTechCount = (e) => {
   maxTechItems.value = Math.max(e, maxTechItems.value)
+}
+
+const handleProjectThumbnailClick = (projectIndex) => {
+  activeIndex.value = projectIndex;
+  activeProject.value = projects.value[projectIndex];
 }
 </script>
 
 <template>
   <section :id="sectionId">
-    <h2 class="text-4xl sm:text-6xl lg:ml-16 transition sm:absolute sm:vertical-text sm:tracking-[-0.25em] inline cursor-default font-black">
-      PROJECTS
-    </h2>
-    <div class="max-w-4xl mx-auto sm:flex pb-12 sm:px-24">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <a 
+        v-for="(project, index) in projects" 
+        class="hover:scale-105
+          cursor-pointer smooth 
+          shadow-lg dark:inset-shadow-sm dark:inset-shadow-gray-500/50"
+        @click="handleProjectThumbnailClick(index)"
+      >
+        <ProjectThumbnail 
+          :image-object="project.images[0]" 
+          :title="project.title" 
+          :snippet="project.snippet"
+          :is-active="index == activeIndex"
+        />
+      </a>
+    </div>
+    <div class="min-w-2xs" id="project-item">
+
+      <!-- SINGLE PROJECT VIEW -->
+      <ProjectItem 
+        :project="activeProject" 
+        :max-tech-items="maxTechItems"
+        @update-max-tech="handleMaxTechCount"
+      />
       
-      <div class="mx-auto my-4">
-        <p 
-          class="pt-4 sm:pt-0 md:text-2xl"
-        >
-          Check out some of the 
-          <strong>projects</strong>
-          I've worked on
-        </p>
-        <div class="min-w-2xs">
-          <!-- PROJECTS LIST -->
-          <div v-for="project in projects" class="">
-            <ProjectItem 
-              :project="project" 
-              :max-tech-items="maxTechItems"
-              @update-max-tech="handleMaxTechCount"
-            />
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+  #project-item {
+    scroll-margin-top: 4rem;
+  }
+</style>
