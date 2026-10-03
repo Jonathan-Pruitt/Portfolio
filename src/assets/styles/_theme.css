@@ -32,6 +32,11 @@
     --color-tag-personal:       hsl(120,50%,35%);
     --color-tag-usage:          hsl(320,50%,50%);
     --color-tag-professional:   hsl(30,50%,40%);
+
+    --color-proficiencies: #26547c;
+    --color-projects: #ef476f;
+    --color-endorsements: #06d6a0;
+    --color-about: #ffd166;
 }
 
 :root {

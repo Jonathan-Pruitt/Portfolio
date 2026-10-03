@@ -48,28 +48,8 @@ const setAboutMeData = () => {
 
 <template>
   <section :id="sectionId" class="pb-1">
-    <h2 class="text-4xl font-black sm:hidden cursor-default bg-background">WHO I AM</h2>
-    <div class="bg-[#6c85a4] border-y-4 border-brand">
-      <div 
-        class="
-          w-full
-          sm:h-[300px]
-          h-[150px]
-          bg-top
-          bg-[url(/images/big-sky.png)] 
-          sm:bg-center
-          bg-no-repeat
-          ">
-      </div>
-    </div>
     
     <div class="sm:flex relative w-full">  
-      <!-- SECTION HEADER TEXT : VERTICAL -->
-      <div class="absolute text-4xl sm:text-6xl tracking-[-0.30em] font-black sm:static flex flex-col h-full invisible sm:visible ml-8 cursor-default">
-        <h2 class="vertical-text mt-16">WHO</h2>
-        <h2 class="vertical-text mt-8">I</h2>
-        <h2 class="vertical-text mt-8">AM</h2>
-      </div>
       
       <!-- COMMAND PROMPT MIMIC -->
       <div class="mx-auto">
@@ -84,8 +64,8 @@ const setAboutMeData = () => {
             </div>
           </div>
           <div class="pt-4 text-white md:text-lg">
-            <code class="block">C:\> cd About/Me</code>
-            <code class="block mt-4">C:\About\Me> run Jonathan.exe</code>
+            <code class="block">C:\> cd About-Me</code>
+            <code class="block mt-4">C:\About-Me> run Jonathan-Bio.exe</code>
             <code class="block mt-4 text-yellow-300">{{ aboutMeData.header }}</code>
             <code class="leading-5">
               <p class="mt-4">I am a <strong>Full-Stack Software Developer</strong> with a passion for building functional, scalable backends. My journey into tech began at the <strong>Mississippi Coding Academies</strong>, where I built a strong foundation in <strong>C#</strong> and software architecture. Since then, I've channeled my lifelong love for troubleshooting and problem-solving into building deep-tech personal projects and delivering dynamic, scalable solutions for <strong>professional client work.</strong></p>

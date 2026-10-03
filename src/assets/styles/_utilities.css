@@ -3,6 +3,18 @@
     .rescue {
         @apply bg-red-500 text-yellow-200 border-black border font-black
     }
+
+    .smooth {
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+
+    .smooth-fast {
+        transition-property: all;
+        transition-duration: 75ms;
+        transition-timing-function: ease-in-out;
+    }
 }
 
 @utility vertical-text {

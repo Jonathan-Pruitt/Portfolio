@@ -2,6 +2,7 @@
     {
         "id": "backendjs",
         "title": "JavaScript",
+        "description": "Backend coding language",
         "domain": "backend",
         "iconPath" : "/src/assets/icons/tech/js.svg",
         "useFrequency" : 3
@@ -9,6 +10,7 @@
     {
         "id": "csharp",
         "title" :       "C#",
+        "description": "Backend coding language",
         "domain" :      "backend",
         "iconPath" :    "/src/assets/icons/tech/csharp.svg",
         "useFrequency" : 1
@@ -16,6 +18,7 @@
     {
         "id": "css",
         "title": "CSS",
+        "description": "Design/styling language",
         "domain": "frontend",
         "iconPath": "/src/assets/icons/tech/css.svg",
         "useFrequency" : 3
@@ -23,6 +26,7 @@
     {
         "id": "github",
         "title" : "GitHub",
+        "description": "Version control platform",
         "domain" : "version control",
         "iconPath" : "/src/assets/icons/tech/github.svg",
         "useFrequency" : 3
@@ -30,6 +34,7 @@
     {
         "id": "html",
         "title" : "HTML",
+        "description": "Website markup language",
         "domain" : "frontend",
         "iconPath" : "/src/assets/icons/tech/html5.svg",
         "useFrequency" : 3
@@ -37,6 +42,7 @@
     {
         "id": "javascript",
         "title": "JavaScript",
+        "description": "Frontend coding language",
         "domain": "frontend",
         "iconPath" : "/src/assets/icons/tech/js.svg",
         "useFrequency" : 3
@@ -44,6 +50,7 @@
     {
         "id": "laravel",
         "title": "Laravel",
+        "description": "Backend web application framework",
         "domain": "framework",
         "iconPath" : "/src/assets/icons/tech/laravel.svg",
         "useFrequency" : 2
@@ -51,6 +58,7 @@
     {
         "id": "learning-github",
         "title": "GitHub",
+        "description": "Version control platform",
         "domain": "educational",
         "iconPath" : "/src/assets/icons/tech/github.svg",
         "useFrequency" : 3
@@ -58,6 +66,7 @@
     {
         "id": "linear",
         "title" : "Linear",
+        "description": "Project management tool",
         "domain" : "project management",
         "iconPath" : "/src/assets/icons/tech/linear.svg",
         "useFrequency" : 2
@@ -65,6 +74,7 @@
     {
         "id": "linux",
         "title" : "Linux",
+        "description": "Operating system",
         "domain" : "OS",
         "iconPath" : "/src/assets/icons/tech/linux.svg",
         "useFrequency" : 3
@@ -72,6 +82,7 @@
     {
         "id": "mysql",
         "title": "MySQL",
+        "description": "Database management system",
         "domain": "backend",
         "iconPath" : "/src/assets/icons/tech/mysql.svg",
         "useFrequency" : 2
@@ -79,6 +90,7 @@
     {
         "id": "php",
         "title": "PHP",
+        "description": "Backend coding language",
         "domain": "backend",
         "iconPath" : "/src/assets/icons/tech/php.svg",
         "useFrequency" : 2
@@ -86,6 +98,7 @@
     {
         "id": "python",
         "title" : "Python",
+        "description": "Backend coding language",
         "domain" : "backend",
         "iconPath" : "/src/assets/icons/tech/python.svg",
         "useFrequency" : 1
@@ -93,6 +106,7 @@
     {
         "id": "react",
         "title" : "React.js",
+        "description": "Frontend coding framework",
         "domain" : "frontend",
         "iconPath" : "/src/assets/icons/tech/react.svg",
         "useFrequency" : 0
@@ -100,6 +114,7 @@
     {
         "id": "tailwind",
         "title": "Tailwind",
+        "description": "CSS framework",
         "domain": "framework",
         "iconPath" : "/src/assets/icons/tech/tailwind.svg",
         "useFrequency" : 3
@@ -107,6 +122,7 @@
     {
         "id": "vue",
         "title": "Vue.js",
+        "description": "Frontend coding framework",
         "domain": "framework",
         "iconPath" : "/src/assets/icons/tech/vue.svg",
         "useFrequency" : 3
@@ -114,6 +130,7 @@
     {
         "id": "windows",
         "title" : "Windows",
+        "description": "Operating system",
         "domain" : "OS",
         "iconPath" : "/src/assets/icons/tech/windows.svg",
         "useFrequency" : 2
@@ -121,6 +138,7 @@
     {
         "id": "wpf",
         "title" :       "WPF",
+        "description": "Graphical User Interface (GUI) framework",
         "domain" :      "framework",
         "iconPath" :    "/src/assets/icons/tech/wpf.svg",
         "useFrequency": 0
@@ -128,6 +146,7 @@
     {
         "id": "xaml",
         "title" :       "XAML",
+        "description": "Markup language for User Interface",
         "domain" :      "frontend",
         "iconPath" :    "/src/assets/icons/tech/xaml.svg",
         "useFrequency" : 0

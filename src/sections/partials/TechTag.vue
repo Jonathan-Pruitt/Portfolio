@@ -32,8 +32,8 @@ const TAG_COLORS = {
 
 <template>
     <div 
-        :title="tag.title + (tag.iconPath.includes('null.svg') ? ': NO SVG AVAILABLE' : '')"
-        class="w-full h-full hover:scale-110 transition duration-75"
+        :title="tag.description"
+        class="w-full h-full"
     >
         <component
             :is="techSvgs[tag.iconPath]?.default"

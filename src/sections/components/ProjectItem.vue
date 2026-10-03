@@ -1,10 +1,10 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue';
+import { computed, watch, ref } from 'vue';
 import { TextFormatService } from '../../services/TextFormatService.js';
 import Carousel from './Carousel.vue';
 import Modal from '../partials/Modal.vue';
 import ProjectTagList from '../partials/ProjectTagList.vue';
-import TechTag from '../partials/TechTag.vue';
+import ContentBox from './ContentBox.vue';
 import Tag from '../partials/Tag.vue';
 import tagSvg from '@/assets/icons/tags/tag.svg?component';
 import techTagSvg from '@/assets/icons/tags/tech.svg?component';
@@ -15,19 +15,9 @@ const props = defineProps({
   maxTechItems: Number
 })
 const emit = defineEmits(['update-max-tech'])
-const project = ref(props.project);
 const techTags = ref([]);
-const description = TextFormatService.insertRichText(props.project.description);
 const showDisclaimer = ref(false);
 const showDetails = ref(false);
-
-const COLORS = {
-    "backend" :             'bg-[hsl(0,50%,50%)]/20 inset-ring-[hsl(0,50%,50%)] text-[hsl(0,50%,50%)]',
-    "frontend" :            'bg-[hsl(216,50%,50%)]/20 inset-ring-[hsl(216,50%,50%)] text-[hsl(216,50%,50%)]',
-    "framework" :           'bg-[hsl(144,70%,40%)]/20 inset-ring-[hsl(144,70%,40%)] text-[hsl(144,70%,40%)]',
-    "version control" :     'bg-[hsl(288,50%,50%)]/20 inset-ring-[hsl(288,50%,50%)] text-[hsl(288,50%,50%)]',
-    "project management":   'bg-[hsl(72,50%,40%)]/20 inset-ring-[hsl(72,50%,40%)] text-[hsl(72,50%,40%)]',
-}
 
 const TAG_COLORS = {
     "backend" :     'bg-[hsl(240,50%,60%)]/20 inset-ring-[hsl(240,50%,60%)] text-[hsl(240,50%,60%)]',
@@ -43,13 +33,17 @@ const maxLogos = computed(() => {
     if (props.maxTechItems > 3) {return 'grid-cols-3'}
     return 'grid-cols-' + props.maxTechItems;
 })
+const description = computed(() =>
+  TextFormatService.insertRichText(props.project.description)
+);
+
 
 // METHODS
 
 const loadTechTags = () => {
-    const tags = project.value.techStack.map((tag) => new TechTagObject(tag).getTechTagItem())
+    const tags = props.project.techStack.map((tag) => new TechTagObject(tag).getTechTagItem())
     let maxTags = 0
-    techTags.value.domains = {};
+    techTags.value = [];
     const fEnd = tags.filter((t) => t.domain == 'frontend');
     const bEnd = tags.filter((t) => t.domain == 'backend');
     const frame = tags.filter((t) => t.domain == 'framework');
@@ -75,20 +69,19 @@ const loadTechTags = () => {
     }
 }
 
-const capitalizeFirstChar = (text) => {
-    return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
-onMounted(() => {
+watch(
+  () => props.project,
+  () => {
     loadTechTags();
-    // emit('update-max-tech', maxTagCount.value)
-})
+  },
+  { immediate: true }
+);
 
 </script>
 
 <template>
   <!-- PROJECT CONTAINER -->
-  <div class="mx-auto mt-8 bg-peak rounded-lg shadow-lg dark:inset-shadow-sm dark:inset-shadow-gray-500/50 dark:bg-linear-to-b dark:from-background dark:via-brand/30 dark:via-15% dark:to-background">
+  <ContentBox>
     <div class="w-full p-4">
         
       <!-- Header -->
@@ -253,7 +246,8 @@ onMounted(() => {
         </div>
       </div>
     </div>
-  </div>
+  </ContentBox>
+  <!-- </div> -->
   <Modal
     :show="showDisclaimer"
     @close="showDisclaimer = false"
