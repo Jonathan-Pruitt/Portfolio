@@ -26,7 +26,7 @@ const isHover = ref(false);
         >
         <div class="absolute inset-0 overflow-clip">
           <div 
-            class="w-full h-full smooth rounded-xs" 
+            class="w-full h-full smooth rounded-xs content-center" 
             :class="isHover ? 'bg-white/60 dark:bg-black/60 translate-y-0 text-header' : 'bg-transparent translate-y-11/10 text-transparent'"
             >
             <p class="text-sm sm:text-base lg:text-lg p-2 lg:p-4">
