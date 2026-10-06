@@ -27,6 +27,7 @@ const handleProjectThumbnailClick = (projectIndex) => {
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
       <a 
         v-for="(project, index) in projects" 
+        href="#project-item"
         class="hover:scale-105
           cursor-pointer smooth 
           shadow-lg dark:inset-shadow-sm dark:inset-shadow-gray-500/50"
@@ -55,6 +56,6 @@ const handleProjectThumbnailClick = (projectIndex) => {
 
 <style scoped>
   #project-item {
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 2rem;
   }
 </style>

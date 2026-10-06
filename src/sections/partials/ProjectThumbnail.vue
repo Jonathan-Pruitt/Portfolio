@@ -35,7 +35,7 @@ const isHover = ref(false);
           </div>
         </div>
       </div>
-      <h3 class="text-lg" :class="isActive ? 'font-bold' : ''">{{ props.title }}</h3>
+      <h3 class="text-lg md:text-3xl font-bold" :class="isActive ? 'font-bold' : ''">{{ props.title }}</h3>
     </div>
   </div>
 </template>

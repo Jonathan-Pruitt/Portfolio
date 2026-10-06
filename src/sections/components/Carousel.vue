@@ -73,17 +73,19 @@ const handleClick = (newIndex) => {
               <div class="absolute inset-y-0 left-0 content-center w-1/15">
                 <button
                   @click="handleClick(currentIndex - 1)"
-                  class="w-full h-1/5 transition-all duration-200 rounded-r border-black border border-l-0 bg-linear-to-r from-transparent to-white opacity-50 hover:opacity-95"
-                >
-                  <
+                  class="w-full h-1/5 transition-all duration-200 rounded border-black border border-l-0 bg-white/50 hover:bg-white/90 cursor-pointer"
+                  >
+                  <img src="/icons/arrow.svg" alt="Left arrow icon" width="24" height="24"/>
                 </button>
               </div>
               <div class="absolute inset-y-0 right-0 content-center w-1/15">
                 <button
                   @click="handleClick(currentIndex + 1)"
-                  class="w-full h-1/5 transition-all duration-200 rounded-l border-black border border-r-0 bg-linear-to-r from-transparent to-white opacity-50 hover:opacity-95"
-                >
+                  class="w-full h-1/5 transition-all duration-200 rounded border-black border border-r-0 bg-white/50 hover:bg-white/90 cursor-pointer"
                   >
+                  <img src="/icons/arrow.svg" alt="Left arrow icon" width="24" height="24"
+                  class="-scale-x-100"
+                  />
                 </button>
               </div>
             </div>
