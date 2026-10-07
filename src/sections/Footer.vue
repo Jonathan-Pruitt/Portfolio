@@ -34,10 +34,6 @@ const props = defineProps({
               </a>
             </div>
           </div>
-          <address 
-            type="email"
-            class="tracking-wider mb-8 font-light md:text-xl"
-          >jonathan.s.pruitt@gmail.com</address>
 
           <div class="border-t pt-6 w-full max-w-2xl text-center mb-16 tracking-widest border-header font-light">
             <small class="flex md:text-xl place-content-center items-center">Built with ADHD <adhd_svg class="mr-2"/> and coffee <coffee_svg/></small>
